@@ -1,0 +1,2017 @@
+{
+  "version": 1,
+  "revision": 0,
+  "updatedAt": null,
+  "profile": {
+    "displayName": "真实硕士研究基线（非个人档案）",
+    "track": "master",
+    "cycle": "2027 入学；逐事实保留原周期",
+    "field": "物理及物理基础交叉方向",
+    "regions": "荷兰、瑞士、英国、美国",
+    "education": "",
+    "academicRecord": "",
+    "language": "",
+    "budget": "",
+    "constraints": "不推定个人资格、语言豁免、学费身份或资助；不包含实际申请进度",
+    "researchInterests": "",
+    "researchExperience": "",
+    "publications": "",
+    "supervisorPreferences": "",
+    "fundingNeeds": "",
+    "prerequisites": "",
+    "degreeDocuments": "",
+    "goals": "供 Agent 核对真实规则并开展隔离测试；用户个人背景另由对话配置"
+  },
+  "programs": [
+    {
+      "id": "master-eu-leiden-physics",
+      "name": "Physics MSc",
+      "institution": "Leiden University",
+      "region": "荷兰",
+      "track": "master",
+      "stage": "调研中",
+      "url": "https://www.universiteitleiden.nl/en/education/study-programmes/master/physics",
+      "fit": "真实硕士候选；课程、学历、语言、费用与个人目标需逐项核对，不表示已符合招生条件。",
+      "nextAction": "由 Agent 对照个人背景及官方事实，拆分逐项目材料、课程差距与行动；保留未知和官网冲突。",
+      "deadline": {
+        "date": "",
+        "time": "",
+        "timezone": "",
+        "basis": "unknown",
+        "sourceId": "master-eu-ld",
+        "cycle": "2027目标轮未明示；年例规则另存事实"
+      },
+      "facts": [
+        {
+          "label": "授课与研究模式",
+          "value": "全日制2年；英文；约50%用于研究，至少一个研究项目；9月或2月开始。",
+          "sourceId": "master-eu-lp",
+          "cycle": "现行规则；页面未明示2027入学轮",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "学术等同性",
+          "value": "相关物理本科或足够相关背景，由Admissions Board判断与荷兰Physics本科等同性；不足可能需个别pre-master。",
+          "sourceId": "master-eu-la",
+          "cycle": "现行规则；页面未明示2027入学轮",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "先修知识",
+          "value": "本科级经典力学、量子、电动力学、统计物理、复分析；Cosmology还需粒子物理。页面列主题而没有逐科最低ECTS，不能把毕业学分当准入。",
+          "sourceId": "master-eu-la",
+          "cycle": "现行规则；页面未明示2027入学轮",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "英语考试",
+          "value": "IELTS Academic总6.5、各项6.0；考试不超过2年。",
+          "sourceId": "master-eu-la",
+          "cycle": "现行规则；页面未明示2027入学轮",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "英语豁免",
+          "value": "页面列已完成USA/UK/Ireland/NZ/Australia/Canada（排除法授）/Singapore/South Africa/Malta教育及特定IB、Dutch学历情形；须核对完成事实与适用学历，英国在读不自动等于豁免。",
+          "sourceId": "master-eu-la",
+          "cycle": "现行规则；页面未明示2027入学轮",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "Education分支语言",
+          "value": "教育专修的教育部分为荷兰语，可能需高级荷语证明；不能泛称全部专修纯英语。",
+          "sourceId": "master-eu-la",
+          "cycle": "现行规则；页面未明示2027入学轮",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "基础材料",
+          "value": "初期上传学位/成绩单原语言扫描件，必要时附官方英/荷/德/法译文；未毕业列预计时间、现有成绩和待修课程。",
+          "sourceId": "master-eu-lm",
+          "cycle": "现行规则；页面未明示2027入学轮",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "语言可成录取条件",
+          "value": "可在语言成绩未出时申请，足够成绩随后成为录取条件；不等于永久免交。",
+          "sourceId": "master-eu-lm",
+          "cycle": "现行规则；页面未明示2027入学轮",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "Placement letter",
+          "value": "项目的Application Form Programme实际为placement letter：解释物理本科等同性，并说明尚缺专修先修知识的入学前补足计划。",
+          "sourceId": "master-eu-lm",
+          "cycle": "现行规则；页面未明示2027入学轮",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "常规推荐要求边界",
+          "value": "常规required-documents页未列推荐信数量；奖学金额外材料需分开，不把LION两封写作全部申请必需。",
+          "sourceId": "master-eu-lm",
+          "cycle": "现行规则；页面未明示2027入学轮",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "9月入学年例",
+          "value": "需签证/居留（含延续学习居留）须4月1日前；无需者5月15日前。页面原文23:59 Central European Time；未标申请年份，2027轮状态不由此确认。",
+          "sourceId": "master-eu-ld",
+          "cycle": "年度9月/2月入学规则；未标年份",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "2月入学年例",
+          "value": "需签证/居留10月15日前；无需者11月15日前，原文23:59 Central European Time。9月开始受推荐，2月需委员会判断背景能否支持2年完成。",
+          "sourceId": "master-eu-ld",
+          "cycle": "年度9月/2月入学规则；未标年份",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "申请入口与年度开放规则",
+          "value": "Studielink先申请并选专修，再获ULCN/uSis完成上传；登记需有效护照/欧洲ID，Dutch居民可DigiD；Studielink通常在目标学年前一年10月1日开放。年例不等于已验证个人门户。",
+          "sourceId": "master-eu-lapp",
+          "cycle": "现行规则；页面未明示2027入学轮",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "申请费",
+          "value": "国际学历通常EUR100，不退；同学年最多3个项目/专修；Dutch本科、既往Leiden注册等列明情形可免，其他理由不免。",
+          "sourceId": "master-eu-lapp",
+          "cycle": "现行规则；页面未明示2027入学轮",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "审理及接受",
+          "value": "完整申请在适用费用收到后通常争取4–6周决定；可录取、条件录取或拒绝；条件在uSis；获录后在uSis确认就读。",
+          "sourceId": "master-eu-lapp",
+          "cycle": "现行规则；页面未明示2027入学轮",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "确认与注册",
+          "value": "需签证者先确认就读并赶签证期限；无需者在开学前确认。需完成录取条件并在正式开始前安排学费支付，仍须按个人通知执行。",
+          "sourceId": "master-eu-lapp",
+          "cycle": "现行规则；页面未明示2027入学轮",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "条件文件流程",
+          "value": "依decision statement在uSis上传条件材料、按需开放学历核验。年例：无需签证者开学前（9/1或2/1），需者签证节点前（6/1或12/1）；文件晚发另有官方安排，未生成2027精确日。",
+          "sourceId": "master-eu-lcond",
+          "cycle": "现行规则；页面未明示2027入学轮",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "学历核验",
+          "value": "按录取书指定线上核验或由颁发院校认证、密封文件；普通公证不等同院校认证。",
+          "sourceId": "master-eu-lverify",
+          "cycle": "现行规则；页面未明示2027入学轮",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "法定年学费",
+          "value": "2027-28法定学费EUR2,771/年，仅符合国籍、既往Dutch学位等条件者；不预判个人。",
+          "sourceId": "master-eu-lfee",
+          "cycle": "2027-28",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "非EEA年学费",
+          "value": "2027-28通常EUR23,300/年，居留/合作协议等例外由校方核定。",
+          "sourceId": "master-eu-lfee",
+          "cycle": "2027-28",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "第二个Dutch硕士年学费",
+          "value": "2027-28 EUR17,900/年，适用范围及例外依页面；不是把所有第二硕士一律归此档。",
+          "sourceId": "master-eu-lfee",
+          "cycle": "2027-28",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "生活费",
+          "value": "现行月粗估EUR1,214–1,644，不含学费；页面未标2027年度，不与签证最低资金数混用。",
+          "sourceId": "master-eu-llive",
+          "cycle": "现行粗估；未标2027预算年",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "LION资助及额外推荐",
+          "value": "非荷兰籍可竞争EUR6,000/年，首年、续年需60EC且GPA>8；不免学费/签证资金证明；另需两封奖学金推荐及明确申请。",
+          "sourceId": "master-eu-llion",
+          "cycle": "年例February 1；入学年份未明示",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "LION日期精度",
+          "value": "仅写February 1，未给年份/时刻/时区；不能编为2027-02-01。",
+          "sourceId": "master-eu-llion",
+          "cycle": "年例February 1；入学年份未明示",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "LExS范围与金额",
+          "value": "仅9月入学的适用全日制项目，另有国籍/DUO及优秀成绩要求；部分学费资助（EUR10,000/15,000/17,500/18,500/19,000），不是全额生活支持。",
+          "sourceId": "master-eu-llexs",
+          "cycle": "页面截止2026-12-01；仅说明9月入学，未标入学年份",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "LExS日期周期缺口",
+          "value": "页面截止2026-12-01，但未说明对应哪年9月；时刻/时区也未给。仅保留观察，不放入2027当轮官方里程碑。",
+          "sourceId": "master-eu-llexs",
+          "cycle": "页面截止2026-12-01；仅说明9月入学，未标入学年份",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "customFields": {
+        "课程与先修": "学术等同性：相关物理本科或足够相关背景，由Admissions Board判断与荷兰Physics本科等同性；不足可能需个别pre-master。（现行规则；页面未明示2027入学轮）；先修知识：本科级经典力学、量子、电动力学、统计物理、复分析；Cosmology还需粒子物理。页面列主题而没有逐科最低ECTS，不能把毕业学分当准入。（现行规则；页面未明示2027入学轮）；个人原学分和课程证据待对照。",
+        "学费": "法定年学费：2027-28法定学费EUR2,771/年，仅符合国籍、既往Dutch学位等条件者；不预判个人。（2027-28）；非EEA年学费：2027-28通常EUR23,300/年，居留/合作协议等例外由校方核定。（2027-28）；第二个Dutch硕士年学费：2027-28 EUR17,900/年，适用范围及例外依页面；不是把所有第二硕士一律归此档。（2027-28）",
+        "学期杂费": "本轮来源未确认单独学期杂费金额，不能记为零。",
+        "生活费": "生活费：现行月粗估EUR1,214–1,644，不含学费；页面未标2027年度，不与签证最低资金数混用。（现行粗估；未标2027预算年）",
+        "申请费": "申请费：国际学历通常EUR100，不退；同学年最多3个项目/专修；Dutch本科、既往Leiden注册等列明情形可免，其他理由不免。（现行规则；页面未明示2027入学轮）",
+        "语言豁免证据": "个人语言及授位情况另由对话确认，未判定已获豁免。",
+        "学制与毕业学分": "授课与研究模式：全日制2年；英文；约50%用于研究，至少一个研究项目；9月或2月开始。（现行规则；页面未明示2027入学轮）",
+        "奖学金": "LION资助及额外推荐：非荷兰籍可竞争EUR6,000/年，首年、续年需60EC且GPA>8；不免学费/签证资金证明；另需两封奖学金推荐及明确申请。（年例February 1；入学年份未明示）；LExS范围与金额：仅9月入学的适用全日制项目，另有国籍/DUO及优秀成绩要求；部分学费资助（EUR10,000/15,000/17,500/18,500/19,000），不是全额生活支持。（页面截止2026-12-01；仅说明9月入学，未标入学年份）；LExS日期周期缺口：页面截止2026-12-01，但未说明对应哪年9月；时刻/时区也未给。仅保留观察，不放入2027当轮官方里程碑。（页面截止2026-12-01；仅说明9月入学，未标入学年份）"
+      },
+      "application": {
+        "route": "项目制",
+        "portal": "https://www.studielink.nl/",
+        "status": "未开始",
+        "submittedOn": "",
+        "referenceNumber": "",
+        "note": "",
+        "references": [],
+        "contacts": [],
+        "interviews": [],
+        "milestones": [
+          {
+            "id": "master-eu-leiden-cycle",
+            "title": "核对目标入学轮及签证分支",
+            "deadline": {
+              "date": "",
+              "time": "",
+              "timezone": "",
+              "basis": "unknown",
+              "sourceId": "master-eu-ld",
+              "cycle": "待核2027目标轮"
+            },
+            "status": "待处理",
+            "note": "先确定9月/2月和是否需签证，再核当轮日期；保留CET原文，不按惯例改CEST。"
+          },
+          {
+            "id": "master-eu-leiden-conditions",
+            "title": "按录取通知补齐条件材料",
+            "deadline": {
+              "date": "",
+              "time": "",
+              "timezone": "",
+              "basis": "unknown",
+              "sourceId": "master-eu-lcond",
+              "cycle": "现行规则；页面未明示2027入学轮"
+            },
+            "status": "待处理",
+            "note": "只有实际录取后才能填个人补件期限。"
+          },
+          {
+            "id": "master-eu-leiden-accept",
+            "title": "在uSis确认就读",
+            "deadline": {
+              "date": "",
+              "time": "",
+              "timezone": "",
+              "basis": "unknown",
+              "sourceId": "master-eu-lapp",
+              "cycle": "现行规则；页面未明示2027入学轮"
+            },
+            "status": "待处理",
+            "note": "按实际决定和签证节点执行；当前未申请。"
+          },
+          {
+            "id": "master-eu-leiden-register",
+            "title": "完成核验与学费安排后注册",
+            "deadline": {
+              "date": "",
+              "time": "",
+              "timezone": "",
+              "basis": "unknown",
+              "sourceId": "master-eu-lapp",
+              "cycle": "现行规则；页面未明示2027入学轮"
+            },
+            "status": "待处理",
+            "note": "不把申请成功当学生注册完成。"
+          }
+        ],
+        "decision": {
+          "status": "待结果",
+          "receivedOn": "",
+          "responseDue": "",
+          "timezone": "",
+          "conditions": "",
+          "note": ""
+        },
+        "funding": {
+          "status": "待核对",
+          "type": "",
+          "amount": "",
+          "currency": "",
+          "period": "",
+          "duration": "",
+          "tuition": "",
+          "sourceId": "",
+          "note": ""
+        },
+        "enrollment": [
+          {
+            "id": "degree",
+            "title": "学位、最终成绩单与注册条件",
+            "status": "待确认",
+            "due": "",
+            "note": "分别核对申请时的替代材料和注册原件。"
+          },
+          {
+            "id": "funding",
+            "title": "资助书、合同与经费安排",
+            "status": "待确认",
+            "due": "",
+            "note": "确认正式资助依据、金额、期限和学费覆盖。"
+          },
+          {
+            "id": "immigration",
+            "title": "签证或居留要求",
+            "status": "待确认",
+            "due": "",
+            "note": "先确认国籍、目的地和个人情况；由官方规则判断是否适用。"
+          },
+          {
+            "id": "housing",
+            "title": "住宿、保险与出行",
+            "status": "待确认",
+            "due": "",
+            "note": "根据实际入学时间安排，避免在条件未确定时作不可撤销预订。"
+          },
+          {
+            "id": "registration",
+            "title": "注册、选课与迎新",
+            "status": "待确认",
+            "due": "",
+            "note": "按实际录取条件核对注册及课程安排；当前没有个人录取。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "master-eu-eth-physics",
+      "name": "Physics MSc",
+      "institution": "ETH Zurich",
+      "region": "瑞士",
+      "track": "master",
+      "stage": "调研中",
+      "url": "https://www.phys.ethz.ch/studies/master.html",
+      "fit": "真实硕士候选；课程、学历、语言、费用与个人目标需逐项核对，不表示已符合招生条件。",
+      "nextAction": "由 Agent 对照个人背景及官方事实，拆分逐项目材料、课程差距与行动；保留未知和官网冲突。",
+      "deadline": {
+        "date": "2026-11-30",
+        "time": "11:59",
+        "timezone": "Europe/Zurich",
+        "basis": "official",
+        "sourceId": "master-eu-ed",
+        "cycle": "Autumn Semester 2027；国际本科"
+      },
+      "facts": [
+        {
+          "label": "模式与学制",
+          "value": "独立MSc，通常1.5年、末半年硕士论文；课程广泛并可专门化。",
+          "sourceId": "master-eu-ep",
+          "cycle": "现行项目说明",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "毕业学分非准入学分",
+          "value": "当前系官网链接的2014规章Art12写90ECTS毕业规模；不把90填成申请者先修总学分。",
+          "sourceId": "master-eu-ereg",
+          "cycle": "2014规章当前系官网链接；英文为非约束性译本",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "学位门槛",
+          "value": "本科至少180ECTS或等同，且在取得本科的大学体系中应可无额外要求进入对应硕士；数学物理知识需与ETH本科相当。",
+          "sourceId": "master-eu-ea",
+          "cycle": "当前招生官网链接；未明示2027专版",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "先修清单",
+          "value": "Part1含分析、线代、数值、计算机、复分析、数理方法及基础物理、实验、论文/研讨；Part2含一般力学、电动力学、量子I；星号组选至少4门内容，其中理论至少1门、实验核心至少2门。",
+          "sourceId": "master-eu-ea",
+          "cycle": "当前招生官网链接；未明示2027专版",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "额外要求上限",
+          "value": "境外物理本科缺口所需额外学分超过30不可录取；其他专业本科还需非常好成绩，并有Part1缺口最多15/总30的限制，须按具体分支核定。",
+          "sourceId": "master-eu-ea",
+          "cycle": "当前招生官网链接；未明示2027专版",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "2027国际本科窗口",
+          "value": "2026-11-01至11-30；截止原文30 November 2026 11:59AM CET，即11:59，不是23:59。2026-10-28尚未到开放日。",
+          "sourceId": "master-eu-ed",
+          "cycle": "Autumn Semester 2027",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "2027瑞士本科后轮",
+          "value": "2027-04-01至04-30，截止11:59AM CEST；只对瑞士本科。瑞士硕士/博士但本科在境外者仍须11月轮；首轮被拒同项目不可后轮重申。",
+          "sourceId": "master-eu-ed",
+          "cycle": "Autumn Semester 2027",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "截止完整性与春季",
+          "value": "截止前完整提交全部材料；迟/缺件不处理；不能春季入学。",
+          "sourceId": "master-eu-ed",
+          "cycle": "Autumn Semester 2027",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "授课语言及项目材料",
+          "value": "英语C1；国际本科须课程全部已修/在修/计划内容摘要、两封推荐、约1张A4动机信。Direct Doctorate的导师经费承诺是另一路径要求，不套普通MSc。",
+          "sourceId": "master-eu-em",
+          "cycle": "现行；按本科学历来源分支",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "英语数值门槛",
+          "value": "官方动态表：IELTS Academic/Online总7.0、各项6.0；TOEFL在2026-01-21前考试100，之后5.0；恰在21日的措辞边界未澄清时应核问。",
+          "sourceId": "master-eu-elt",
+          "cycle": "现行官方动态表；2026-10-28核验",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "语言提交与豁免",
+          "value": "最迟申请截止交有效语言证据；豁免含Swiss Matura、ETH/EPFL本科或整个本科全英文（通常需中央行政盖章/签署证明，部分英语国家本科免证明）；外校硕士不列为豁免依据。",
+          "sourceId": "master-eu-elang",
+          "cycle": "现行语言规则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "语言证明有效期",
+          "value": "TOEFL/IELTS/C1 Advanced一般2年；C2 Proficiency或C1 Grade A为5年；不合要求的授课语言证明可能导致直接拒绝且截止后不能补语言证书。",
+          "sourceId": "master-eu-elang",
+          "cycle": "现行语言规则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "全部大学材料",
+          "value": "全部校级高教经历的最新正式成绩单；在读附注册证明（起止/预计结束、学位），已毕业附学位证和最终记录；适用European教育区另有Diploma Supplement/HEAR。",
+          "sourceId": "master-eu-eg",
+          "cycle": "现行国际本科申请规则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "其他基础材料",
+          "value": "连续时间线CV（从高中起）、高中毕业/大学入学资格证、有效护照（适用EU/EFTA可ID）、签署同意书。自制/无安全要素成绩单或学生门户截图不接受。",
+          "sourceId": "master-eu-eg",
+          "cycle": "现行国际本科申请规则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "翻译",
+          "value": "原语言材料不能被翻译替代；非德/法/意/英者另附认可英文译文，颁发院校或授权译者。",
+          "sourceId": "master-eu-etrans",
+          "cycle": "现行国际本科申请规则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "申请费和入口",
+          "value": "国际本科eApply：每项目CHF150，不退不免；支付后才能提交；每学期最多申请两个项目。",
+          "sourceId": "master-eu-eapp",
+          "cycle": "现行国际本科申请规则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "毕业节点与结果",
+          "value": "在读本科须最迟ETH开课时拿到学位证；通常截止后2–3个月出eApply书面决定，非保证日。",
+          "sourceId": "master-eu-eapp",
+          "cycle": "现行国际本科申请规则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "学费两档",
+          "value": "现行每学期Group1 CHF730，Group2 CHF2,190；由ETH结合国籍、取得入学资格时居留等规则核定，不能只按EU国籍判断。",
+          "sourceId": "master-eu-efee",
+          "cycle": "现行；HS2025起两档，规则更新2025-11-19",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "杂费单列",
+          "value": "每学期强制杂费ASVZ35+奖学金基金7+VSETH服务32=CHF74；另有自愿项目，不并入学费730/2190。",
+          "sourceId": "master-eu-efpdf",
+          "cycle": "费表state2024-12-05；含HS2025起政策",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "纯生活费估计",
+          "value": "官方国际学生成本表：个人生活费约CHF22,100/年；租金基于2024平均，不标成2027确定支出。",
+          "sourceId": "master-eu-elive",
+          "cycle": "现行估算；租金基于2024平均",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "学习和生活总体估计",
+          "value": "除建筑外，官方表总学习及生活费Group1约CHF25,200/年、Group2 CHF28,100/年；此数已含学费、杂费及教材等，不再重复加学费。",
+          "sourceId": "master-eu-elive",
+          "cycle": "现行估算；租金基于2024平均",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "804口径",
+          "value": "一般financial概览仍写学费及杂费合计CHF804/学期且未分收费组；不能把这一概览金额直接用于所有国际学生。",
+          "sourceId": "master-eu-eoverview",
+          "cycle": "现行概览；未标预算年",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "ESOP2027窗口与支持",
+          "value": "HS27申请2026-11-01至11-30 11.59h MEZ；HS27起CHF13,500/学期及学费豁免，正常学制；竞争性，2027-28约60项总名额，3月底决定。",
+          "sourceId": "master-eu-eesop",
+          "cycle": "HS27/2027-28已明确",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "ESOP额外条件",
+          "value": "本科top10%自评、独立硕士论文pre-proposal；已在ETH硕士注册或已持硕士学位者不符合；普通项目两封推荐与ESOP要求需按系统核对，不伪造个人资格。",
+          "sourceId": "master-eu-eesop",
+          "cycle": "HS27/2027-28已明确",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "接受与注册材料",
+          "value": "eApply在个人指定期限接受，否则offer失效；随后下载注册确认与文件清单；毕业文件部分须原件或颁发大学认证件，按账户指示，不能普通公证替代。",
+          "sourceId": "master-eu-eadmit",
+          "cycle": "通用流程；同页仍有2026迎新/2025链接",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "注册期限年代边界",
+          "value": "通用页写学期开始前完成并具备学位/官方文件、例外最多两周延长；同页仍有2026迎新及2025链接，不能据此编造2027注册/迎新日。",
+          "sourceId": "master-eu-eadmit",
+          "cycle": "通用流程；同页仍有2026迎新/2025链接",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "customFields": {
+        "课程与先修": "学位门槛：本科至少180ECTS或等同，且在取得本科的大学体系中应可无额外要求进入对应硕士；数学物理知识需与ETH本科相当。（当前招生官网链接；未明示2027专版）；先修清单：Part1含分析、线代、数值、计算机、复分析、数理方法及基础物理、实验、论文/研讨；Part2含一般力学、电动力学、量子I；星号组选至少4门内容，其中理论至少1门、实验核心至少2门。（当前招生官网链接；未明示2027专版）；额外要求上限：境外物理本科缺口所需额外学分超过30不可录取；其他专业本科还需非常好成绩，并有Part1缺口最多15/总30的限制，须按具体分支核定。（当前招生官网链接；未明示2027专版）；个人课程证据待对照。",
+        "学费": "学费两档：现行每学期Group1 CHF730，Group2 CHF2,190；由ETH结合国籍、取得入学资格时居留等规则核定，不能只按EU国籍判断。（现行；HS2025起两档，规则更新2025-11-19）",
+        "学期杂费": "杂费单列：每学期强制杂费ASVZ35+奖学金基金7+VSETH服务32=CHF74；另有自愿项目，不并入学费730/2190。（费表state2024-12-05；含HS2025起政策）；804口径：一般financial概览仍写学费及杂费合计CHF804/学期且未分收费组；不能把这一概览金额直接用于所有国际学生。（现行概览；未标预算年）",
+        "生活费": "纯生活费估计：官方国际学生成本表：个人生活费约CHF22,100/年；租金基于2024平均，不标成2027确定支出。（现行估算；租金基于2024平均）",
+        "申请费": "申请费和入口：国际本科eApply：每项目CHF150，不退不免；支付后才能提交；每学期最多申请两个项目。（现行国际本科申请规则）",
+        "语言豁免证据": "个人语言及授位情况另由对话确认，未判定已获豁免。",
+        "学制与毕业学分": "模式与学制：独立MSc，通常1.5年、末半年硕士论文；课程广泛并可专门化。（现行项目说明）；毕业学分非准入学分：当前系官网链接的2014规章Art12写90ECTS毕业规模；不把90填成申请者先修总学分。（2014规章当前系官网链接；英文为非约束性译本）",
+        "学习生活总体参考": "学习和生活总体估计：除建筑外，官方表总学习及生活费Group1约CHF25,200/年、Group2 CHF28,100/年；此数已含学费、杂费及教材等，不再重复加学费。（现行估算；租金基于2024平均）",
+        "奖学金": "ESOP2027窗口与支持：HS27申请2026-11-01至11-30 11.59h MEZ；HS27起CHF13,500/学期及学费豁免，正常学制；竞争性，2027-28约60项总名额，3月底决定。（HS27/2027-28已明确）；ESOP额外条件：本科top10%自评、独立硕士论文pre-proposal；已在ETH硕士注册或已持硕士学位者不符合；普通项目两封推荐与ESOP要求需按系统核对，不伪造个人资格。（HS27/2027-28已明确）"
+      },
+      "application": {
+        "route": "项目制",
+        "portal": "https://ethz.ch/en/studies/master/application/international-bachelor/how-to-apply.html",
+        "status": "未开始",
+        "submittedOn": "",
+        "referenceNumber": "",
+        "note": "",
+        "references": [],
+        "contacts": [],
+        "interviews": [],
+        "milestones": [
+          {
+            "id": "master-eu-eth-window",
+            "title": "国际本科2027秋申请开放",
+            "deadline": {
+              "date": "2026-11-01",
+              "time": "",
+              "timezone": "",
+              "basis": "official",
+              "sourceId": "master-eu-ed",
+              "cycle": "Autumn Semester 2027"
+            },
+            "status": "待处理",
+            "note": "官网仅给开放日期，无开放时刻；2026-10-28未到开放日。"
+          },
+          {
+            "id": "master-eu-eth-deadline",
+            "title": "国际本科完整申请及语言材料截止",
+            "deadline": {
+              "date": "2026-11-30",
+              "time": "11:59",
+              "timezone": "Europe/Zurich",
+              "basis": "official",
+              "sourceId": "master-eu-ed",
+              "cycle": "Autumn Semester 2027"
+            },
+            "status": "待处理",
+            "note": "保留11:59AM CET原文；如需IANA仅作明确标注的整理映射。 CET/MEZ在该11月日期整理映射为Europe/Zurich。"
+          },
+          {
+            "id": "master-eu-eth-esop",
+            "title": "HS27 ESOP截止",
+            "deadline": {
+              "date": "2026-11-30",
+              "time": "11:59",
+              "timezone": "Europe/Zurich",
+              "basis": "official",
+              "sourceId": "master-eu-eesop",
+              "cycle": "HS27/2027-28"
+            },
+            "status": "待处理",
+            "note": "官网11.59h MEZ；CET是MEZ整理映射；先核是否适合ESOP，非自动获得。 CET/MEZ在该11月日期整理映射为Europe/Zurich。"
+          },
+          {
+            "id": "master-eu-eth-accept",
+            "title": "按eApply接受位置",
+            "deadline": {
+              "date": "",
+              "time": "",
+              "timezone": "",
+              "basis": "unknown",
+              "sourceId": "master-eu-eadmit",
+              "cycle": "实际offer期限待产生"
+            },
+            "status": "待处理",
+            "note": "不得编造统一接受日。"
+          },
+          {
+            "id": "master-eu-eth-enroll",
+            "title": "完成毕业文件与注册",
+            "deadline": {
+              "date": "",
+              "time": "",
+              "timezone": "",
+              "basis": "unknown",
+              "sourceId": "master-eu-eadmit",
+              "cycle": "2027精确注册日期未核实"
+            },
+            "status": "待处理",
+            "note": "按当轮通知完成；旧迎新日期不使用。"
+          }
+        ],
+        "decision": {
+          "status": "待结果",
+          "receivedOn": "",
+          "responseDue": "",
+          "timezone": "",
+          "conditions": "",
+          "note": ""
+        },
+        "funding": {
+          "status": "待核对",
+          "type": "",
+          "amount": "",
+          "currency": "",
+          "period": "",
+          "duration": "",
+          "tuition": "",
+          "sourceId": "",
+          "note": ""
+        },
+        "enrollment": [
+          {
+            "id": "degree",
+            "title": "学位、最终成绩单与注册条件",
+            "status": "待确认",
+            "due": "",
+            "note": "分别核对申请时的替代材料和注册原件。"
+          },
+          {
+            "id": "funding",
+            "title": "资助书、合同与经费安排",
+            "status": "待确认",
+            "due": "",
+            "note": "确认正式资助依据、金额、期限和学费覆盖。"
+          },
+          {
+            "id": "immigration",
+            "title": "签证或居留要求",
+            "status": "待确认",
+            "due": "",
+            "note": "先确认国籍、目的地和个人情况；由官方规则判断是否适用。"
+          },
+          {
+            "id": "housing",
+            "title": "住宿、保险与出行",
+            "status": "待确认",
+            "due": "",
+            "note": "根据实际入学时间安排，避免在条件未确定时作不可撤销预订。"
+          },
+          {
+            "id": "registration",
+            "title": "注册、选课与迎新",
+            "status": "待确认",
+            "due": "",
+            "note": "按实际录取条件核对注册及课程安排；当前没有个人录取。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "master-eu-oxford-mtp",
+      "name": "MSc Mathematical and Theoretical Physics",
+      "institution": "University of Oxford",
+      "region": "英国",
+      "track": "master",
+      "stage": "调研中",
+      "url": "https://www.ox.ac.uk/admissions/graduate/courses/msc-mathematical-and-theoretical-physics",
+      "fit": "真实硕士候选；课程、学历、语言、费用与个人目标需逐项核对，不表示已符合招生条件。",
+      "nextAction": "由 Agent 对照个人背景及官方事实，拆分逐项目材料、课程差距与行动；保留未知和官网冲突。",
+      "deadline": {
+        "date": "2027-01-27",
+        "time": "12:00",
+        "timezone": "Europe/London",
+        "basis": "official",
+        "sourceId": "master-eu-op",
+        "cycle": "2027-28"
+      },
+      "facts": [
+        {
+          "label": "独立申请模式",
+          "value": "校外申请者可以申请MSc模式；Oxford本科MPhys/MMath/MPhysPhil第四年转MMathPhys是另一模式。",
+          "sourceId": "master-eu-ohome",
+          "cycle": "现行项目说明",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "学制与开放",
+          "value": "2027-28全日制页面Open；9个月，预计2027-10-04开始。授课为主，可选论文，不应标成纯研究型硕士。",
+          "sourceId": "master-eu-op",
+          "cycle": "2027-28",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "准入",
+          "value": "数学、物理或相关学科一等honours或等同（可预计获得）；美国本科通常GPA3.7/4；不要求GRE/GMAT，不期待已有论文。未给先修逐科最低ECTS。",
+          "sourceId": "master-eu-op",
+          "cycle": "2027-28",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "2027截止",
+          "value": "2027-01-27 12:00 midday UK time为最终申请截止；只有一项当轮截止，不能沿用DPhil的1/6或3/2。",
+          "sourceId": "master-eu-op",
+          "cycle": "2027-28",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "英语Higher",
+          "value": "IELTS Academic总7.5、各项7.0；考试距开学不超过2年；现行页不接受2026-01-21起的新TOEFL用于条件，须持续复核政策。",
+          "sourceId": "master-eu-op",
+          "cycle": "2027-28",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "语言豁免裁量",
+          "value": "全日制≥9个月、认可院校全英文教学和评估、完成至目标课程间隔≤2学年可申请；在读可申请，系酌情批准，通常按offer期限补成功完成证明。",
+          "sourceId": "master-eu-owaiver",
+          "cycle": "现行规则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "材料",
+          "value": "官方成绩单及必要认证英译；英文Statement of Purpose≤600词；可选contextual statement。表格问题采集CV内容，不应上传独立CV，上传会被移除。",
+          "sourceId": "master-eu-op",
+          "cycle": "2027-28",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "推荐人",
+          "value": "登记3名、至少2名学术推荐；其他材料完整且截止前有2封到达可开始评估，第3封仍可能要求。不能变成只需登记两名。",
+          "sourceId": "master-eu-op",
+          "cycle": "2027-28",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "申请费与入口",
+          "value": "通过课程页Apply进入中央系统；申请费GBP75，只有符合官方列明条件才可免；不需要事先联系学者作为申请前提。",
+          "sourceId": "master-eu-op",
+          "cycle": "2027-28",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "年学费",
+          "value": "2027-28 Home GBP17,190 / Overseas GBP46,350，个人分类及净自付额未知。",
+          "sourceId": "master-eu-op",
+          "cycle": "2027-28",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "生活费",
+          "value": "2027-28每月GBP1,475–2,175，另于学费，按实际在Oxford月数预算。",
+          "sourceId": "master-eu-op",
+          "cycle": "2027-28",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "奖学金非录取承诺",
+          "value": "一月截止申请且获course offer后评估适用Oxford scholarships；多数自动、部分另申；并非保证资助，是否已获资助不影响学术评估。",
+          "sourceId": "master-eu-op",
+          "cycle": "2027-28",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "面试与条件",
+          "value": "通常不面试；个别offer决定学术条件与期限，需Financial Declaration，ATAS是否要求由系确认。",
+          "sourceId": "master-eu-op",
+          "cycle": "2027-28",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "结果与完成条件",
+          "value": "通常截止后8–10周学术决定，资助可分开通知；完成offer条件后发Completion of Conditions及确认入学指引，如需学生签证再启动相关流程。",
+          "sourceId": "master-eu-otimeline",
+          "cycle": "现行流程",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "接受合同",
+          "value": "按个人offer说明接受；需阅读对应年度条款、Course Information Sheet和手册。接受日、补件日未产生，不能将通常审理周期变官方固定结果日。",
+          "sourceId": "master-eu-ooffer",
+          "cycle": "2027-28条款入口及现行流程",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "customFields": {
+        "课程与先修": "准入：数学、物理或相关学科一等honours或等同（可预计获得）；美国本科通常GPA3.7/4；不要求GRE/GMAT，不期待已有论文。未给先修逐科最低ECTS。（2027-28）；个人学历和课程证据待对照，不换算GPA或学分。",
+        "学费": "年学费：2027-28 Home GBP17,190 / Overseas GBP46,350，个人分类及净自付额未知。（2027-28）",
+        "学期杂费": "本轮未单独核得杂费金额；其他收费须按当轮官方说明核对，不能记为零。",
+        "生活费": "生活费：2027-28每月GBP1,475–2,175，另于学费，按实际在Oxford月数预算。（2027-28）",
+        "申请费": "申请费与入口：通过课程页Apply进入中央系统；申请费GBP75，只有符合官方列明条件才可免；不需要事先联系学者作为申请前提。（2027-28）",
+        "语言豁免证据": "个人语言及授位情况另由对话确认，未判定已获豁免。",
+        "学制与毕业学分": "学制与开放：2027-28全日制页面Open；9个月，预计2027-10-04开始。授课为主，可选论文，不应标成纯研究型硕士。（2027-28）；未确认具体毕业学分，不推定ECTS。",
+        "奖学金": "奖学金非录取承诺：一月截止申请且获course offer后评估适用Oxford scholarships；多数自动、部分另申；并非保证资助，是否已获资助不影响学术评估。（2027-28）"
+      },
+      "application": {
+        "route": "项目制",
+        "portal": "https://www.ox.ac.uk/admissions/graduate/courses/msc-mathematical-and-theoretical-physics",
+        "status": "未开始",
+        "submittedOn": "",
+        "referenceNumber": "",
+        "note": "",
+        "references": [],
+        "contacts": [],
+        "interviews": [],
+        "milestones": [
+          {
+            "id": "master-eu-ox-deadline",
+            "title": "MSc当轮最终申请及推荐信截止",
+            "deadline": {
+              "date": "2027-01-27",
+              "time": "12:00",
+              "timezone": "Europe/London",
+              "basis": "official",
+              "sourceId": "master-eu-op",
+              "cycle": "2027-28"
+            },
+            "status": "待处理",
+            "note": "官方UK time；Europe/London是整理映射。至少两封已交只是可开审条件，仍须登记三名、至少两名学术推荐人。"
+          },
+          {
+            "id": "master-eu-ox-accept",
+            "title": "按offer接受及确认条件",
+            "deadline": {
+              "date": "",
+              "time": "",
+              "timezone": "",
+              "basis": "unknown",
+              "sourceId": "master-eu-ooffer",
+              "cycle": "实际offer期限待产生"
+            },
+            "status": "待处理",
+            "note": "未建立个人录取；不套DPhil要求。"
+          },
+          {
+            "id": "master-eu-ox-conditions",
+            "title": "完成语言/学位/财务等实际条件",
+            "deadline": {
+              "date": "",
+              "time": "",
+              "timezone": "",
+              "basis": "unknown",
+              "sourceId": "master-eu-otimeline",
+              "cycle": "实际offer条件期限待产生"
+            },
+            "status": "待处理",
+            "note": "系裁量豁免与个人完成情况分别核对。"
+          },
+          {
+            "id": "master-eu-ox-start",
+            "title": "预计课程开始",
+            "deadline": {
+              "date": "2027-10-04",
+              "time": "",
+              "timezone": "",
+              "basis": "official",
+              "sourceId": "master-eu-op",
+              "cycle": "2027-28"
+            },
+            "status": "待处理",
+            "note": "预计课程开始日期；不是个人注册已完成或迎新日期。"
+          }
+        ],
+        "decision": {
+          "status": "待结果",
+          "receivedOn": "",
+          "responseDue": "",
+          "timezone": "",
+          "conditions": "",
+          "note": ""
+        },
+        "funding": {
+          "status": "待核对",
+          "type": "",
+          "amount": "",
+          "currency": "",
+          "period": "",
+          "duration": "",
+          "tuition": "",
+          "sourceId": "",
+          "note": ""
+        },
+        "enrollment": [
+          {
+            "id": "degree",
+            "title": "学位、最终成绩单与注册条件",
+            "status": "待确认",
+            "due": "",
+            "note": "分别核对申请时的替代材料和注册原件。"
+          },
+          {
+            "id": "funding",
+            "title": "资助书、合同与经费安排",
+            "status": "待确认",
+            "due": "",
+            "note": "确认正式资助依据、金额、期限和学费覆盖。"
+          },
+          {
+            "id": "immigration",
+            "title": "签证或居留要求",
+            "status": "待确认",
+            "due": "",
+            "note": "先确认国籍、目的地和个人情况；由官方规则判断是否适用。"
+          },
+          {
+            "id": "housing",
+            "title": "住宿、保险与出行",
+            "status": "待确认",
+            "due": "",
+            "note": "根据实际入学时间安排，避免在条件未确定时作不可撤销预订。"
+          },
+          {
+            "id": "registration",
+            "title": "注册、选课与迎新",
+            "status": "待确认",
+            "due": "",
+            "note": "按实际录取条件核对注册及课程安排；当前没有个人录取。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "master-us-columbia-pfp-ma",
+      "name": "物理学哲学基础 MA（跨物理与哲学）",
+      "institution": "Columbia University",
+      "region": "美国",
+      "track": "master",
+      "stage": "调研中",
+      "url": "https://www.gsas.columbia.edu/content/philosophical-foundations-physics",
+      "fit": "物理基础与哲学交叉方向；须由用户确认愿意考虑此方向，不能静默替换普通物理硕士。个人先修与学历仍待核对。",
+      "nextAction": "由 Agent 对照个人背景及官方事实，拆分逐项目材料、课程差距与行动；保留未知和官网冲突。",
+      "deadline": {
+        "date": "2027-04-22",
+        "time": "23:59",
+        "timezone": "America/New_York",
+        "basis": "official",
+        "sourceId": "master-us-columbia-deadlines",
+        "cycle": "2027秋季"
+      },
+      "facts": [
+        {
+          "label": "独立硕士",
+          "value": "GSAS明确Free-Standing MA，可全日制或非全日制。",
+          "sourceId": "master-us-columbia-pfp",
+          "cycle": "2027招生及现行要求",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "方向适配",
+          "value": "科学哲学与物理基础交叉；不能当作普通Physics MA或自动衔接PhD。",
+          "sourceId": "master-us-columbia-pfp",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "学历申请资格",
+          "value": "已获或将获认可学士或国际等同学位者可申请；个人学历等同性仍待核。",
+          "sourceId": "master-us-columbia-international",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "先修",
+          "value": "至少两门本科哲学课及24 points物理；不能自行换成24 ECTS。",
+          "sourceId": "master-us-columbia-pfp",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "GPA待核",
+          "value": "GSAS建议向具体项目了解GPA范围；PFP硬门槛尚未确认，不写成没有门槛。",
+          "sourceId": "master-us-columbia-faq",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "学位学分",
+          "value": "至少30 points；至少18 points为E-credit；须满足物理、哲学和相对论/量子/热力学分布。",
+          "sourceId": "master-us-columbia-pfp-degree",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "驻校与学制",
+          "value": "2 Residence Units；全日制预计2–3学期，非全日制最多6学期。",
+          "sourceId": "master-us-columbia-pfp-degree",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "毕业论文",
+          "value": "须在物理或哲学系教师指导下完成并答辩原创硕士论文。",
+          "sourceId": "master-us-columbia-pfp-degree",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "当轮开放",
+          "value": "GSAS明确2027申请已开放。",
+          "sourceId": "master-us-columbia-intro",
+          "cycle": "2027申请",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "秋季截止",
+          "value": "2027-04-22 23:59 Eastern Time；IANA归一化America/New_York，非官网原写；未作跨时区换算。",
+          "sourceId": "master-us-columbia-deadlines",
+          "cycle": "2027秋季",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "春季条目",
+          "value": "GSAS列Spring Admission截止2026-10-29；仅凭该条目不认定春季当轮开放。",
+          "sourceId": "master-us-columbia-pfp",
+          "cycle": "春季条目；入学年份与开放待确认",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "院系季别待协调",
+          "value": "哲学系招生页仅描述fall admission，列PFP2027-04-22；与GSAS春季条目有待确认。",
+          "sourceId": "master-us-columbia-philosophy-admissions",
+          "cycle": "2027秋季；春季待核",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "基础申请材料",
+          "value": "各院校成绩单、Academic SOP、Personal Statement、CV及写作样本。",
+          "sourceId": "master-us-columbia-pfp",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "写作样本正文",
+          "value": "Special Admissions Requirements写≤20页，主题可为物理、哲学或科学哲学。",
+          "sourceId": "master-us-columbia-pfp",
+          "cycle": "现行要求；与同页表格范围不一致",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "写作样本表格",
+          "value": "同页表格写10–15页、双倍行距；正式执行格式应确认，不能悄悄覆盖正文。",
+          "sourceId": "master-us-columbia-pfp",
+          "cycle": "现行要求；与同页正文范围不一致",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "Academic SOP",
+          "value": "多数项目最多1000词，写背景、研究生学习计划及职业目标；仍以项目/申请页细节为准。",
+          "sourceId": "master-us-columbia-faq",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "Personal Statement",
+          "value": "最多1000词，说明个人经历如何贡献学术社群。",
+          "sourceId": "master-us-columbia-personal",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "GRE",
+          "value": "项目表General GRE为No；PGRE及提交后是否审阅未明确，不继承Physics PhD规则。",
+          "sourceId": "master-us-columbia-pfp",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "项目推荐信",
+          "value": "项目正文要求三封学术来源评价信；登记推荐人不等于信已到达。",
+          "sourceId": "master-us-columbia-pfp",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "GSAS推荐信通则",
+          "value": "至少两封学术来源，最多四封；不替代项目三封学术来源要求。",
+          "sourceId": "master-us-columbia-supporting",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "推荐信提交与期限",
+          "value": "推荐人本人在线上传；可先递交网申。信件应最迟网申截止后两周到达，超过则不保证审阅。",
+          "sourceId": "master-us-columbia-supporting",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "官方分数期限",
+          "value": "官方标准化成绩须截止后两周内收到；自报不是官方成绩，英语成绩有效两年。",
+          "sourceId": "master-us-columbia-international",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "英语判断依据",
+          "value": "看本科授位国家是否英语为唯一官方语言，而不是国籍；全英文本科可另申请waiver。",
+          "sourceId": "master-us-columbia-international",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "英语最低分",
+          "value": "TOEFL旧制100、新制5.5（网页分界为2026-01-21之后）；IELTS Academic7.5；DET135。",
+          "sourceId": "master-us-columbia-international",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "语言graduate waiver",
+          "value": "文字为已获MA或PhD且成绩单标授位、院校国家英语为唯一官方语言；MSc等同性及在读不自动满足。",
+          "sourceId": "master-us-columbia-international",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "语言waiver流程",
+          "value": "完成Educational History后申表，至少截止前两周附证据；个案审理不保证批准。",
+          "sourceId": "master-us-columbia-international",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "申请阶段成绩单",
+          "value": "每所院校上传完整可得成绩单含评分说明；正式件在接受录取后交。",
+          "sourceId": "master-us-columbia-supporting",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "申请费",
+          "value": "2027网申USD125，不可退；收费页要求付费才视为完整。豁免程序另行核对。",
+          "sourceId": "master-us-columbia-fee",
+          "cycle": "2027申请",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "申请费waiver",
+          "value": "财务困难等可请求；需证据、个案批准，未获批仍须支付。",
+          "sourceId": "master-us-columbia-fee-waivers",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "学费参考",
+          "value": "2026-27 All Other MA / Full Residence Unit：USD38,106/学期；两学期列USD76,212。不是2027-28报价。",
+          "sourceId": "master-us-columbia-coa-2026",
+          "cycle": "2026-27全日制Full RU",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "大学服务费",
+          "value": "USD703/学期，与学费分列。",
+          "sourceId": "master-us-columbia-coa-2026",
+          "cycle": "2026-27全日制Full RU",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "健康服务费",
+          "value": "USD759/学期；不因保险豁免自动免除。",
+          "sourceId": "master-us-columbia-coa-2026",
+          "cycle": "2026-27全日制Full RU",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "健康保险",
+          "value": "秋季USD2,218、春季USD3,605；有同等覆盖可按规则申请豁免，个人状态未知。",
+          "sourceId": "master-us-columbia-coa-2026",
+          "cycle": "2026-27全日制Full RU",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "学生活动费",
+          "value": "USD48/学期。",
+          "sourceId": "master-us-columbia-coa-2026",
+          "cycle": "2026-27全日制Full RU",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "文件费",
+          "value": "秋季USD105；页面春季为横线，不推算个人收费。",
+          "sourceId": "master-us-columbia-coa-2026",
+          "cycle": "2026-27全日制Full RU",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "有条件国际服务费",
+          "value": "如适用USD175/学期；国籍与收费身份未知，不认定个人适用。",
+          "sourceId": "master-us-columbia-coa-2026",
+          "cycle": "2026-27全日制Full RU",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "生活等间接费用",
+          "value": "9个月估算USD31,773，含住房、食物、个人、书籍及交通，不是每月租金或已获资金。",
+          "sourceId": "master-us-columbia-coa-2026",
+          "cycle": "2026-27估算",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "下一学年费用未知",
+          "value": "已核COA仅2026-27；2027秋季入学的2027-28学费/费用及个人净自付未知。",
+          "sourceId": "master-us-columbia-coa-2026",
+          "cycle": "2027-28待公布或待核",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "MA资助",
+          "value": "奖学金机会非常有限、由院系决定；无本项目个人全奖承诺，不继承Physics PhD资助。",
+          "sourceId": "master-us-columbia-ma-financing",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "结果与面试",
+          "value": "MA通知时间随项目、可能晚至7月；GSAS不安排面试，教师如需会联系。无已核PFP固定日期。",
+          "sourceId": "master-us-columbia-faq",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "正式录取边界",
+          "value": "院长签署正式offer才是录取；教师来信不算，正式程度还依资格文件核验。",
+          "sourceId": "master-us-columbia-faq",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "接受与定金",
+          "value": "须Acceptance Attestation Form；其他MA一般USD1,000不可退定金、抵学费。不是申请费；个案期限未知。",
+          "sourceId": "master-us-columbia-accept",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "最终文件与核验",
+          "value": "入学前核所有高等教育成绩/学位及推荐信；每所曾读院校均须最终正式成绩单，即使未授位。",
+          "sourceId": "master-us-columbia-credentials",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "在读者补件节点",
+          "value": "2026季指南写在读本科或研究生完成并授位后交最终正式材料和必要英译；2027送件细则待新版。",
+          "sourceId": "master-us-columbia-transcripts-2026",
+          "cycle": "2026季历史说明；不可自动套2027",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "旧周期日期",
+          "value": "最终成绩单页明确仅2026季，Fall2026为8/1；不得改成Fall2027的官方8/1。",
+          "sourceId": "master-us-columbia-transcripts-2026",
+          "cycle": "2026季历史日期",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "注册与入学",
+          "value": "接受后UNI、资格核验、免疫材料及住房；国际生按适用情况核I-20/DS-2019。2027注册日未知。",
+          "sourceId": "master-us-columbia-checklist",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "同时在读限制",
+          "value": "除获批双学位外，同一学期不得同时注册其他院校学位；当前在读何时完成仍须核对。",
+          "sourceId": "master-us-columbia-philosophy-admissions",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "customFields": {
+        "课程与先修": "先修：至少两门本科哲学课及24 points物理；不能自行换成24 ECTS。（现行通则）；个人课程对照待核，不换算为ECTS。",
+        "学费": "学费参考：2026-27 All Other MA / Full Residence Unit：USD38,106/学期；两学期列USD76,212。不是2027-28报价。（2026-27全日制Full RU）；下一学年费用未知：已核COA仅2026-27；2027秋季入学的2027-28学费/费用及个人净自付未知。（2027-28待公布或待核）",
+        "学期杂费": "大学服务费：USD703/学期，与学费分列。（2026-27全日制Full RU）；健康服务费：USD759/学期；不因保险豁免自动免除。（2026-27全日制Full RU）；学生活动费：USD48/学期。（2026-27全日制Full RU）；文件费：秋季USD105；页面春季为横线，不推算个人收费。（2026-27全日制Full RU）；有条件国际服务费：如适用USD175/学期；国籍与收费身份未知，不认定个人适用。（2026-27全日制Full RU）",
+        "生活费": "生活等间接费用：9个月估算USD31,773，含住房、食物、个人、书籍及交通，不是每月租金或已获资金。（2026-27估算）",
+        "申请费": "申请费：2027网申USD125，不可退；收费页要求付费才视为完整。豁免程序另行核对。（2027申请）",
+        "语言豁免证据": "个人语言及授位情况另由对话确认，未判定已获豁免。",
+        "学制与毕业学分": "学位学分：至少30 points；至少18 points为E-credit；须满足物理、哲学和相对论/量子/热力学分布。（现行通则）；驻校与学制：2 Residence Units；全日制预计2–3学期，非全日制最多6学期。（现行通则）；毕业论文：须在物理或哲学系教师指导下完成并答辩原创硕士论文。（现行通则）",
+        "保险": "健康保险：秋季USD2,218、春季USD3,605；有同等覆盖可按规则申请豁免，个人状态未知。（2026-27全日制Full RU）",
+        "定金": "接受与定金：须Acceptance Attestation Form；其他MA一般USD1,000不可退定金、抵学费。不是申请费；个案期限未知。（现行通则）",
+        "奖学金": "MA资助：奖学金机会非常有限、由院系决定；无本项目个人全奖承诺，不继承Physics PhD资助。（现行通则）"
+      },
+      "application": {
+        "route": "项目制",
+        "portal": "https://apply.gsas.columbia.edu/apply/",
+        "status": "未开始",
+        "submittedOn": "",
+        "referenceNumber": "",
+        "note": "",
+        "references": [],
+        "contacts": [],
+        "interviews": [],
+        "milestones": [
+          {
+            "id": "master-us-pfp-references",
+            "title": "三封推荐信到达规则",
+            "deadline": {
+              "date": "",
+              "time": "",
+              "timezone": "",
+              "basis": "unknown",
+              "sourceId": "master-us-columbia-supporting",
+              "cycle": "2027秋季"
+            },
+            "status": "待处理",
+            "note": "官方为申请截止后两周；未另列具体时刻，未自行计算日期。"
+          },
+          {
+            "id": "master-us-pfp-score-report",
+            "title": "必需官方考试成绩到达规则",
+            "deadline": {
+              "date": "",
+              "time": "",
+              "timezone": "",
+              "basis": "unknown",
+              "sourceId": "master-us-columbia-international",
+              "cycle": "2027秋季"
+            },
+            "status": "待处理",
+            "note": "官方为截止后两周；哪些考试适用待个人资格核对。"
+          },
+          {
+            "id": "master-us-pfp-waiver",
+            "title": "英语waiver证据最晚申请安排",
+            "deadline": {
+              "date": "",
+              "time": "",
+              "timezone": "",
+              "basis": "unknown",
+              "sourceId": "master-us-columbia-international",
+              "cycle": "2027秋季"
+            },
+            "status": "待处理",
+            "note": "至少课程截止前两周，个案审批；未把相对规则自行转换为官网绝对日期。"
+          },
+          {
+            "id": "master-us-pfp-response",
+            "title": "正式offer答复与定金",
+            "deadline": {
+              "date": "",
+              "time": "",
+              "timezone": "",
+              "basis": "unknown",
+              "sourceId": "master-us-columbia-accept",
+              "cycle": "2027秋季"
+            },
+            "status": "待处理",
+            "note": "尚无个案offer；官方统一答复日期未核验。"
+          },
+          {
+            "id": "master-us-pfp-final-documents",
+            "title": "2027最终学位文件与注册",
+            "deadline": {
+              "date": "",
+              "time": "",
+              "timezone": "",
+              "basis": "unknown",
+              "sourceId": "master-us-columbia-transcripts-2026",
+              "cycle": "2027秋季"
+            },
+            "status": "待处理",
+            "note": "链接仍为2026季，2027确切日期未知；不继承历史8/1。"
+          }
+        ],
+        "decision": {
+          "status": "待结果",
+          "receivedOn": "",
+          "responseDue": "",
+          "timezone": "",
+          "conditions": "",
+          "note": ""
+        },
+        "funding": {
+          "status": "待核对",
+          "type": "",
+          "amount": "",
+          "currency": "",
+          "period": "",
+          "duration": "",
+          "tuition": "",
+          "sourceId": "",
+          "note": ""
+        },
+        "enrollment": [
+          {
+            "id": "degree",
+            "title": "学位、最终成绩单与注册条件",
+            "status": "待确认",
+            "due": "",
+            "note": "分别核对申请时的替代材料和注册原件。"
+          },
+          {
+            "id": "funding",
+            "title": "资助书、合同与经费安排",
+            "status": "待确认",
+            "due": "",
+            "note": "确认正式资助依据、金额、期限和学费覆盖。"
+          },
+          {
+            "id": "immigration",
+            "title": "签证或居留要求",
+            "status": "待确认",
+            "due": "",
+            "note": "先确认国籍、目的地和个人情况；由官方规则判断是否适用。"
+          },
+          {
+            "id": "housing",
+            "title": "住宿、保险与出行",
+            "status": "待确认",
+            "due": "",
+            "note": "根据实际入学时间安排，避免在条件未确定时作不可撤销预订。"
+          },
+          {
+            "id": "registration",
+            "title": "注册、选课与迎新",
+            "status": "待确认",
+            "due": "",
+            "note": "按实际录取条件核对注册及课程安排；当前没有个人录取。"
+          }
+        ]
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "id": "master-1",
+      "title": "确认方向与入学时间",
+      "note": "说明目标学科、地区、预算和不可妥协的条件。",
+      "stage": "定位",
+      "track": "master",
+      "programId": "",
+      "due": "",
+      "done": false,
+      "priority": "high"
+    },
+    {
+      "id": "master-2",
+      "title": "核对先修课程与学分",
+      "note": "逐项目记录课程要求、适用周期和官方出处；不同学分体系单独说明。",
+      "stage": "选校",
+      "track": "master",
+      "programId": "",
+      "due": "",
+      "done": false,
+      "priority": "normal"
+    },
+    {
+      "id": "master-3",
+      "title": "整理成绩、学位和语言材料",
+      "note": "分别核对申请阶段和入学注册阶段要求。",
+      "stage": "准备",
+      "track": "master",
+      "programId": "",
+      "due": "",
+      "done": false,
+      "priority": "normal"
+    },
+    {
+      "id": "master-4",
+      "title": "准备个人陈述与推荐信",
+      "note": "区分授课型和研究型项目，按实际项目要求安排。",
+      "stage": "准备",
+      "track": "master",
+      "programId": "",
+      "due": "",
+      "done": false,
+      "priority": "normal"
+    },
+    {
+      "id": "master-5",
+      "title": "核对申请窗口与递交清单",
+      "note": "截止日期保留适用周期和来源；时刻、时区未公布时留空并列为待核对。",
+      "stage": "递交",
+      "track": "master",
+      "programId": "",
+      "due": "",
+      "done": false,
+      "priority": "normal"
+    },
+    {
+      "id": "master-6",
+      "title": "比较录取条件与费用",
+      "note": "学费、学期杂费、生活费和奖学金分别记录。",
+      "stage": "结果",
+      "track": "master",
+      "programId": "",
+      "due": "",
+      "done": false,
+      "priority": "normal"
+    },
+    {
+      "id": "master-7",
+      "title": "确认录取选择与答复日期",
+      "note": "保留正式录取条件、答复日期和用户决定；对外答复需明确授权。",
+      "stage": "结果",
+      "track": "master",
+      "programId": "",
+      "due": "",
+      "done": false,
+      "priority": "normal"
+    },
+    {
+      "id": "master-8",
+      "title": "准备注册、签证与入学",
+      "note": "核对学位原件、目的地签证或居留要求、住宿、保险与注册。",
+      "stage": "入学",
+      "track": "master",
+      "programId": "",
+      "due": "",
+      "done": false,
+      "priority": "normal"
+    }
+  ],
+  "materials": [],
+  "sources": [
+    {
+      "id": "master-eu-lp",
+      "label": "Leiden Physics MSc",
+      "url": "https://www.universiteitleiden.nl/en/education/study-programmes/master/physics",
+      "cycle": "现行规则；页面未明示2027入学轮",
+      "verifiedAt": "2026-10-28",
+      "note": "项目主页：研究占比、学制、开学月份；快照 leiden-program.web.txt"
+    },
+    {
+      "id": "master-eu-la",
+      "label": "Leiden Physics admission requirements",
+      "url": "https://www.universiteitleiden.nl/en/education/study-programmes/master/physics/admission-and-application/admission-requirements",
+      "cycle": "现行规则；页面未明示2027入学轮",
+      "verifiedAt": "2026-10-28",
+      "note": "学术要求、语言、豁免；网页外国学历段出现重复荷兰本科措辞，应按等同性及委员会核定，不泛化为保证录取；快照 leiden-admission.web.txt"
+    },
+    {
+      "id": "master-eu-ld",
+      "label": "Leiden Physics application deadlines",
+      "url": "https://www.universiteitleiden.nl/en/education/study-programmes/master/physics/admission-and-application/application-deadlines",
+      "cycle": "年度9月/2月入学规则；未标年份",
+      "verifiedAt": "2026-10-28",
+      "note": "web数次失败后curl官网HTML200；明确23:59 Central European Time，保留原文，不自行换CEST；官网直连快照 leiden-deadlines-http11.raw"
+    },
+    {
+      "id": "master-eu-lm",
+      "label": "Leiden Physics required documents",
+      "url": "https://www.universiteitleiden.nl/en/education/study-programmes/master/physics/admission-and-application/required-documents",
+      "cycle": "现行规则；页面未明示2027入学轮",
+      "verifiedAt": "2026-10-28",
+      "note": "curl官网HTML200；常规申请与奖学金额外材料区分；官网直连快照 leiden-documents-direct.html"
+    },
+    {
+      "id": "master-eu-lapp",
+      "label": "Leiden Physics application procedure",
+      "url": "https://www.universiteitleiden.nl/en/education/study-programmes/master/physics/admission-and-application/application-procedure",
+      "cycle": "现行规则；页面未明示2027入学轮",
+      "verifiedAt": "2026-10-28",
+      "note": "Studielink/uSis、EUR100及豁免、审理、确认、注册；快照 leiden-procedure.web.txt"
+    },
+    {
+      "id": "master-eu-lfee",
+      "label": "Leiden Physics tuition fees",
+      "url": "https://www.universiteitleiden.nl/en/education/study-programmes/master/physics/admission-and-application/tuition-fees",
+      "cycle": "2027-2028",
+      "verifiedAt": "2026-10-28",
+      "note": "三类年学费各有条件，个人费率未知；快照 leiden-tuition.web.txt"
+    },
+    {
+      "id": "master-eu-llive",
+      "label": "Leiden international financial matters",
+      "url": "https://www.universiteitleiden.nl/en/education/international-students/financial-matters",
+      "cycle": "现行粗估；未标2027预算年",
+      "verifiedAt": "2026-10-28",
+      "note": "月生活费不含学费；快照 leiden-financial.web.txt"
+    },
+    {
+      "id": "master-eu-lcond",
+      "label": "Leiden meet admission conditions",
+      "url": "https://www.universiteitleiden.nl/en/education/international-students/prepare-your-stay/meet-admission-conditions",
+      "cycle": "现行规则；页面未明示2027入学轮",
+      "verifiedAt": "2026-10-28",
+      "note": "录取条件、uSis、核验及年度条件期限；快照 leiden-conditions.web.txt"
+    },
+    {
+      "id": "master-eu-lverify",
+      "label": "Leiden academic record verification",
+      "url": "https://www.universiteitleiden.nl/en/education/international-students/prepare-your-stay/meet-admission-conditions/verification-of-academic-records",
+      "cycle": "现行规则；页面未明示2027入学轮",
+      "verifiedAt": "2026-10-28",
+      "note": "按decision statement选择线上核验或院校认证文件；快照 leiden-verification.web.txt"
+    },
+    {
+      "id": "master-eu-llion",
+      "label": "Leiden LION scholarship",
+      "url": "https://www.universiteitleiden.nl/en/scholarships/science/lion-scholarship",
+      "cycle": "年例February 1；入学年份未明示",
+      "verifiedAt": "2026-10-28",
+      "note": "非荷兰籍、EUR6000/年、续期及两封奖学金推荐；不得当常规录取材料；快照 leiden-scholarship.web.txt"
+    },
+    {
+      "id": "master-eu-llexs",
+      "label": "Leiden Excellence Scholarship LExS",
+      "url": "https://www.universiteitleiden.nl/en/scholarships/sea/leiden-university-excellence-scholarship-lexs",
+      "cycle": "页面截止2026-12-01；仅说明9月入学，未标入学年份",
+      "verifiedAt": "2026-10-28",
+      "note": "不自动关联2027秋，也不生成当轮奖学金里程碑；部分学费资助，不是全奖；快照 leiden-lexs.web.txt"
+    },
+    {
+      "id": "master-eu-ep",
+      "label": "ETH MSc Physics",
+      "url": "https://www.phys.ethz.ch/studies/master.html",
+      "cycle": "现行项目说明",
+      "verifiedAt": "2026-10-28",
+      "note": "通常1.5年、末半年论文；可单独申请MSc；快照 eth-program.web.txt"
+    },
+    {
+      "id": "master-eu-ereg",
+      "label": "ETH Physics programme regulations",
+      "url": "https://ethz.ch/content/dam/ethz/special-interest/phys/department/studies/master/Programme%20Regulations%202014%20MSc%20Physics%20%28non-binding%20english%20translation%29.pdf",
+      "cycle": "2014规章当前系官网链接；英文为非约束性译本",
+      "verifiedAt": "2026-10-28",
+      "note": "Art12毕业规模90ECTS；不是准入先修学分；未据此声称2027新规；快照 eth-profile.web.txt"
+    },
+    {
+      "id": "master-eu-ea",
+      "label": "ETH Physics MSc admission appendix",
+      "url": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/naturwissenschaften/MSc-Physics-Appendix.pdf",
+      "cycle": "当前招生官网链接；未明示2027专版",
+      "verifiedAt": "2026-10-28",
+      "note": "PDF页2-6：本科180ECTS或等同、学科知识、额外学分上限；快照 eth-requirement-profile.web.txt"
+    },
+    {
+      "id": "master-eu-ed",
+      "label": "ETH Autumn Semester 2027 application dates",
+      "url": "https://ethz.ch/en/studies/master/application/dates.html",
+      "cycle": "Autumn Semester 2027",
+      "verifiedAt": "2026-10-28",
+      "note": "国际本科2026-11-01至11-30，官方11:59AM CET；瑞士本科另轮；当前10/28未开始；快照 eth-dates.web.txt CET/MEZ原文另保留；本基线在对应11月日期将其整理映射为Europe/Zurich，未改变上午11:59。"
+    },
+    {
+      "id": "master-eu-elang",
+      "label": "ETH language requirements",
+      "url": "https://ethz.ch/en/studies/master/application/language-requirements.html",
+      "cycle": "现行语言规则",
+      "verifiedAt": "2026-10-28",
+      "note": "本科全英文豁免条件、提交时点及有效期；硕士不替代；快照 eth-language.web.txt"
+    },
+    {
+      "id": "master-eu-elt",
+      "label": "ETH official recognised English certificate table",
+      "url": "https://ethz.ch/en/studies/master/application/language-requirements/_jcr_content/par/accordion_1095454243/accordionitem_656038998/par/table.tableComp.json",
+      "cycle": "现行官方动态表；2026-10-28核验",
+      "verifiedAt": "2026-10-28",
+      "note": "该JSON地址由官网HTML的json-url提供；curl200；与正文C1要求配合，不属于第三方表；官网直连快照 eth-english-table-direct.raw"
+    },
+    {
+      "id": "master-eu-em",
+      "label": "ETH Physics MSc application documents",
+      "url": "https://ethz.ch/en/studies/master/application/master-physik.html",
+      "cycle": "现行；按本科学历来源分支",
+      "verifiedAt": "2026-10-28",
+      "note": "国际本科：两推荐、1A4动机、课程内容、C1；Direct Doctorate额外导师承诺不套普通MSc；快照 eth-admission-program.web.txt"
+    },
+    {
+      "id": "master-eu-eg",
+      "label": "ETH international general documents",
+      "url": "https://ethz.ch/en/studies/master/application/international-bachelor/application-documents/general-documents.html",
+      "cycle": "现行国际本科申请规则",
+      "verifiedAt": "2026-10-28",
+      "note": "全部高教记录、在读/毕业、CV、高中、护照与同意书；快照 eth-general-docs-detail.web.txt"
+    },
+    {
+      "id": "master-eu-etrans",
+      "label": "ETH required documents and translations",
+      "url": "https://ethz.ch/en/studies/master/application/international-bachelor/application-documents.html",
+      "cycle": "现行国际本科申请规则",
+      "verifiedAt": "2026-10-28",
+      "note": "原语言+认可英译、录取后毕业文件；快照 eth-general-docs.web.txt"
+    },
+    {
+      "id": "master-eu-eapp",
+      "label": "ETH international how to apply",
+      "url": "https://ethz.ch/en/studies/master/application/international-bachelor/how-to-apply.html",
+      "cycle": "现行国际本科申请规则",
+      "verifiedAt": "2026-10-28",
+      "note": "CHF150、eApply、开课前本科毕业、通常截止后2-3月决定；快照 eth-how-apply.web.txt"
+    },
+    {
+      "id": "master-eu-efee",
+      "label": "ETH tuition fee groups",
+      "url": "https://ethz.ch/students/en/studies/financial/studiengebuehren.html",
+      "cycle": "现行；HS2025起两档，规则更新2025-11-19",
+      "verifiedAt": "2026-10-28",
+      "note": "730与2190/学期；由ETH核定分组；快照 eth-fees.web.txt"
+    },
+    {
+      "id": "master-eu-efpdf",
+      "label": "ETH tuition and semester fees",
+      "url": "https://ethz.ch/content/dam/ethz/main/education/finanzielles/files-en/tuition-fees.pdf",
+      "cycle": "费表state2024-12-05；含HS2025起政策",
+      "verifiedAt": "2026-10-28",
+      "note": "每学期强制杂费35+7+32=74CHF；另有自愿费用；快照 eth-fees-pdf.web.txt"
+    },
+    {
+      "id": "master-eu-elive",
+      "label": "ETH international living and study costs",
+      "url": "https://ethz.ch/content/dam/ethz/main/education/finanzielles/files-en/cost-of-living.pdf",
+      "cycle": "现行估算；租金基于2024平均",
+      "verifiedAt": "2026-10-28",
+      "note": "生活费CHF22100/年；总体费用含学费，不混为纯生活费；快照 eth-costs.web.txt"
+    },
+    {
+      "id": "master-eu-eoverview",
+      "label": "ETH financial overview",
+      "url": "https://ethz.ch/en/studies/financial.html",
+      "cycle": "现行概览；未标预算年",
+      "verifiedAt": "2026-10-28",
+      "note": "804可调和为Group1的730+74；不适用于全部学生；快照 eth-financial-overview.web.txt"
+    },
+    {
+      "id": "master-eu-eesop",
+      "label": "ETH ESOP",
+      "url": "https://ethz.ch/students/en/studies/financial/scholarships/excellencescholarship.html",
+      "cycle": "HS27/2027-28已明确",
+      "verifiedAt": "2026-10-28",
+      "note": "2026年11月窗口；13,500CHF/学期+学费豁免；硕士持有者等排除；快照 eth-esop.web.txt CET/MEZ原文另保留；本基线在对应11月日期将其整理映射为Europe/Zurich，未改变上午11:59。"
+    },
+    {
+      "id": "master-eu-eadmit",
+      "label": "ETH admitted: what next",
+      "url": "https://ethz.ch/en/studies/master/beginning-your-master-studies/admitted-what-next.html",
+      "cycle": "通用流程；同页仍有2026迎新/2025链接",
+      "verifiedAt": "2026-10-28",
+      "note": "按个人通知接受、文件与注册；不把旧迎新日期变2027；快照 eth-admitted.web.txt"
+    },
+    {
+      "id": "master-eu-op",
+      "label": "Oxford MSc Mathematical and Theoretical Physics",
+      "url": "https://www.ox.ac.uk/admissions/graduate/courses/msc-mathematical-and-theoretical-physics",
+      "cycle": "2027-28",
+      "verifiedAt": "2026-10-28",
+      "note": "Open；2027-01-27 12:00 UK time；高英语；收费与offer条件；后半材料见同URL补充快照ox-mtp-materials.web.txt；快照 ox-mtp-program.web.txt；无查询canonical已于2026-10-28实际读取，标题、2027-28、Open、截止和学制一致；另存ox-mtp-canonical.web.txt，不需放宽query回退。"
+    },
+    {
+      "id": "master-eu-ohome",
+      "label": "Oxford MMathPhys/MSc course home",
+      "url": "https://mmathphys.web.ox.ac.uk/home",
+      "cycle": "现行项目说明",
+      "verifiedAt": "2026-10-28",
+      "note": "校外可单独申请MSc；与本科MMathPhys转入区分；快照 ox-mtp-home.web.txt"
+    },
+    {
+      "id": "master-eu-owaiver",
+      "label": "Oxford English test waivers",
+      "url": "https://www.ox.ac.uk/admissions/graduate/application-guide/qualifications-experience-languages-funding/english-language-test-waivers",
+      "cycle": "现行规则",
+      "verifiedAt": "2026-10-28",
+      "note": "9个月全日制、全英文教学评估、间隔≤2学年；系裁量；快照 ox-english-waiver.web.txt"
+    },
+    {
+      "id": "master-eu-otimeline",
+      "label": "Oxford decision timeline",
+      "url": "https://www.ox.ac.uk/admissions/graduate/after-you-apply/decision-timeline",
+      "cycle": "现行流程",
+      "verifiedAt": "2026-10-28",
+      "note": "结果、资助、完成条件及后续签证；快照 ox-decision-timeline.web.txt"
+    },
+    {
+      "id": "master-eu-ooffer",
+      "label": "Oxford offer and contract",
+      "url": "https://www.ox.ac.uk/admissions/graduate/after-you-apply/your-offer-and-contract",
+      "cycle": "2027-28条款入口及现行流程",
+      "verifiedAt": "2026-10-28",
+      "note": "接受按offer，合同文件、补条件与相关期限；快照 ox-meet-conditions.web.txt"
+    },
+    {
+      "id": "master-us-columbia-pfp",
+      "label": "Columbia物理学哲学基础MA项目",
+      "url": "https://www.gsas.columbia.edu/content/philosophical-foundations-physics",
+      "cycle": "2027招生及现行要求",
+      "verifiedAt": "2026-10-28",
+      "note": "Free-Standing MA；Special Admissions Requirements；表格。写作样本正文与表格范围不一致。"
+    },
+    {
+      "id": "master-us-columbia-physics-only-phd",
+      "label": "Columbia物理系研究生招生模式",
+      "url": "https://www.physics.columbia.edu/content/graduate-programs",
+      "cycle": "现行招生模式",
+      "verifiedAt": "2026-10-28",
+      "note": "物理系只招PhD；MA/MPhil为途中学位，另指向PFP独立MA。"
+    },
+    {
+      "id": "master-us-columbia-intro",
+      "label": "Columbia GSAS 2027申请说明",
+      "url": "https://www.gsas.columbia.edu/content/introduction-gsas-admissions",
+      "cycle": "2027申请",
+      "verifiedAt": "2026-10-28",
+      "note": "首段2027 application now open；The Application Process。"
+    },
+    {
+      "id": "master-us-columbia-deadlines",
+      "label": "Columbia GSAS招生截止",
+      "url": "https://www.gsas.columbia.edu/content/admissions-deadlines",
+      "cycle": "2027招生；各日期见表",
+      "verifiedAt": "2026-10-28",
+      "note": "首段所有截止23:59 Eastern Time；PFP MA行Fall4/22/2027、Spring10/29/2026。IANA America/New_York为整理归一化，非官网原写；未换算UTC/上海。"
+    },
+    {
+      "id": "master-us-columbia-philosophy-admissions",
+      "label": "Columbia哲学系招生",
+      "url": "https://philosophy.columbia.edu/content/admissions",
+      "cycle": "2027秋季",
+      "verifiedAt": "2026-10-28",
+      "note": "Our Graduate Programs描述fall admission；Deadlines列PFP4/22/2027；Notes并行注册限制。与GSAS春季条目待核。"
+    },
+    {
+      "id": "master-us-columbia-pfp-degree",
+      "label": "PFP MA修读要求",
+      "url": "https://philosophy.columbia.edu/content/master-arts-philosophical-foundations-physics",
+      "cycle": "现行学位要求",
+      "verifiedAt": "2026-10-28",
+      "note": "Degree Requirements；Residence/Coursework/Distribution/Thesis；全日制2–3学期。"
+    },
+    {
+      "id": "master-us-columbia-international",
+      "label": "Columbia国际学历与语言",
+      "url": "https://www.gsas.columbia.edu/content/information-international-applicants",
+      "cycle": "现行通则；语言含2026新制",
+      "verifiedAt": "2026-10-28",
+      "note": "学士及等同；English Proficiency Requirement；Waiver Requests。研究生豁免原文MA或PhD，不擅自把MSc或在读等同。"
+    },
+    {
+      "id": "master-us-columbia-supporting",
+      "label": "Columbia申请支持材料",
+      "url": "https://www.gsas.columbia.edu/content/admissions-supporting-materials",
+      "cycle": "现行通则",
+      "verifiedAt": "2026-10-28",
+      "note": "Letters of Recommendation；Transcripts；Official Score Report。推荐信及官方分数均有截止后两周规则，不把该规则计算值标成官网直接日期。"
+    },
+    {
+      "id": "master-us-columbia-fee",
+      "label": "Columbia 2027申请费",
+      "url": "https://www.gsas.columbia.edu/content/application-fee",
+      "cycle": "2027申请",
+      "verifiedAt": "2026-10-28",
+      "note": "USD125 nonrefundable；支付或获豁免前完整性待确认。"
+    },
+    {
+      "id": "master-us-columbia-fee-waivers",
+      "label": "Columbia申请费豁免",
+      "url": "https://www.gsas.columbia.edu/content/application-fee-waivers",
+      "cycle": "现行通则",
+      "verifiedAt": "2026-10-28",
+      "note": "Financial Fee Waiver及Notes；提交请求不保证获批。"
+    },
+    {
+      "id": "master-us-columbia-personal",
+      "label": "Columbia个人陈述题目",
+      "url": "https://www.gsas.columbia.edu/content/personal-statement-prompt",
+      "cycle": "现行通则",
+      "verifiedAt": "2026-10-28",
+      "note": "Personal Statement Prompt，maximum1000words。"
+    },
+    {
+      "id": "master-us-columbia-faq",
+      "label": "Columbia GSAS招生FAQ",
+      "url": "https://www.gsas.columbia.edu/content/frequently-asked-questions",
+      "cycle": "现行通则",
+      "verifiedAt": "2026-10-28",
+      "note": "SOP长度；GPA范围由项目咨询；Decisions/Reapplying；Tours/Interviews。未据此创建固定2027结果或面试日期。"
+    },
+    {
+      "id": "master-us-columbia-ma-financing",
+      "label": "Columbia MA资助",
+      "url": "https://www.gsas.columbia.edu/content/financing-information-ma-students",
+      "cycle": "现行政策；页面活动为2026-27",
+      "verifiedAt": "2026-10-28",
+      "note": "首段MA奖学金非常有限、由院系决定；不等于全奖承诺或贷款个人资格。"
+    },
+    {
+      "id": "master-us-columbia-coa-2026",
+      "label": "Columbia 2026-27费用",
+      "url": "https://www.gsas.columbia.edu/content/2026-27-academic-year-cost-attendance",
+      "cycle": "2026-27；不得升级2027-28",
+      "verifiedAt": "2026-10-28",
+      "note": "All Other MA Programs / Full Time Full Residence Unit；所有金额USD。9个月间接费用估算；国籍、注册类别和个人收费适用性未知。"
+    },
+    {
+      "id": "master-us-columbia-accept",
+      "label": "Columbia接受录取流程",
+      "url": "https://www.gsas.columbia.edu/content/accepting-offer-admission",
+      "cycle": "现行通则；个案offer待取得",
+      "verifiedAt": "2026-10-28",
+      "note": "Acceptance Attestation Form；All other MA deposit USD1000；定金不可退、抵学费，不是申请费。"
+    },
+    {
+      "id": "master-us-columbia-credentials",
+      "label": "Columbia入学资格核验",
+      "url": "https://www.gsas.columbia.edu/content/credentials-verification",
+      "cycle": "现行通则",
+      "verifiedAt": "2026-10-28",
+      "note": "Final Official Transcripts及Re Vera核验；所有高等教育院校，包括未授位。"
+    },
+    {
+      "id": "master-us-columbia-transcripts-2026",
+      "label": "Columbia最终成绩单2026季说明",
+      "url": "https://apply.gsas.columbia.edu/register/TranscriptInstructions26",
+      "cycle": "仅2026申请季；2027日期未知",
+      "verifiedAt": "2026-10-28",
+      "note": "Document Deadlines只列2026；在读者授位后提交；境外学历评估机构与送件规则不能自动宣称为2027最终要求。"
+    },
+    {
+      "id": "master-us-columbia-checklist",
+      "label": "Columbia新生清单",
+      "url": "https://www.gsas.columbia.edu/content/new-student-checklist",
+      "cycle": "现行通则；部分活动仍2026",
+      "verifiedAt": "2026-10-28",
+      "note": "UNI、住房、免疫材料、资格核验及国际学生I-20/DS-2019；个人是否适用及2027具体日期未知。"
+    },
+    {
+      "id": "master-us-columbia-portal",
+      "label": "Columbia GSAS公开申请入口",
+      "url": "https://apply.gsas.columbia.edu/apply/",
+      "cycle": "2027入口经GSAS指向；登录页只读",
+      "verifiedAt": "2026-10-28",
+      "note": "Application Management页面可读，存在Log in/Create account；未创建账号或选择项目。"
+    },
+    {
+      "id": "master-us-mit-physics-sm-exclusion",
+      "label": "MIT物理SM招生限制",
+      "url": "https://catalog.mit.edu/schools/science/physics/",
+      "cycle": "现行目录；不是2027独立招生公告",
+      "verifiedAt": "2026-10-28",
+      "note": "Graduate Study / Master of Science in Physics：通常PhD，直接硕士仅特殊情况，如US military officers。学位存在不等于普通申请开放。"
+    }
+  ],
+  "observations": [],
+  "extensions": [
+    {
+      "id": "master-excluded",
+      "title": "独立硕士选校排除记录",
+      "description": "真实官网核验的招生范围；不把途中学位或特殊身份项目当普通开放硕士。",
+      "fields": [
+        "项目",
+        "排除依据",
+        "官网"
+      ],
+      "items": [
+        {
+          "项目": "Columbia 普通 Physics MA",
+          "排除依据": "物理系只招Physics PhD，MA/MPhil是途中学位；普通独立Physics MA不能当成开放候选。另有已单列的PFP独立MA。",
+          "官网": "https://www.physics.columbia.edu/content/graduate-programs"
+        },
+        {
+          "项目": "MIT Physics SM（普通独立硕士候选排除）",
+          "排除依据": "学位存在，但直接硕士仅特殊情况（如美国军官）；未提供特殊条件，不能列为普通开放独立硕士或套用PhD日期。",
+          "官网": "https://catalog.mit.edu/schools/science/physics/"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "refreshMinutes": 0
+  }
+}

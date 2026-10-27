@@ -6,6 +6,7 @@ import { applicationsView, decisionsView, lifecycleDates } from './lifecycle-vie
 import { programStage, fundingSummary, contactSummary, actionDates } from '/lib/lifecycle.mjs';
 import { helpView } from './help-view.mjs';
 import { createTutorial } from './tutorial.mjs';
+import { programComparisonView } from './comparison-view.mjs';
 
 const $ = selector => document.querySelector(selector);
 const STATIC = document.querySelector('meta[name="gradatlas-mode"]')?.content === 'static';
@@ -94,8 +95,7 @@ function programs() {
 
 function comparison() {
   const chosen = workspace.programs.filter(p => compare.has(p.id));
-  const rows = [['方向', p => trackName(p.track)], ['匹配依据', p => p.fit], ['当前阶段', p => programStage(p)], ['日期', p => `${p.deadline.date || '待核对'} ${p.deadline.time || ''} · ${p.deadline.timezone || '时区待核对'} · ${{ official: '官方', personal: '个人计划', historical: '往年参考', unknown: '待核实' }[p.deadline.basis]}`], ['导师与资助', p => p.track === 'phd' ? `${p.supervisor || '待核对'}；${fundingSummary(p)}` : '见各项来源要求'], ['下一步', p => p.nextAction]];
-  return `<section class="comparison"><div class="section-head"><h2>并排比较</h2><button class="button quiet" id="clear-compare">清空选择</button></div><div class="table-scroll"><table><caption class="sr-only">所选项目对比</caption><thead><tr><th scope="col">比较项目</th>${chosen.map(p => `<th scope="col">${esc(p.institution)}<small>${esc(p.name)}</small></th>`).join('')}</tr></thead><tbody>${rows.map(([k, fn]) => `<tr><th scope="row">${k}</th>${chosen.map(p => `<td>${esc(fn(p))}</td>`).join('')}</tr>`).join('')}</tbody></table></div></section>`;
+  return programComparisonView(chosen, { esc, trackName });
 }
 
 function timeline() {
@@ -158,7 +158,7 @@ function agent() {
     <section class="section"><h2>本地维护与备份</h2><p class="prose">Agent 使用 <code>npm run agent</code> 读取、校验和更新 <code>.local/workspace.json</code>。每次写入检查版本号并生成本地备份。改端口或换浏览器不会改变同一目录里的申请记录；换电脑时迁移整个 <code>.local/</code>。</p><div class="inline-note">${icon('link')}<p>程序不自带模型账号，也不自动向外发送你的资料。定时官网检查需要 Agent 配置，服务运行期间才会执行。发送邮件或递交申请前，由用户明确授权。</p></div></section>`;
 }
 
-function lifecycleContext() { return { esc, pill, heading, promptButton, trackFilter, matchesTrack, sourceLink, empty }; }
+function lifecycleContext() { return { esc, pill, heading, promptButton, trackFilter, matchesTrack, sourceLink, empty, track }; }
 function practiceView(view, data, controls) {
   const saved = { workspace, track, query, stage, compare, sourceReader };
   try { workspace = data; sourceReader = data.settings.sourceReader || 'off'; track = controls.track; query = controls.query; stage = controls.stage; compare = new Set(controls.compare); return views[view](); }

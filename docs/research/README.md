@@ -1,4 +1,16 @@
-# 真实博士目标研究基线
+# 真实院校研究基线
+
+## 硕士申请
+
+核验日期：2026-10-28。本轮研究 Leiden Physics MSc、ETH Physics MSc、Oxford MSc Mathematical and Theoretical Physics，以及 Columbia MA in Philosophical Foundations of Physics，共 52 个官方来源、114 项事实。可校验数据为 [real-master-research-20261028.json](../../examples/real-master-research-20261028.json)；详细依据见 [欧洲硕士记录](masters-europe-20261028.md)和[美国硕士记录](masters-us-20261028.md)。
+
+基线保留未公布的入学周期、学费身份、旧年度费用、语言豁免条件及官网冲突，不包含个人递交或录取。Columbia 的候选属于物理基础与哲学交叉方向，须由用户明确接受后才加入计划；普通 Columbia Physics MA 和 MIT Physics SM 的招生范围另存排除记录，不能套用博士入口。
+
+Leiden 页面给的是年度日期通则，未推成 2027 当轮截止。ETH 已公布的国际本科轮为 2026-11-30 上午 11:59 CET，按说明整理映射为 Europe/Zurich；Oxford MSc 的 2027-01-27 中午截止与 DPhil 分开。Columbia 的 2026-27 费用和最终送件旧周期不改成 2027-28。毕业学分与准入先修也分别记录，不自动换算个人成绩或学分。
+
+测试从空工作区的中文 Agent 分轮引导开始，个人回答和全周期事件仅在隔离环境模拟。实际执行范围与问题修复见 [硕士完整测试报告](../qa/masters-lifecycle-20261028.md)。默认演示与教程继续使用虚构院校。
+
+## 博士申请
 
 核验日期：2026-10-28，按 Asia/Shanghai 记录。四个候选来自真实官方岗位和博士项目，覆盖欧洲岗位招聘、英国学位申请和美国项目制招生。
 

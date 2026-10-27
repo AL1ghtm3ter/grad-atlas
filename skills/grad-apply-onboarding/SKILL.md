@@ -60,6 +60,8 @@ description: 通过分轮追问建立或更新 GradAtlas 研究生申请档案�
 
 用户要求检查官网时运行 `npm run agent -- check-sources`。`changed` 只表示网页文本变化，`error` 不能表示未变化。阅读变化后的官方内容，核对适用周期，再更新相关事实、`verifiedAt` 和实际核对过的 `reviewedHash`。不要仅为清除提醒而更新核验状态。
 
+直连失败时先看错误和实际网络路径。需要公开阅读回退时，说明会将无查询参数的公开URL发送到Jina，然后按用户偏好把 `settings.sourceReader` 设为 `jina` 或 `off`；沿用快照、干跑和当前版本写入，不覆盖其他设置。Node需22.21或24.5以上，代理沿用进程标准环境变量。检查 `observations.method` 与来源页实际通道；回退成功不代表官网直连已恢复，也不自动确认招生要求。不得用手工旧HTML替代本次抓取结果。
+
 定时检查需要用户明确选择频率；设置 `settings.refreshMinutes` 为 15–1440，0 为关闭。说明本地服务停止后不会执行。不要自行创建云端定时任务。
 
 需要新功能时先明确用户希望看见什么。简单信息放自定义字段或 `extensions` 表；需要交互再按 docs/EXTENDING.md 增加源码模块。只实现本次授权的功能。

@@ -25,7 +25,7 @@ const icons = {
 };
 const icon = name => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[name] || icons.file}</svg>`;
 document.querySelectorAll('[data-icon]').forEach(el => { el.innerHTML = icon(el.dataset.icon); });
-let workspace, demo = false, signature = '';
+let workspace, demo = false, signature = '', sourceReader = 'off';
 let track = 'all', query = '', stage = 'all', compare = new Set();
 const names = { home: '申请总览', programs: '目标项目', applications: '申请跟踪', timeline: '申请时间线', materials: '材料与任务', decisions: '录取与入学', sources: '来源与更新', profile: '申请档案', extensions: '我的扩展', agent: '与 Agent 协作', guide: '新手教程与功能介绍', tutorial: '交互式新手教程' };
 const trackName = t => ({ master: '硕士申请', phd: '博士申请', both: '硕士 + 博士申请' }[t] || t);
@@ -121,10 +121,11 @@ function unresolvedChanges() {
 function sources() {
   const latest = id => [...workspace.observations].reverse().find(o => o.sourceId === id);
   const changes = unresolvedChanges();
+  const methodLabel = o => o.method === 'jina' ? 'Jina 公共阅读服务' : '来源直连';
   return heading('每条信息，都能回到出处。', '检查网页变化后，由 Agent 核对正文、适用周期和实际要求，再更新申请信息。', promptButton('请运行 npm run agent -- check-sources，查看来源变化。对有变化、出错或过时的来源逐个核对。只有核对过的事实才能更新 verifiedAt，网页抓取时间不能当作事实核验日期。', '检查并核对来源')) +
-    `<div class="source-status"><span class="dot"></span><p>页面：Agent 写入后自动同步。官网检查：${workspace.settings.refreshMinutes ? `每 ${workspace.settings.refreshMinutes} 分钟一次，仅服务运行期间有效` : '按需检查，定时检查尚未开启'}。</p></div>${changes.length ? `<div class="notice">${changes.length} 个来源有变化待核对。未变化的页面也可能包含过期信息。</div>` : ''}
-    <section class="section"><div class="section-head"><h2>资料来源</h2><span class="muted">${workspace.sources.length} 个来源</span></div><div class="source-list">${workspace.sources.map(s => { const o = latest(s.id); return `<article><div class="source-title"><h3>${sourceLink(s.id)}</h3>${o ? pill({ baseline: '已建基线', unchanged: '文本未变', changed: '发现变化', error: '检查失败' }[o.status], ['changed', 'error'].includes(o.status) ? 'amber' : 'green') : pill('尚未检查')}</div><p>${esc(s.note)}</p><div class="source-dates"><span>适用周期：${esc(s.cycle || '待核对')}</span><span>事实核验：${esc(s.verifiedAt || '尚未核验')}</span><span>网页检查：${o ? esc(new Date(o.checkedAt).toLocaleString('zh-CN', { hour12: false })) : '尚未检查'}</span></div>${o ? `<p class="observation">${esc(o.message)}</p>` : ''}</article>`; }).join('') || empty('从官方来源开始。', '由 Agent 整理项目官网、招生条例、导师和资助信息，并标明核对日期。')}</div></section>
-    <section class="section"><h2>变化记录</h2><div class="observation-list">${workspace.observations.slice(-20).reverse().map(o => `<div><time>${esc(new Date(o.checkedAt).toLocaleString('zh-CN', { hour12: false }))}</time><span>${sourceLink(o.sourceId)} · ${esc(o.message)}</span></div>`).join('') || '<p class="muted">首次检查只建立文本基线，后续检查才会比较变化。</p>'}</div></section>`;
+    `<div class="source-status"><span class="dot"></span><p>页面：Agent 写入后自动同步。官网检查：${workspace.settings.refreshMinutes ? `每 ${workspace.settings.refreshMinutes} 分钟一次，仅服务运行期间有效` : '按需检查，定时检查尚未开启'}。</p></div><p class="muted prose">${sourceReader === 'jina' ? '读取方式：优先直连；受限时经 Jina 重新读取公开正文。仅发送无查询参数的公开网址，不发送档案、Cookie 或登录信息。可让 Agent 关闭回退。' : '读取方式：来源直连。遇到安全验证或网络失败，可让 Agent 配置公开阅读回退。'}</p>${changes.length ? `<div class="notice">${changes.length} 个来源有变化待核对。未变化的页面也可能包含过期信息。</div>` : ''}
+    <section class="section"><div class="section-head"><h2>资料来源</h2><span class="muted">${workspace.sources.length} 个来源</span></div><div class="source-list">${workspace.sources.map(s => { const o = latest(s.id); return `<article><div class="source-title"><h3>${sourceLink(s.id)}</h3>${o ? pill({ baseline: '已建基线', unchanged: '文本未变', changed: '发现变化', error: '检查失败' }[o.status], ['changed', 'error'].includes(o.status) ? 'amber' : 'green') : pill('尚未检查')}</div><p>${esc(s.note)}</p><div class="source-dates"><span>适用周期：${esc(s.cycle || '待核对')}</span><span>事实核验：${esc(s.verifiedAt || '尚未核验')}</span><span>网页检查：${o ? esc(new Date(o.checkedAt).toLocaleString('zh-CN', { hour12: false })) : '尚未检查'}</span></div>${o ? `<p class="observation"><strong>${esc(methodLabel(o))}</strong> · ${esc(o.message)}</p>` : ''}</article>`; }).join('') || empty('从官方来源开始。', '由 Agent 整理项目官网、招生条例、导师和资助信息，并标明核对日期。')}</div></section>
+    <section class="section"><h2>变化记录</h2><div class="observation-list">${workspace.observations.slice(-20).reverse().map(o => `<div><time>${esc(new Date(o.checkedAt).toLocaleString('zh-CN', { hour12: false }))}</time><span>${sourceLink(o.sourceId)} · ${esc(methodLabel(o))} · ${esc(o.message)}</span></div>`).join('') || '<p class="muted">首次检查只建立文本基线，后续检查才会比较变化。</p>'}</div></section>`;
 }
 
 function profile() {
@@ -159,9 +160,9 @@ function agent() {
 
 function lifecycleContext() { return { esc, pill, heading, promptButton, trackFilter, matchesTrack, sourceLink, empty }; }
 function practiceView(view, data, controls) {
-  const saved = { workspace, track, query, stage, compare };
-  try { workspace = data; track = controls.track; query = controls.query; stage = controls.stage; compare = new Set(controls.compare); return views[view](); }
-  finally { ({ workspace, track, query, stage, compare } = saved); }
+  const saved = { workspace, track, query, stage, compare, sourceReader };
+  try { workspace = data; sourceReader = data.settings.sourceReader || 'off'; track = controls.track; query = controls.query; stage = controls.stage; compare = new Set(controls.compare); return views[view](); }
+  finally { ({ workspace, track, query, stage, compare, sourceReader } = saved); }
 }
 function helpContext() { return { esc, heading, promptButton, icon, names, renderPractice: practiceView }; }
 let tutorialStorage;
@@ -199,7 +200,7 @@ const load = createLatestLoader(async () => {
     const res = await fetch(STATIC ? '/api/state/index.html' : '/api/state', { cache: 'no-store' });
     const data = await res.json(); if (!res.ok) throw new Error(data.error || '无法读取本地记录');
     const nextSignature = JSON.stringify(data);
-    if (nextSignature !== signature) { workspace = data.workspace; demo = data.demo; signature = nextSignature; compare = new Set([...compare].filter(id => workspace.programs.some(p => p.id === id))); render(); }
+    if (nextSignature !== signature) { workspace = data.workspace; demo = data.demo; sourceReader = data.sourceReader || workspace.settings.sourceReader || 'off'; signature = nextSignature; compare = new Set([...compare].filter(id => workspace.programs.some(p => p.id === id))); render(); }
     $('#error').hidden = true;
   } catch (e) { $('#error').textContent = `${e.message}。当前画面保留；请让 Agent 检查记录或确认本地服务正在运行。`; $('#error').hidden = false; if (!workspace) render(); }
 });

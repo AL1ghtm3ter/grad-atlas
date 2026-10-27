@@ -9,9 +9,9 @@
 | `tasks` | 个人行动 | 标题、阶段、方向、关联项目、计划日期、完成状态、优先级 |
 | `materials` | 材料准备 | 名称、方向、状态、备注、关联项目 |
 | `sources` | 官方资料与事实核对状态 | URL、适用周期、事实核验日、说明、已核对文本的 `reviewedHash` |
-| `observations` | 网页检查结果 | 来源、检查时间、文本哈希、上次哈希、状态、说明 |
+| `observations` | 网页检查结果 | 来源、检查时间、文本哈希、上次哈希、状态、说明；可附实际通道、原URL、上游状态与缓存请求方式 |
 | `extensions` | 自定义数据表 | ID、标题、说明、列名和行记录 |
-| `settings` | 官网定时检查 | `refreshMinutes` 为 0 时关闭，开启为 15–1440 分钟 |
+| `settings` | 官网检查策略 | `refreshMinutes` 为 0 时关闭定时，开启为 15–1440 分钟；`sourceReader` 可选 `off` / `jina`，控制公开阅读回退 |
 
 档案的基础字段是：`displayName`、`track`、`cycle`、`field`、`regions`、`education`、`academicRecord`、`language`、`budget`、`constraints`、`goals`。硕士补充 `prerequisites`、`degreeDocuments`；博士补充 `researchInterests`、`researchExperience`、`publications`、`supervisorPreferences`、`fundingNeeds`。可按实际情况留空；自定义字符串放 `profile.customFields`。
 
@@ -69,6 +69,8 @@
 只有年度月日通则、未明确当轮年份时，不据此生成当轮官方日期。两个官方页面要求冲突时，分别保存事实和来源，列待核对事项；来源核验日不能代替招生周期。真实院校基线与研究记录见 `docs/research/README.md`，模拟个人进展与官方事实分开。
 
 项目 `facts` 中的每项是 `{ label, value, sourceId, cycle, verifiedAt }`。没有来源的内容会显示待核对；空值不能解释为已满足要求。官方日期关联来源存在不等于系统核实其内容，Agent 仍须阅读原文。
+
+来源观察可附 `method: "direct" | "jina"`、`sourceUrl`、`upstreamStatus: 200`、`cacheMode: "no-cache" | "bypass"`。它们描述正文的实际取得方式，不是资格或招生事实。通道改变时重新建文本基线，旧记录继续兼容。读取策略、隐私边界及代理说明见 [官网检查](SOURCES.md)。
 
 ## Agent 写入
 

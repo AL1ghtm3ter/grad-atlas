@@ -35,3 +35,11 @@ test('磁盘数据无效时返回错误，保留原始记录', async t => {
   const { url, store } = await fixture(t); await writeFile(store.file, '{bad');
   const response = await fetch(url + '/api/state'); assert.equal(response.status, 500); assert.match((await response.json()).error, /原文件已保留/);
 });
+test('来源页可读取有效策略，工作区显式关闭优先于进程默认回退', async t => {
+  const previous = process.env.GRAD_ATLAS_SOURCE_READER; process.env.GRAD_ATLAS_SOURCE_READER = 'jina';
+  t.after(() => { if (previous === undefined) delete process.env.GRAD_ATLAS_SOURCE_READER; else process.env.GRAD_ATLAS_SOURCE_READER = previous; });
+  const { url, store } = await fixture(t);
+  assert.equal((await (await fetch(url + '/api/state')).json()).sourceReader, 'jina');
+  const w = blankWorkspace(); w.settings.sourceReader = 'off'; await store.initialize(w);
+  const data = await (await fetch(url + '/api/state')).json(); assert.equal(data.sourceReader, 'off'); assert.equal(data.workspace.settings.refreshMinutes, 0);
+});

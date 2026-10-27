@@ -20,6 +20,17 @@ test('网页检查建立基线、检测文本变化，失败时保留哈希', as
   const c = await inspectSource(source, b, async () => '<p>B</p>'); assert.equal(c.status, 'changed');
   const e = await inspectSource(source, c, async () => { throw new Error('offline'); }); assert.equal(e.status, 'error'); assert.equal(e.hash, c.hash);
 });
+test('安全验证页不能当成官网正文建立成功基线', async () => {
+  const result = await inspectSource(source, null, async () => '<html><title>Just a moment...</title><body>Enable JavaScript and cookies to continue. Cloudflare Ray ID</body></html>');
+  assert.equal(result.status, 'error'); assert.equal(result.hash, '');
+});
+test('切换读取通道重新建立基线，正文变化只在相同通道比较', async () => {
+  const first = await inspectSource(source, null, async () => ({ body: '<p>Official page</p>', method: 'direct' }));
+  const next = await inspectSource(source, first, async () => ({ body: '# Official page', method: 'jina', sourceUrl: source.url, upstreamStatus: 200 }));
+  assert.equal(next.status, 'baseline'); assert.equal(next.method, 'jina'); assert.match(next.message, /通道/);
+  const same = await inspectSource(source, next, async () => ({ body: '# Official page', method: 'jina', sourceUrl: source.url, upstreamStatus: 200 })); assert.equal(same.status, 'unchanged');
+  const changed = await inspectSource(source, same, async () => ({ body: '# Changed page', method: 'jina', sourceUrl: source.url, upstreamStatus: 200 })); assert.equal(changed.status, 'changed');
+});
 test('来源检查不改变事实核验日和个人任务状态', async t => {
   const dir = await mkdtemp(join(tmpdir(), 'gradatlas-source-')); t.after(() => rm(dir, { recursive: true, force: true }));
   const store = new Store(dir); const w = demoWorkspace(); w.revision = 0; await store.initialize(w);

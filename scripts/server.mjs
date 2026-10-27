@@ -50,8 +50,8 @@ export async function createApp({ dir = join(ROOT, '.local'), demo = false, demo
       if (req.headers.origin && ![`http://127.0.0.1:${port}`, `http://localhost:${port}`].includes(req.headers.origin)) return send(403, { error: '跨来源请求已拒绝' });
       if (req.method !== 'GET' && req.method !== 'HEAD') return send(405, { error: '此服务只提供读取；由本地 Agent 命令维护记录。' });
       const url = new URL(req.url, `http://${req.headers.host}`);
-      if (url.pathname === '/api/health') return send(200, { name: 'grad-atlas', version: '1.1.0', demo });
-      if (url.pathname === '/api/state') return send(200, { workspace: await store.read(), demo });
+      if (url.pathname === '/api/health') return send(200, { name: 'grad-atlas', version: '1.2.0', demo });
+      if (url.pathname === '/api/state') { const workspace = await store.read(); return send(200, { workspace, demo, sourceReader: workspace.settings.sourceReader ?? process.env.GRAD_ATLAS_SOURCE_READER ?? 'off' }); }
       if (url.pathname === '/api/events') {
         res.writeHead(200, { 'Content-Type': 'text/event-stream', 'Connection': 'keep-alive', 'X-Accel-Buffering': 'no' });
         res.write('event: connected\ndata: {}\n\n'); clients.add(res); req.on('close', () => clients.delete(res)); return;

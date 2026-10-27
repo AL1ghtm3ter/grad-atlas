@@ -8,6 +8,8 @@
 
 ## 开始使用
 
+需要按步骤操作时，见[中文安装与首次使用教程](docs/INSTALL.zh-CN.md)；公测附件从[GitHub Release](https://github.com/AL1ghtm3ter/grad-atlas/releases/tag/v1.3.1)下载，测试记录见[中文报告索引](docs/qa/README.md)。
+
 先准备 Git 和 Node.js 22.21+（22.x）或 24.5+。尚未安装时，从 [Git 官网](https://git-scm.com/install/)和 [Node.js 官网](https://nodejs.org/en/download)选择系统对应的安装程序；Node.js 选符合上述版本的 LTS。安装后重新打开终端，运行 `git --version`、`node --version` 和 `npm --version`，确认工具可用。程序不依赖第三方运行时软件包，无需先安装 npm 包。可选的公开网页阅读回退会调用 Jina 服务，默认关闭。
 
 ```sh

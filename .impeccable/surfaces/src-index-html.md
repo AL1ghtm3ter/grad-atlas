@@ -2,7 +2,7 @@
 version: 1
 slug: "src-index-html"
 primary_target: "src/index.html"
-related_targets: ["src/app.mjs","src/style.css","src/theme-init.js","src/theme.mjs","src/extensions/index.mjs"]
+related_targets: ["src/app.mjs","src/style.css","src/theme-init.js","src/theme.mjs","src/extensions/index.mjs","src/help-view.mjs","src/help.css","src/tutorial.mjs"]
 ---
 
 # Surface brief: 申请工作区
@@ -20,7 +20,7 @@ related_targets: ["src/app.mjs","src/style.css","src/theme-init.js","src/theme.m
 
 首次进入显示按阶段整理资料的引导；资料具备后，同一路由显示每日看板。各模块使用统一的页面标题、段落说明、状态标签与下一步入口。官方事实、来源变化与个人安排分别说明；缺少内容时保留未知提示。
 
-工作区明确显示连接、重连、读取失败和静态示例状态。来源变化待核对，个人任务完成不会改写官方要求。组件示例、公开演示和文档中的人物与申请内容均使用虚构资料。
+工作区明确显示连接、重连、读取失败和静态示例状态。来源变化待核对，个人任务完成不会改写官方要求。组件示例、默认演示和教程使用虚构资料；真实院校研究基线单独注明核验日和来源，不含实际个人进度。
 
 ## Direction contract
 
@@ -39,3 +39,11 @@ related_targets: ["src/app.mjs","src/style.css","src/theme-init.js","src/theme.m
 ## Evidence boundary
 
 此 brief 记录源码中的结构与交互意图，未声明新的截图检查或可访问性认证。当前提取依据为 `PRODUCT.md` 及上述关联实现；主题与组件规范以 `DESIGN.md` 的实际 tokens 为准。
+
+## 教程与帮助扩展（2026-10-28）
+
+顶栏增加常驻帮助入口。功能介绍使用连续条目和直接页面链接；教程沿用现有标题、按钮、标签与文字反馈。桌面按章节目录和练习区分列，窄屏把章节收成可横向滚动的目录，正文保持单列。没有增加颜色角色。
+
+练习区明确标注虚构资料，搜索、比较与记录展示复用正式渲染器，浏览器进度与正式工作区隔离。错误判断保留反馈，跳过显示待回看。真实院校研究基线另行维护，只含公开规则与测试角色，不包含实际申请进度。
+
+完成检查：实际查看1440px白昼功能介绍和教程、390px夜间教程截图；320/390px昼夜七课与静态产物操作已验收。没有发现阻止使用的排版问题；没有将这些检查称为屏幕阅读器或完整无障碍认证。截图来源见 `docs/screenshots/README.md`，操作证据见 `docs/qa/tutorial-20261028.md`。

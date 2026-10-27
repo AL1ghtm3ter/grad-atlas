@@ -12,11 +12,14 @@ test('硕士与博士使用不同任务模板，并支持同时申请', () => {
   assert.ok(master.some(t => /学分/.test(t.title))); assert.ok(phd.some(t => /资助/.test(t.title))); assert.ok(phd.some(t => /导师/.test(t.title)));
   assert.equal(templateTasks('both').length, master.length + phd.length);
 });
-test('官方截止日需有来源周期和时区，并校验真实日期', () => {
+test('官方截止日需有来源和周期，未公布时区留空并校验真实日期', () => {
   const w = demoWorkspace(); w.programs[0].deadline.basis = 'official';
   assert.throws(() => validateWorkspace(w), /官方日期/);
   Object.assign(w.programs[0].deadline, { sourceId: 'demo-source', cycle: '2028 秋季', timezone: 'Europe/Berlin' });
   assert.doesNotThrow(() => validateWorkspace(w));
+  w.programs[0].deadline.timezone = ''; w.programs[0].deadline.time = '12:00'; assert.doesNotThrow(() => validateWorkspace(w));
+  w.programs[0].deadline.time = '24:00'; assert.throws(() => validateWorkspace(w), /HH:MM/);
+  w.programs[0].deadline.time = '';
   w.programs[0].deadline.date = '2028-02-30'; assert.throws(() => validateWorkspace(w), /真实/);
   w.programs[0].deadline.date = '2028-02-29'; w.programs[0].deadline.timezone = 'Mars/Olympus'; assert.throws(() => validateWorkspace(w), /时区/);
 });

@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { demoWorkspace } from '../examples/demo.mjs';
 import { validateWorkspace, PROGRAM_STAGES, STAGES } from '../lib/model.mjs';
-import { blankApplication, enrollmentTemplate, actionDates, fundingSummary, contactSummary } from '../lib/lifecycle.mjs';
+import { blankApplication, enrollmentTemplate, actionDates, fundingSummary, contactSummary, referenceSummary } from '../lib/lifecycle.mjs';
 import { applicationsView, decisionsView, lifecycleDates } from '../src/lifecycle-view.mjs';
 
 test('新版全周期和旧版项目数据均可读取，无需破坏性迁移', () => {
@@ -70,4 +70,35 @@ test('项目与比较采用原生资助和联系状态，旧摘要只供旧数�
   assert.match(fundingSummary(p), /已获资助/); assert.doesNotMatch(fundingSummary(p), /旧摘要/);
   assert.match(contactSummary(p), /已回复/); assert.doesNotMatch(contactSummary(p), /旧状态/);
   delete p.application; assert.equal(fundingSummary(p), '旧摘要'); assert.equal(contactSummary(p), '旧状态');
+});
+
+test('官网未公布时区时保留官方日期但不倒计时，精确时刻可往返展示', () => {
+  const w = demoWorkspace('phd'); w.tasks = []; w.programs = [w.programs[0]];
+  const p = w.programs[0]; w.materials = []; p.application = blankApplication('岗位招聘');
+  p.deadline = { date: '2026-11-30', time: '', timezone: '', basis: 'official', sourceId: 'demo-source', cycle: '招聘编号示例' };
+  p.application.milestones = [{ id: 'funding', title: '奖学金轮', deadline: { date: '2027-01-06', time: '12:00', timezone: 'Europe/London', basis: 'official', sourceId: 'demo-source', cycle: '2027-28' }, status: '待处理', note: '' }];
+  assert.doesNotThrow(() => validateWorkspace(w));
+  assert.deepEqual(actionDates(w).map(e => e.label), ['奖学金轮']);
+  const esc = v => String(v ?? ''); const c = { esc, pill: esc, heading: () => '', promptButton: () => '', trackFilter: () => '', matchesTrack: () => true, sourceLink: () => '来源', empty: () => '' };
+  assert.match(applicationsView(w, c), /12:00/); assert.match(lifecycleDates(w, c), /12:00/);
+  p.application.milestones[0].deadline.time = '12:60'; assert.throws(() => validateWorkspace(w), /HH:MM/);
+  p.application.milestones[0].deadline.time = ''; p.application.milestones[0].deadline.timezone = ''; validateWorkspace(w);
+  assert.equal(actionDates(w).length, 0);
+});
+
+test('联系型推荐人记录同意和资料，区别于旧版推荐信的提交与追交', () => {
+  const w = demoWorkspace('phd'), p = w.programs[0]; p.application = blankApplication('岗位招聘');
+  const r = { id: 'contact-ref', kind: 'contact', label: '测试推荐人', status: '已同意', due: '2027-01-01', submittedOn: '', contactDetails: '虚构联系资料', note: 'CV列可联系推荐人，不要求上传信。' };
+  p.application.references = [r]; validateWorkspace(w);
+  assert.deepEqual(referenceSummary([r]), { label: '可联系推荐人', text: '1 / 1 已同意' });
+  assert.ok(!actionDates(w).some(e => e.label.includes(r.label)));
+  const esc = v => String(v ?? ''); const c = { esc, pill: esc, heading: () => '', promptButton: () => '', trackFilter: () => '', matchesTrack: q => q.id === p.id, sourceLink: () => '', empty: () => '' };
+  const page = applicationsView(w, c); assert.match(page, /1 \/ 1 已同意/); assert.match(page, /虚构联系资料/); assert.doesNotMatch(page, /0 \/ 1 已提交|未提交/);
+  r.contactDetails = ''; assert.match(applicationsView(w, c), /联系方式待补充/);
+  r.status = '待邀请'; assert.ok(actionDates(w).some(e => e.label === `推荐人资料安排 · ${r.label}`));
+  r.status = '已提交'; assert.throws(() => validateWorkspace(w), /可联系推荐人/);
+  r.status = '已同意'; r.submittedOn = '2027-01-01'; assert.throws(() => validateWorkspace(w), /可联系推荐人/); r.submittedOn = '';
+  const letter = { id: 'old-letter', label: '旧版信件记录', status: '已同意', due: '', submittedOn: '', note: '' };
+  p.application.references.push(letter); validateWorkspace(w); assert.match(referenceSummary(p.application.references).text, /推荐信 0 \/ 1 已提交 · 可联系推荐人 1 \/ 1 已同意/);
+  letter.status = '已提交'; assert.throws(() => validateWorkspace(w), /推荐信已提交/);
 });

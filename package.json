@@ -1,6 +1,6 @@
 {
   "name": "grad-atlas",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Agent 维护的研究生申请工作台，支持硕士与博士申请。",
   "type": "module",
   "license": "MIT",

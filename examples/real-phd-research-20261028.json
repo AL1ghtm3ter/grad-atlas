@@ -1,0 +1,1403 @@
+{
+  "version": 1,
+  "revision": 0,
+  "updatedAt": null,
+  "profile": {
+    "displayName": "",
+    "track": "phd",
+    "cycle": "",
+    "field": "物理",
+    "regions": "欧洲、美国",
+    "education": "QMUL · 理论物理 MSc 在读",
+    "academicRecord": "",
+    "language": "",
+    "budget": "",
+    "constraints": "",
+    "researchInterests": "",
+    "researchExperience": "",
+    "publications": "",
+    "supervisorPreferences": "",
+    "fundingNeeds": "",
+    "prerequisites": "",
+    "degreeDocuments": "",
+    "goals": "申请欧洲与美国博士",
+    "customFields": {
+      "测试角色": "虚构功能测试角色，不是实际个人档案。仅背景前提为 QMUL 理论物理 MSc 在读，拟申请欧洲与美国博士。",
+      "未知背景": "本科、GPA、课程与实验、国籍、英语成绩、科研成果、预算、资助需求和最终毕业时间均未知；对应基础字段留空。",
+      "目标含义": "以下四项为真实官方来源研究基线，不表示申请者已决定申请、满足资格、获导师接收或获资助。",
+      "证据日期": "官方事实核验日为2026-10-28；公开页面开放观察、年例规则、推导与个人进度分别记录。"
+    }
+  },
+  "programs": [
+    {
+      "id": "leiden-ml-quantum-16972",
+      "name": "机器学习与量子系统博士岗位（16972）",
+      "institution": "Leiden University",
+      "region": "荷兰",
+      "track": "phd",
+      "stage": "调研中",
+      "url": "https://careers.universiteitleiden.nl/job/PhD-in-Machine-Learning-for-Quantum-Systems-(1_0-FTE)/16972-en_US/",
+      "fit": "资格及研究匹配待核对；专业名称不能替代课程、方法与科研证据。",
+      "nextAction": "补齐未知背景并逐项核对资格；实际申请行动需另行明确。",
+      "deadline": {
+        "date": "2026-11-30",
+        "time": "",
+        "timezone": "",
+        "basis": "official",
+        "sourceId": "eu-l1",
+        "cycle": "2026招聘；最晚2027年11月开始"
+      },
+      "facts": [
+        {
+          "label": "开放观察",
+          "value": "2026-10-28岗位页仍列申请入口，未完成门户登录核验。",
+          "sourceId": "eu-l1",
+          "cycle": "2026招聘；最晚2027年11月开始",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "截止精度",
+          "value": "2026-11-30前申请获完整考虑；官网无时刻/时区，不补23:59或IANA，不生成倒计时。",
+          "sourceId": "eu-l1",
+          "cycle": "2026招聘；最晚2027年11月开始",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "学术条件",
+          "value": "物理、计算机或相近硕士；Python和ML动机，量子/数值或深度学习理论优先。在读者最晚授位节点未说明。",
+          "sourceId": "eu-l1",
+          "cycle": "2026招聘；最晚2027年11月开始",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "真实研究方向",
+          "value": "ML与量子多体交叉，可解释、可靠、可扩展方法；须证明方法匹配，不能仅凭理论物理MSc判合格。",
+          "sourceId": "eu-l1",
+          "cycle": "2026招聘；最晚2027年11月开始",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "语言",
+          "value": "英语口语与书面熟练；分数及豁免未公布。",
+          "sourceId": "eu-l1",
+          "cycle": "2026招聘；最晚2027年11月开始",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "申请材料",
+          "value": "CV、1页动机信；可选1页科研陈述。",
+          "sourceId": "eu-l1",
+          "cycle": "2026招聘；最晚2027年11月开始",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "推荐人不等于推荐信",
+          "value": "CV至少两名同意被联系的科学家；上传信件数量及单独期限未公布。",
+          "sourceId": "eu-l1",
+          "cycle": "2026招聘；最晚2027年11月开始",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "薪资与合同",
+          "value": "38小时/周；税前月薪EUR3,204–4,051；初始1年，正评后延3年；另有津贴。不是个人已获合同。",
+          "sourceId": "eu-l1",
+          "cycle": "2026招聘；最晚2027年11月开始",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "学费未知",
+          "value": "岗位页未公布博士培训收费/学费，不能填零。",
+          "sourceId": "eu-l1",
+          "cycle": "2026招聘；最晚2027年11月开始",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "甄选与入职",
+          "value": "面试窗口写December/January 2027，December年份未单列；起始灵活、最晚2027年11月。结果/答复/注册日未知。",
+          "sourceId": "eu-l1",
+          "cycle": "2026招聘；最晚2027年11月开始",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "申请入口",
+          "value": "岗位按钮端点存在，未确认端点登录；未注册或递交。",
+          "sourceId": "eu-l1",
+          "cycle": "2026招聘；最晚2027年11月开始",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "有条件的居留流程",
+          "value": "国籍及居留未知；适用时再按IND研究人员规则核对雇主、学历、合同/hosting agreement。",
+          "sourceId": "eu-n1",
+          "cycle": "现行规则；个人适用性未知",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "supervisor": "Anna Dawid（岗位公开导师；未联系或确认接收）",
+      "lab": "Interpretable Machines for Physics / aQa",
+      "funding": "公开政策见事实；个人资助待核对",
+      "contactStatus": "未建立联系记录",
+      "application": {
+        "route": "岗位招聘",
+        "portal": "https://careers.universiteitleiden.nl/talentcommunity/apply/16972/?locale=en_US",
+        "status": "未开始",
+        "submittedOn": "",
+        "referenceNumber": "",
+        "note": "真实官方事实基线；未建立申请、邀请推荐人、联系导师、递交、面试或录取。",
+        "references": [],
+        "contacts": [],
+        "interviews": [],
+        "milestones": [],
+        "decision": {
+          "status": "待结果",
+          "receivedOn": "",
+          "responseDue": "",
+          "timezone": "",
+          "conditions": "",
+          "note": ""
+        },
+        "funding": {
+          "status": "待核对",
+          "type": "",
+          "amount": "",
+          "currency": "",
+          "period": "",
+          "duration": "",
+          "tuition": "",
+          "sourceId": "",
+          "note": ""
+        },
+        "enrollment": [
+          {
+            "id": "degree",
+            "title": "学位、最终成绩单与注册条件",
+            "status": "待确认",
+            "due": "",
+            "note": "硕士最晚完成节点及研究生院注册要求未知，向校方核对。"
+          },
+          {
+            "id": "funding",
+            "title": "资助书、合同与经费安排",
+            "status": "待确认",
+            "due": "",
+            "note": "岗位政策不等于已获聘；以后核对正式合同、税前工资、期限与收费。"
+          },
+          {
+            "id": "immigration",
+            "title": "签证或居留要求",
+            "status": "待确认",
+            "due": "",
+            "note": "先确认国籍、目的地和个人情况；由官方规则判断是否适用。"
+          },
+          {
+            "id": "housing",
+            "title": "住宿、保险与出行",
+            "status": "待确认",
+            "due": "",
+            "note": "根据实际入学时间安排，避免在条件未确定时作不可撤销预订。"
+          },
+          {
+            "id": "registration",
+            "title": "注册、入组与迎新",
+            "status": "待确认",
+            "due": "",
+            "note": "核对校方注册、院系和课题组要求。"
+          }
+        ]
+      },
+      "customFields": {
+        "基线性质": "真实院校与官方要求；测试角色；无实际申请进度。",
+        "个人资格": "未知",
+        "个人资助": "未知",
+        "时区口径": "仅录入官方明确的时区；IANA归一化如有推导在事实中说明。"
+      }
+    },
+    {
+      "id": "oxford-theoretical-plasma-2027",
+      "name": "理论物理 DPhil（等离子体方向候选）",
+      "institution": "University of Oxford",
+      "region": "英国",
+      "track": "phd",
+      "stage": "调研中",
+      "url": "https://www.ox.ac.uk/admissions/graduate/courses/dphil-theoretical-physics",
+      "fit": "资格及研究匹配待核对；专业名称不能替代课程、方法与科研证据。",
+      "nextAction": "补齐未知背景并逐项核对资格；实际申请行动需另行明确。",
+      "deadline": {
+        "date": "2027-01-06",
+        "time": "12:00",
+        "timezone": "Europe/London",
+        "basis": "official",
+        "sourceId": "eu-o2",
+        "cycle": "2027-28入学"
+      },
+      "facts": [
+        {
+          "label": "开放与学位",
+          "value": "2027-28全日制DPhil页面显示Open；预期2027-10-03开始。",
+          "sourceId": "eu-o2",
+          "cycle": "2027-28入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "两轮截止",
+          "value": "2027-01-06 12:00 UK time为奖学金考虑轮；2027-03-02同一时刻为课程最终截止。",
+          "sourceId": "eu-o2",
+          "cycle": "2027-28入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "UK time映射",
+          "value": "Europe/London为整理者依据UK time的IANA映射；官网未直接写IANA。",
+          "sourceId": "eu-o2",
+          "cycle": "2027-28入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "学术条件",
+          "value": "物理、数学或相关科学一等/strong upper-second；通常等同四年MPhys/MSci。个人学制与成绩未知。",
+          "sourceId": "eu-o2",
+          "cycle": "2027-28入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "GRE与材料",
+          "value": "不要求GRE/GMAT；官方成绩单、必要认证英译、CV及英文研究计划最多500词（含参考文献）。",
+          "sourceId": "eu-o2",
+          "cycle": "2027-28入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "科研匹配",
+          "value": "候选含等离子体动力学、解析及gyrokinetic模拟；须核实本人兴趣与方法训练。",
+          "sourceId": "eu-o1",
+          "cycle": "2027-28入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "导师与路径",
+          "value": "通过中央申请；无需申请前锁定最终导师或课题。plasma与其他物理分支入口须按项目核对。",
+          "sourceId": "eu-o3",
+          "cycle": "2027-28入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "英语门槛",
+          "value": "Standard：IELTS7、单项6.5；成绩距开学不超过两年；新TOEFL限制需按现行页面复核。",
+          "sourceId": "eu-o4",
+          "cycle": "2027-28入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "语言豁免边界",
+          "value": "认可院校全日制至少9个月、全英文教学与评估、完成学位至入学不超过2学年者可申请豁免。在读也可申请，由系酌情批准，通常按offer补交完成学位证明。英国MSc在读不自动豁免。",
+          "sourceId": "eu-o5",
+          "cycle": "2027-28入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "推荐信",
+          "value": "登记三名推荐人；至少两封在课程截止前到达且其他材料完整时可开始评估，第三封仍可能要求。",
+          "sourceId": "eu-o2",
+          "cycle": "2027-28入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "奖学金非承诺",
+          "value": "按一月截止完整申请且获course offer后，才评估适用的Oxford奖学金；多数自动考虑，部分另申，录取不保证资助。",
+          "sourceId": "eu-o2",
+          "cycle": "2027-28入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "费用不作个人归类",
+          "value": "年学费Home GBP10,940/Overseas GBP36,260；申请费GBP20；生活费GBP1,475–2,175/月。个人费率及净自付未知。",
+          "sourceId": "eu-o2",
+          "cycle": "2027-28入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "面试安排通则",
+          "value": "通常面试，至少两名学者；一般2–3月决定邀请。个人是否获邀、具体日期及结果未知。",
+          "sourceId": "eu-o2",
+          "cycle": "2027-28入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "资助与入学分开",
+          "value": "奖学金结果可与学术录取分开通知；完成offer条件后按校方指引继续签证和注册。没有个人offer或已完成状态。",
+          "sourceId": "eu-o7",
+          "cycle": "2027-28入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "plasma专项截止",
+          "value": "plasma 2027页明确2027年10月入学、1月6日截止；课程3月终轮不能视作该专项资助窗口延期。",
+          "sourceId": "eu-o1",
+          "cycle": "2027-28入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "推荐人提交方式",
+          "value": "推荐人本人提交英文推荐；系统通知中由申请人输入的日期不构成大学另设宽限期，未发现独立宽限日。",
+          "sourceId": "eu-o6",
+          "cycle": "2027-28入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "plasma招生计划",
+          "value": "2027方向计划收1–3人，取决于申请与资助；2026年3人全额资助只是历史结果，个人资金未知。",
+          "sourceId": "eu-o1",
+          "cycle": "2027-28入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "学术结果通则",
+          "value": "学术结果通常在所选截止后8–10周通知，不是个案保证日期；多数奖学金通知在2月下旬至6月。",
+          "sourceId": "eu-o7",
+          "cycle": "2027-28入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "offer后条件",
+          "value": "正式offer会列个人学术和财务条件，须Financial Declaration；ATAS是否适用由系确认。当前没有个人offer或资格结论。",
+          "sourceId": "eu-o2",
+          "cycle": "2027-28入学",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "supervisor": "公开候选含 Michael Barnes、Alexander Schekochihin 等；未确定导师",
+      "lab": "Plasma Theory（候选方向）",
+      "funding": "公开政策见事实；个人资助待核对",
+      "contactStatus": "未建立联系记录",
+      "application": {
+        "route": "项目制",
+        "portal": "https://evision.ox.ac.uk/urd/sits.urd/run/siw_ipp_lgn.login?code1=RD_AE1_NAL&code2=0012&process=siw_ipp_app",
+        "status": "未开始",
+        "submittedOn": "",
+        "referenceNumber": "",
+        "note": "真实官方事实基线；未建立申请、邀请推荐人、联系导师、递交、面试或录取。",
+        "references": [],
+        "contacts": [],
+        "interviews": [],
+        "milestones": [
+          {
+            "id": "january-funding",
+            "title": "一月轮及奖学金考虑截止",
+            "deadline": {
+              "date": "2027-01-06",
+              "time": "12:00",
+              "timezone": "Europe/London",
+              "basis": "official",
+              "sourceId": "eu-o2",
+              "cycle": "2027-28入学"
+            },
+            "status": "待处理",
+            "note": "官方UK time归一化为Europe/London；个人是否选择该轮未知。"
+          },
+          {
+            "id": "march-final",
+            "title": "课程最终申请截止",
+            "deadline": {
+              "date": "2027-03-02",
+              "time": "12:00",
+              "timezone": "Europe/London",
+              "basis": "official",
+              "sourceId": "eu-o2",
+              "cycle": "2027-28入学"
+            },
+            "status": "待处理",
+            "note": "不是plasma专项奖学金延期。"
+          },
+          {
+            "id": "january-references",
+            "title": "一月轮至少两封推荐信到达",
+            "deadline": {
+              "date": "2027-01-06",
+              "time": "12:00",
+              "timezone": "Europe/London",
+              "basis": "official",
+              "sourceId": "eu-o2",
+              "cycle": "2027-28入学"
+            },
+            "status": "待处理",
+            "note": "三名推荐人，至少两封随本轮截止；第三封另按通知，无已核宽限。"
+          }
+        ],
+        "decision": {
+          "status": "待结果",
+          "receivedOn": "",
+          "responseDue": "",
+          "timezone": "",
+          "conditions": "",
+          "note": ""
+        },
+        "funding": {
+          "status": "待核对",
+          "type": "",
+          "amount": "",
+          "currency": "",
+          "period": "",
+          "duration": "",
+          "tuition": "",
+          "sourceId": "",
+          "note": ""
+        },
+        "enrollment": [
+          {
+            "id": "degree",
+            "title": "学位、最终成绩单与注册条件",
+            "status": "待确认",
+            "due": "",
+            "note": "未来如获offer，分别核对硕士完成、最终成绩单与学位条件。"
+          },
+          {
+            "id": "funding",
+            "title": "资助书、合同与经费安排",
+            "status": "待确认",
+            "due": "",
+            "note": "确认正式资助依据、金额、期限和学费覆盖。"
+          },
+          {
+            "id": "immigration",
+            "title": "签证或居留要求",
+            "status": "待确认",
+            "due": "",
+            "note": "国籍未知；如适用，再核ATAS及签证；不预判身份。"
+          },
+          {
+            "id": "housing",
+            "title": "住宿、保险与出行",
+            "status": "待确认",
+            "due": "",
+            "note": "根据实际入学时间安排，避免在条件未确定时作不可撤销预订。"
+          },
+          {
+            "id": "registration",
+            "title": "注册、入组与迎新",
+            "status": "待确认",
+            "due": "",
+            "note": "核对校方注册、院系和课题组要求。"
+          }
+        ]
+      },
+      "customFields": {
+        "基线性质": "真实院校与官方要求；测试角色；无实际申请进度。",
+        "个人资格": "未知",
+        "个人资助": "未知",
+        "时区口径": "仅录入官方明确的时区；IANA归一化如有推导在事实中说明。"
+      }
+    },
+    {
+      "id": "mit-physics-phd",
+      "name": "物理 PhD",
+      "institution": "Massachusetts Institute of Technology",
+      "region": "美国",
+      "track": "phd",
+      "stage": "调研中",
+      "url": "https://physics.mit.edu/academic-programs/graduate-students/graduate-admissions/",
+      "fit": "资格及研究匹配待核对；专业名称不能替代课程、方法与科研证据。",
+      "nextAction": "补齐未知背景并逐项核对资格；实际申请行动需另行明确。",
+      "deadline": {
+        "date": "",
+        "time": "",
+        "timezone": "",
+        "basis": "unknown",
+        "sourceId": "us-m1",
+        "cycle": "2027秋季（待核实）"
+      },
+      "facts": [
+        {
+          "label": "当轮周期未知",
+          "value": "官网仍有Fall2025活动；每年9/15—12/15 23:59 EST为次年秋季通则，不标Fall2027已开放。",
+          "sourceId": "us-m1",
+          "cycle": "年例规则；2027当轮未确认",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "学历门槛",
+          "value": "入学前认可本科或等同学位；无需先有硕士。本科及授位日期未知。",
+          "sourceId": "us-m3",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "课程与GPA",
+          "value": "通常物理本科或大量物理课；整体GPA无最低线，相关课程仍审查。",
+          "sourceId": "us-m1",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "课程填报",
+          "value": "物理、数学及其他科学课程分组填写；未核个人课程、实验或成绩。",
+          "sourceId": "us-m4",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "PGRE",
+          "value": "推荐但非必需；不能把未交成绩视作资格不符。",
+          "sourceId": "us-m1",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "在读与最终材料",
+          "value": "初审非正式成绩单、在读课程清单；秋季成绩可后补，最终成绩单为注册条件。",
+          "sourceId": "us-m1",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "研究与匹配",
+          "value": "候选领域含高能粒子理论、量子引力/场论与量子信息；实际方向未选。研究领域及建议审阅教师用于分配审阅，不等于导师接收。",
+          "sourceId": "us-m2",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "研究陈述",
+          "value": "建议2页、12磅、单倍；科研经历与拟研究问题。论文不是入学必需。",
+          "sourceId": "us-m2",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "个人陈述",
+          "value": "自选，建议最多500词。",
+          "sourceId": "us-m2",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "英语自动豁免",
+          "value": "近5年所列六国英语院校3–4年本科/同等学位等条件；研究生学位不算自动豁免。",
+          "sourceId": "us-m5",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "院系语言waiver",
+          "value": "与自动豁免分开，须实际获批；英国在读MSc不能直接判通过。",
+          "sourceId": "us-m6",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "语言最低线冲突一",
+          "value": "主招生FAQ称TOEFL/IELTS无最低线。",
+          "sourceId": "us-m1",
+          "cycle": "现行通则；存在冲突",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "语言最低线冲突二",
+          "value": "Additional Guidance列IELTS7、TOEFL iBT100/iBT26 5为最低；OGE亦列7/100，执行口径待校方确认。",
+          "sourceId": "us-m2",
+          "cycle": "现行通则；存在冲突",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "推荐信",
+          "value": "三封足够、最多六封；推荐人通过各申请门户提交。未核独立于网申的截止或宽限。",
+          "sourceId": "us-m3",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "申请费用",
+          "value": "USD90。",
+          "sourceId": "us-m4",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "资金政策",
+          "value": "状态良好时通常逐年全学费、生活津贴及12个月医保；fellowship/RA/TA。个人award、金额及条件未知。",
+          "sourceId": "us-m7",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "面试与结果",
+          "value": "可能视频面试；通则二月底通知、秋季入学。2027面试/答复/注册日未知。",
+          "sourceId": "us-m1",
+          "cycle": "年例规则；2027当轮未确认",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "时间信息不升级",
+          "value": "EST可归一化America/New_York但当轮日期未确认，主截止日期留空，不建2026倒计时。",
+          "sourceId": "us-m1",
+          "cycle": "年例规则；2027当轮未确认",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "supervisor": "",
+      "lab": "",
+      "funding": "公开政策见事实；个人资助待核对",
+      "contactStatus": "未建立联系记录",
+      "application": {
+        "route": "项目制",
+        "portal": "https://apply.mit.edu/apply/",
+        "status": "未开始",
+        "submittedOn": "",
+        "referenceNumber": "",
+        "note": "真实官方事实基线；未建立申请、邀请推荐人、联系导师、递交、面试或录取。",
+        "references": [],
+        "contacts": [],
+        "interviews": [],
+        "milestones": [],
+        "decision": {
+          "status": "待结果",
+          "receivedOn": "",
+          "responseDue": "",
+          "timezone": "",
+          "conditions": "",
+          "note": ""
+        },
+        "funding": {
+          "status": "待核对",
+          "type": "",
+          "amount": "",
+          "currency": "",
+          "period": "",
+          "duration": "",
+          "tuition": "",
+          "sourceId": "",
+          "note": ""
+        },
+        "enrollment": [
+          {
+            "id": "degree",
+            "title": "学位、最终成绩单与注册条件",
+            "status": "待确认",
+            "due": "",
+            "note": "最终成绩单为注册条件；最终证书形式及2027提交日仍未知。"
+          },
+          {
+            "id": "funding",
+            "title": "资助书、合同与经费安排",
+            "status": "待确认",
+            "due": "",
+            "note": "确认正式资助依据、金额、期限和学费覆盖。"
+          },
+          {
+            "id": "immigration",
+            "title": "签证或居留要求",
+            "status": "待确认",
+            "due": "",
+            "note": "先确认国籍、目的地和个人情况；由官方规则判断是否适用。"
+          },
+          {
+            "id": "housing",
+            "title": "住宿、保险与出行",
+            "status": "待确认",
+            "due": "",
+            "note": "根据实际入学时间安排，避免在条件未确定时作不可撤销预订。"
+          },
+          {
+            "id": "registration",
+            "title": "注册、入组与迎新",
+            "status": "待确认",
+            "due": "",
+            "note": "核对校方注册、院系和课题组要求。"
+          }
+        ]
+      },
+      "customFields": {
+        "基线性质": "真实院校与官方要求；测试角色；无实际申请进度。",
+        "个人资格": "未知",
+        "个人资助": "未知",
+        "时区口径": "仅录入官方明确的时区；IANA归一化如有推导在事实中说明。"
+      }
+    },
+    {
+      "id": "princeton-physics-phd",
+      "name": "物理 PhD",
+      "institution": "Princeton University",
+      "region": "美国",
+      "track": "phd",
+      "stage": "调研中",
+      "url": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/physics",
+      "fit": "资格及研究匹配待核对；专业名称不能替代课程、方法与科研证据。",
+      "nextAction": "补齐未知背景并逐项核对资格；实际申请行动需另行明确。",
+      "deadline": {
+        "date": "2026-12-15",
+        "time": "23:59",
+        "timezone": "America/New_York",
+        "basis": "official",
+        "sourceId": "us-p2",
+        "cycle": "2027秋季入学"
+      },
+      "facts": [
+        {
+          "label": "当轮开放",
+          "value": "研究生院明确Fall2027已开放；仅核验公开页，未登录或创建申请。",
+          "sourceId": "us-p1",
+          "cycle": "2027秋季入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "网申与材料截止",
+          "value": "2026-12-15 23:59 Eastern Standard Time；全体必需支持材料同截止，不推导晚交宽限。",
+          "sourceId": "us-p3",
+          "cycle": "2027秋季入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "EST时区映射",
+          "value": "America/New_York为整理者归一化，非大学原写IANA；上海对应2026-12-16 12:59。",
+          "sourceId": "us-p2",
+          "cycle": "2027秋季入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "学历",
+          "value": "入学前认可本科/等同学位；少于三年标准学制不等同。",
+          "sourceId": "us-p4",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "核心物理背景",
+          "value": "不强制物理学位；须有力学、电磁、热统、量子及实验。未核个人核心课程。",
+          "sourceId": "us-p5",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "GPA未知",
+          "value": "已核页面未找到GPA下限，不把未找到写成没有门槛。",
+          "sourceId": "us-p5",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "GRE",
+          "value": "Fall2027 General与Physics Subject均Optional/Not Required。",
+          "sourceId": "us-p6",
+          "cycle": "2027秋季入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "研究方向",
+          "value": "至少选择一项领域；可含数学物理、高能理论、重力/宇宙学、凝聚态等。未选个人课题或导师。",
+          "sourceId": "us-p2",
+          "cycle": "2027秋季入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "研究匹配",
+          "value": "SOP突出科研贡献、Princeton具体研究组/教师匹配；列教师不代表其有空位或同意指导。",
+          "sourceId": "us-p10",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "SOP与CV",
+          "value": "英文Academic SOP最多1000词；提交CV。",
+          "sourceId": "us-p11",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "另需个人陈述",
+          "value": "英文Personal Statement最多250词。",
+          "sourceId": "us-p12",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "英语豁免",
+          "value": "全英文本科入学前授位，或申请开放时已完成两学年全日制全英文研究生学习，须院校证明；另有主要语言分支。",
+          "sourceId": "us-p7",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "英语考试",
+          "value": "TOEFL/IELTS/DET；无统一最低分；建议截止前三周送分，缺必需成绩不发offer。",
+          "sourceId": "us-p7",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "成绩单",
+          "value": "每所现/曾就读院校非正式成绩单及评分说明，必要官方英译；不收学生系统截图。",
+          "sourceId": "us-p8",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "推荐信要求",
+          "value": "恰好三封英文推荐信；可先交网申，不表示信件可迟于全部材料截止。",
+          "sourceId": "us-p13",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "费用",
+          "value": "USD90。",
+          "sourceId": "us-p2",
+          "cycle": "2027秋季入学",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "资金政策",
+          "value": "前五年全额支持，以学术进展和职责达标为条件；个人award与金额未知。",
+          "sourceId": "us-p14",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "资金范围",
+          "value": "常规注册期间全学费、学生医保及基本津贴。",
+          "sourceId": "us-p15",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "结果与答复通则",
+          "value": "一月底至3/15，候补可近4/15；答复一般4/15 23:59 ET。未据此伪造2027个案答复期限。",
+          "sourceId": "us-p16",
+          "cycle": "年例通则；非个人offer",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "正式接受流程",
+          "value": "只有门户答复表提交才算回应；院系沟通不等于接受，接受也不等于注册。",
+          "sourceId": "us-p17",
+          "cycle": "现行通则",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "最终材料",
+          "value": "接受后一般8/1前正式最终成绩单，显示授位及日期；缺失则附学位证书。个案日期未知。",
+          "sourceId": "us-p9",
+          "cycle": "现行通则；非个人offer",
+          "verifiedAt": "2026-10-28"
+        },
+        {
+          "label": "面试与开学未知",
+          "value": "未核统一面试要求；系页August/September开始月份冲突，精确注册日留空。",
+          "sourceId": "us-p10",
+          "cycle": "现行通则；存在冲突",
+          "verifiedAt": "2026-10-28"
+        }
+      ],
+      "supervisor": "",
+      "lab": "",
+      "funding": "公开政策见事实；个人资助待核对",
+      "contactStatus": "未建立联系记录",
+      "application": {
+        "route": "项目制",
+        "portal": "https://gradschool.princeton.edu/admission-onboarding/apply",
+        "status": "未开始",
+        "submittedOn": "",
+        "referenceNumber": "",
+        "note": "真实官方事实基线；未建立申请、邀请推荐人、联系导师、递交、面试或录取。",
+        "references": [],
+        "contacts": [],
+        "interviews": [],
+        "milestones": [
+          {
+            "id": "required-materials",
+            "title": "必需材料及三封推荐信截止",
+            "deadline": {
+              "date": "2026-12-15",
+              "time": "23:59",
+              "timezone": "America/New_York",
+              "basis": "official",
+              "sourceId": "us-p3",
+              "cycle": "2027秋季入学"
+            },
+            "status": "待处理",
+            "note": "采用全部必需材料同截止规则；推荐信个人记录尚空。"
+          }
+        ],
+        "decision": {
+          "status": "待结果",
+          "receivedOn": "",
+          "responseDue": "",
+          "timezone": "",
+          "conditions": "",
+          "note": ""
+        },
+        "funding": {
+          "status": "待核对",
+          "type": "",
+          "amount": "",
+          "currency": "",
+          "period": "",
+          "duration": "",
+          "tuition": "",
+          "sourceId": "",
+          "note": ""
+        },
+        "enrollment": [
+          {
+            "id": "degree",
+            "title": "学位、最终成绩单与注册条件",
+            "status": "待确认",
+            "due": "",
+            "note": "通则为接受后8/1交正式最终成绩单及授位证据；不写成已收到的2027条件。"
+          },
+          {
+            "id": "funding",
+            "title": "资助书、合同与经费安排",
+            "status": "待确认",
+            "due": "",
+            "note": "确认正式资助依据、金额、期限和学费覆盖。"
+          },
+          {
+            "id": "immigration",
+            "title": "签证或居留要求",
+            "status": "待确认",
+            "due": "",
+            "note": "先确认国籍、目的地和个人情况；由官方规则判断是否适用。"
+          },
+          {
+            "id": "housing",
+            "title": "住宿、保险与出行",
+            "status": "待确认",
+            "due": "",
+            "note": "根据实际入学时间安排，避免在条件未确定时作不可撤销预订。"
+          },
+          {
+            "id": "registration",
+            "title": "注册、入组与迎新",
+            "status": "待确认",
+            "due": "",
+            "note": "开学月份官网表述冲突；精确注册与入组日期待校方通知。"
+          }
+        ]
+      },
+      "customFields": {
+        "基线性质": "真实院校与官方要求；测试角色；无实际申请进度。",
+        "个人资格": "未知",
+        "个人资助": "未知",
+        "时区口径": "仅录入官方明确的时区；IANA归一化如有推导在事实中说明。"
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "id": "leiden-ml-quantum-16972-background",
+      "title": "补齐资格与研究证据",
+      "note": "核对本科、课程/实验、科研与语言；当前未知不填合格。",
+      "stage": "准备",
+      "track": "phd",
+      "programId": "leiden-ml-quantum-16972",
+      "due": "",
+      "done": false,
+      "priority": "normal"
+    },
+    {
+      "id": "leiden-ml-quantum-16972-sources",
+      "title": "复核周期、日期与缺口",
+      "note": "按项目官方页面核对动态状态，保留不明确的时刻、时区和条件。",
+      "stage": "选校",
+      "track": "phd",
+      "programId": "leiden-ml-quantum-16972",
+      "due": "",
+      "done": false,
+      "priority": "normal"
+    },
+    {
+      "id": "oxford-theoretical-plasma-2027-background",
+      "title": "补齐资格与研究证据",
+      "note": "核对本科、课程/实验、科研与语言；当前未知不填合格。",
+      "stage": "准备",
+      "track": "phd",
+      "programId": "oxford-theoretical-plasma-2027",
+      "due": "",
+      "done": false,
+      "priority": "normal"
+    },
+    {
+      "id": "oxford-theoretical-plasma-2027-sources",
+      "title": "复核周期、日期与缺口",
+      "note": "按项目官方页面核对动态状态，保留不明确的时刻、时区和条件。",
+      "stage": "选校",
+      "track": "phd",
+      "programId": "oxford-theoretical-plasma-2027",
+      "due": "",
+      "done": false,
+      "priority": "normal"
+    },
+    {
+      "id": "mit-physics-phd-background",
+      "title": "补齐资格与研究证据",
+      "note": "核对本科、课程/实验、科研与语言；当前未知不填合格。",
+      "stage": "准备",
+      "track": "phd",
+      "programId": "mit-physics-phd",
+      "due": "",
+      "done": false,
+      "priority": "normal"
+    },
+    {
+      "id": "mit-physics-phd-sources",
+      "title": "复核周期、日期与缺口",
+      "note": "按项目官方页面核对动态状态，保留不明确的时刻、时区和条件。",
+      "stage": "选校",
+      "track": "phd",
+      "programId": "mit-physics-phd",
+      "due": "",
+      "done": false,
+      "priority": "normal"
+    },
+    {
+      "id": "princeton-physics-phd-background",
+      "title": "补齐资格与研究证据",
+      "note": "核对本科、课程/实验、科研与语言；当前未知不填合格。",
+      "stage": "准备",
+      "track": "phd",
+      "programId": "princeton-physics-phd",
+      "due": "",
+      "done": false,
+      "priority": "normal"
+    },
+    {
+      "id": "princeton-physics-phd-sources",
+      "title": "复核周期、日期与缺口",
+      "note": "按项目官方页面核对动态状态，保留不明确的时刻、时区和条件。",
+      "stage": "选校",
+      "track": "phd",
+      "programId": "princeton-physics-phd",
+      "due": "",
+      "done": false,
+      "priority": "normal"
+    }
+  ],
+  "materials": [
+    {
+      "id": "background-evidence",
+      "name": "本科、在读学位、课程与成绩证据",
+      "track": "phd",
+      "status": "待核对",
+      "note": "尚无任何真实材料；不把在读说明写成文件已就绪。",
+      "programId": ""
+    },
+    {
+      "id": "language-evidence",
+      "name": "语言成绩或豁免证明",
+      "track": "phd",
+      "status": "待核对",
+      "note": "各校规则分别核对；英国在读不自动满足。",
+      "programId": ""
+    },
+    {
+      "id": "research-evidence",
+      "name": "科研、研究陈述与方法匹配证据",
+      "track": "phd",
+      "status": "待核对",
+      "note": "不编造论文、科研项目或研究成果。",
+      "programId": ""
+    },
+    {
+      "id": "reference-requirements",
+      "name": "逐项目推荐要求",
+      "track": "phd",
+      "status": "待核对",
+      "note": "莱顿至少两名可联系推荐人，牛津登记三名/截止至少两封，美国各校三封；尚未邀请任何人。",
+      "programId": ""
+    }
+  ],
+  "sources": [
+    {
+      "id": "eu-l1",
+      "label": "PhD in Machine Learning for Quantum Systems (1.0 FTE)",
+      "url": "https://careers.universiteitleiden.nl/job/PhD-in-Machine-Learning-for-Quantum-Systems-(1_0-FTE)/16972-en_US/",
+      "cycle": "2026岗位招聘",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Job Description；What you bring；Applications；What we offer；Apply按钮。仅给日期，未给时刻/时区。 事实核验与网页抓取状态分开；发布日期未见，不以核验日替代。"
+    },
+    {
+      "id": "eu-o1",
+      "label": "Oxford Plasma DPhil Applications 2027",
+      "url": "https://www-thphys.physics.ox.ac.uk/research/plasma/dphil27.html",
+      "cycle": "2027-28或现行申请通则；逐项见事实",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：2027 plasma competition；Application routes；Projects；资助名额。 事实核验与网页抓取状态分开；发布日期未见，不以核验日替代。"
+    },
+    {
+      "id": "eu-o2",
+      "label": "DPhil in Theoretical Physics",
+      "url": "https://www.ox.ac.uk/admissions/graduate/courses/dphil-theoretical-physics",
+      "cycle": "2027-28或现行申请通则；逐项见事实",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：2027-28；Entry requirements；Completing your application；Deadlines；Funding and costs；Offer conditions。UK time映射Europe/London为整理者推导。 事实核验与网页抓取状态分开；发布日期未见，不以核验日替代。"
+    },
+    {
+      "id": "eu-o3",
+      "label": "Department of Physics: DPhil in Theoretical Physics",
+      "url": "https://www.physics.ox.ac.uk/study/postgraduates/dphil-theoretical-physics",
+      "cycle": "2027-28或现行申请通则；逐项见事实",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：How to apply；无需申请前锁定最终导师。 事实核验与网页抓取状态分开；发布日期未见，不以核验日替代。"
+    },
+    {
+      "id": "eu-o4",
+      "label": "English language proficiency",
+      "url": "https://www.ox.ac.uk/admissions/graduate/application-guide/qualifications-experience-languages-funding/english-language-proficiency",
+      "cycle": "2027-28或现行申请通则；逐项见事实",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Standard level；Test scores；当前新TOEFL限制。 事实核验与网页抓取状态分开；发布日期未见，不以核验日替代。"
+    },
+    {
+      "id": "eu-o5",
+      "label": "English language test waivers",
+      "url": "https://www.ox.ac.uk/admissions/graduate/application-guide/qualifications-experience-languages-funding/english-language-test-waivers",
+      "cycle": "2027-28或现行申请通则；逐项见事实",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Previous education waiver；在读可申请，系裁量且须证据。 事实核验与网页抓取状态分开；发布日期未见，不以核验日替代。"
+    },
+    {
+      "id": "eu-o6",
+      "label": "Information for referees",
+      "url": "https://www.ox.ac.uk/admissions/graduate/application-guide/references/information-for-referees",
+      "cycle": "2027-28或现行申请通则；逐项见事实",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Deadlines for references；推荐人本人在线提交；无独立宽限期。 事实核验与网页抓取状态分开；发布日期未见，不以核验日替代。"
+    },
+    {
+      "id": "eu-o7",
+      "label": "Decision timeline",
+      "url": "https://www.ox.ac.uk/admissions/graduate/after-you-apply/decision-timeline",
+      "cycle": "2027-28或现行申请通则；逐项见事实",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Academic assessment；Funding and scholarships；Finalising your offer。 事实核验与网页抓取状态分开；发布日期未见，不以核验日替代。"
+    },
+    {
+      "id": "eu-o8",
+      "label": "When to apply and deadlines",
+      "url": "https://www.ox.ac.uk/admissions/graduate/application-guide/starting-your-application/when-to-apply",
+      "cycle": "2027-28或现行申请通则；逐项见事实",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Open的含义；When to apply and deadlines。 事实核验与网页抓取状态分开；发布日期未见，不以核验日替代。"
+    },
+    {
+      "id": "eu-o9",
+      "label": "IPP login screen",
+      "url": "https://evision.ox.ac.uk/urd/sits.urd/run/siw_ipp_lgn.login?code1=RD_AE1_NAL&code2=0012&process=siw_ipp_app",
+      "cycle": "2027-28或现行申请通则；逐项见事实",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：只读eVision登录页，未创建账号。 事实核验与网页抓取状态分开；发布日期未见，不以核验日替代。"
+    },
+    {
+      "id": "eu-n1",
+      "label": "Residence permit researcher (Directive (EU) 2016/801)",
+      "url": "https://ind.nl/en/residence-permits/work/residence-permit-researcher-directive-eu-2016801",
+      "cycle": "现行研究人员居留规则；个案适用性未知",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Requirements；Contract or hosting agreement；Apply。适用性取决于国籍/居留及雇主条件。 事实核验与网页抓取状态分开；发布日期未见，不以核验日替代。"
+    },
+    {
+      "id": "us-m1",
+      "label": "MIT Physics Graduate Admissions",
+      "url": "https://physics.mit.edu/academic-programs/graduate-students/graduate-admissions/",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：When/How to Apply；Required for a Complete Application；Admissions/Application FAQs；旧 Fall 2025 活动信息仍在。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-m2",
+      "label": "MIT Physics Additional Guidance",
+      "url": "https://physics.mit.edu/academic-programs/graduate-students/graduate-admissions-additional-guidance/",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Program Information；Academic History；Publications；Research Statement；Personal Statement；Recommendations。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-m3",
+      "label": "MIT OGE Procedures",
+      "url": "https://oge.mit.edu/graduate-admissions/applications/procedures/",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Eligibility to apply；Requirements to apply；Letters of recommendation；Application review/decisions。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-m4",
+      "label": "MIT OGE Physics",
+      "url": "https://oge.mit.edu/programs/physics/",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Application Opens；Deadline；Application Requirements；Standardized Tests；Courses Instructions。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-m5",
+      "label": "MIT ELP exemptions",
+      "url": "https://oge.mit.edu/graduate-admissions/admissions-policies/elp-test-requirement/elp-exemptions/",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Exemption criteria 1/2；Graduate Admissions does not consider graduate degrees。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-m6",
+      "label": "MIT Department ELP waivers",
+      "url": "https://oge.mit.edu/graduate-admissions/admissions-policies/elp-test-requirement/department-elp-waivers/",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Requesting a Department ELP test waiver；General department policies。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-m7",
+      "label": "MIT Physics Financial Support",
+      "url": "https://physics.mit.edu/academic-programs/graduate-students/financial-support/",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Types of Financial Support；General Information；Fellowships。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-p1",
+      "label": "Princeton Apply",
+      "url": "https://gradschool.princeton.edu/admission-onboarding/apply",
+      "cycle": "2027秋季或现行通则；逐项见事实",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Apply to Princeton Graduate School：Fall 2027 now open；仅公开入口。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-p2",
+      "label": "Princeton Physics field",
+      "url": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/physics",
+      "cycle": "2027秋季或现行通则；逐项见事实",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Apply：Fall 2027 deadline；Additional departmental requirements。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-p3",
+      "label": "Princeton Deadlines",
+      "url": "https://gradschool.princeton.edu/admission-onboarding/prepare/application-deadlines",
+      "cycle": "2027秋季或现行通则；逐项见事实",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Deadlines：所有材料同截止；Fall 2027各截止日在2026年。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-p4",
+      "label": "Princeton Prepare",
+      "url": "https://gradschool.princeton.edu/admission-onboarding/prepare",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Eligibility for Admission。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-p5",
+      "label": "Princeton Physics FAQ",
+      "url": "https://phy.princeton.edu/academics/graduate-program/graduate-admissions/faqs",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Physics degree/core courses；GRE；Fixed period of financial support。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-p6",
+      "label": "Princeton GRE",
+      "url": "https://gradschool.princeton.edu/admission-onboarding/prepare/gre",
+      "cycle": "2027秋季或现行通则；逐项见事实",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：GRE Table: Requirements for Fall 2027 Admission，Physics行。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-p7",
+      "label": "Princeton English Proficiency",
+      "url": "https://gradschool.princeton.edu/admission-onboarding/prepare/english-proficiency",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Exemptions from Testing；Who Needs to Submit Scores。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-p8",
+      "label": "Princeton Transcripts",
+      "url": "https://gradschool.princeton.edu/admission-onboarding/prepare/transcripts",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Records；Translations；Sealed copies。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-p9",
+      "label": "Princeton Final Transcripts",
+      "url": "https://gradschool.princeton.edu/admission-onboarding/onboard-arrive/final-transcripts",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Final Transcripts；Final Transcript Requirements。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-p10",
+      "label": "Princeton Physics Admissions",
+      "url": "https://phy.princeton.edu/academics/graduate-program/graduate-admissions",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Key dates；Admissions Process；Application Components；August/September表述冲突。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-p11",
+      "label": "Princeton Academic SOP",
+      "url": "https://gradschool.princeton.edu/admission-onboarding/prepare/academic-statement-purpose",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Requirements；Revisions。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-p12",
+      "label": "Princeton Personal Statement",
+      "url": "https://gradschool.princeton.edu/admission-onboarding/prepare/personal-statement",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Requirements；Revisions。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-p13",
+      "label": "Princeton Recommendation Letters",
+      "url": "https://gradschool.princeton.edu/admission-onboarding/prepare/letters-recommendation",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Requirements；Submission Process；Manage & Track Recommendations。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-p14",
+      "label": "Princeton Physics Funding",
+      "url": "https://phy.princeton.edu/academics/graduate-program/graduate-admissions/graduate-student-funding",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：前五年资助条件、首年支持。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-p15",
+      "label": "Princeton Financial Support Model",
+      "url": "https://gradschool.princeton.edu/financial-support/financial-support-model",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Base Financial Support；Sources of Financial Support。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-p16",
+      "label": "Princeton Decision Notification",
+      "url": "https://gradschool.princeton.edu/admission-onboarding/apply/decision-notification",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：March 15；April 15。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-p17",
+      "label": "Princeton Review Admission Decision",
+      "url": "https://gradschool.princeton.edu/admission-onboarding/review-admission-decision",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：正式门户答复步骤；Pre-Onboarding Tasks。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    },
+    {
+      "id": "us-tz1",
+      "label": "IANA tzdb northamerica",
+      "url": "https://data.iana.org/time-zones/tzdb/northamerica",
+      "cycle": "年例或现行通则；非2027当轮确认",
+      "verifiedAt": "2026-10-28",
+      "note": "章节定位：Zone America/New_York及US规则；IANA映射为整理者推导，非大学原文。 证据为官方正文的web工具返回；curl 403仅为访问失败快照。"
+    }
+  ],
+  "observations": [],
+  "extensions": [],
+  "settings": {
+    "refreshMinutes": 0
+  }
+}

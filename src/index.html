@@ -10,6 +10,7 @@
   <script src="/src/theme-init.js"></script>
   <link rel="icon" href="/src/mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="/src/help.css">
   <script type="module" src="/src/app.mjs"></script>
 </head>
 <body>
@@ -36,7 +37,7 @@
       </div>
     </aside>
     <div class="workspace">
-      <header class="topbar"><span id="breadcrumb">申请工作区 / 总览</span><div class="topbar-right"><a class="mobile-agent" href="#agent">与 Agent 协作</a><span id="connection" role="status"><i class="dot"></i>正在连接</span><time id="today"></time><button id="theme-toggle" class="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="切换至夜间配色"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><span>白昼</span></button></div></header>
+      <header class="topbar"><span id="breadcrumb">申请工作区 / 总览</span><div class="topbar-right"><a class="mobile-agent" href="#agent">与 Agent 协作</a><span id="connection" role="status"><i class="dot"></i>正在连接</span><time id="today"></time><a class="help-link" href="#guide" aria-label="新手教程与功能介绍"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 9a3 3 0 0 1 6 0c0 2-3 2-3 4m0 3v1"/></svg><span>帮助</span></a><button id="theme-toggle" class="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="切换至夜间配色"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><span>白昼</span></button></div></header>
       <div id="banner" role="status" hidden></div>
       <div id="error" role="alert" hidden></div>
       <main id="content" tabindex="-1"><div class="loading">正在读取本地申请计划…</div></main>

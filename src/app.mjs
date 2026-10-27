@@ -1,9 +1,11 @@
-import { daysUntil, readiness, STAGES } from '/lib/model.mjs';
+import { daysUntil, readiness, STAGES, blankWorkspace } from '/lib/model.mjs';
 import { renderers } from './extensions/index.mjs';
 import './theme.mjs';
 import { createLatestLoader } from './live.mjs';
 import { applicationsView, decisionsView, lifecycleDates } from './lifecycle-view.mjs';
 import { programStage, fundingSummary, contactSummary, actionDates } from '/lib/lifecycle.mjs';
+import { helpView } from './help-view.mjs';
+import { createTutorial } from './tutorial.mjs';
 
 const $ = selector => document.querySelector(selector);
 const STATIC = document.querySelector('meta[name="gradatlas-mode"]')?.content === 'static';
@@ -25,9 +27,9 @@ const icon = name => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
 document.querySelectorAll('[data-icon]').forEach(el => { el.innerHTML = icon(el.dataset.icon); });
 let workspace, demo = false, signature = '';
 let track = 'all', query = '', stage = 'all', compare = new Set();
-const names = { home: '申请总览', programs: '目标项目', applications: '申请跟踪', timeline: '申请时间线', materials: '材料与任务', decisions: '录取与入学', sources: '来源与更新', profile: '申请档案', extensions: '我的扩展', agent: '与 Agent 协作' };
+const names = { home: '申请总览', programs: '目标项目', applications: '申请跟踪', timeline: '申请时间线', materials: '材料与任务', decisions: '录取与入学', sources: '来源与更新', profile: '申请档案', extensions: '我的扩展', agent: '与 Agent 协作', guide: '新手教程与功能介绍', tutorial: '交互式新手教程' };
 const trackName = t => ({ master: '硕士申请', phd: '博士申请', both: '硕士 + 博士申请' }[t] || t);
-const currentView = () => location.hash.slice(1) in names ? location.hash.slice(1) : 'home';
+const currentView = () => Object.hasOwn(names, location.hash.slice(1)) ? location.hash.slice(1) : 'home';
 const pill = (text, tone = '') => `<span class="pill ${tone}">${esc(text)}</span>`;
 const dateLabel = date => date ? `${Number(date.slice(5, 7))} 月 ${Number(date.slice(8))} 日` : '时间待核对';
 const sourceLink = id => {
@@ -44,7 +46,7 @@ function onboarding() {
   const steps = readiness(workspace), done = steps.filter(s => s.done).length;
   const prompt = '请使用 $grad-apply-onboarding 引导我建立研究生申请工作区。先阅读 AGENTS.md 和 SKILL.md，检查当前本地记录。逐轮问我申请方向、背景、目标与约束；根据硕士或博士分别追问。不要让我手工填写 JSON。只把我已确认的信息写入 .local/，保留未知项，并生成目标和任务，网页应自动刷新。';
   return heading('从一次对话，开始申请。', '先和你的 Agent 理清方向。信息整理好后，这里会变成你的每日申请看板。', pill(workspace.revision === 0 ? '方向待确认' : trackName(workspace.profile.track), 'green')) +
-    `<section class="onboard-intro"><div><h2>你负责选择，Agent 负责整理。</h2><p>不必先准备一张完美的表格。说清你想学什么、想去哪里，以及眼下的顾虑。Agent 会顺着你的回答，逐步补齐计划。</p><button class="button primary" data-prompt="${esc(prompt)}">${icon('spark')}复制引导提示词</button><a class="text-link" href="#agent">查看如何连接 Agent ${icon('arrow')}</a></div><div class="journey-symbol" aria-hidden="true"><svg viewBox="0 0 240 210" fill="none"><path d="M30 178C30 110 91 147 105 95S190 117 208 32" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 7"/><circle cx="30" cy="178" r="8" fill="currentColor"/><circle cx="105" cy="95" r="8" fill="#d4e5b5" stroke="currentColor"/><circle cx="208" cy="32" r="11" stroke="currentColor"/><path d="m202 32 4 4 8-9" stroke="currentColor" stroke-width="1.5"/></svg><span>从想法，到下一步。</span></div></section>
+    `<section class="onboard-intro"><div><h2>你负责选择，Agent 负责整理。</h2><p>不必先准备一张完美的表格。说清你想学什么、想去哪里，以及眼下的顾虑。Agent 会顺着你的回答，逐步补齐计划。</p><button class="button primary" data-prompt="${esc(prompt)}">${icon('spark')}复制引导提示词</button><a class="text-link" href="#agent">查看如何连接 Agent ${icon('arrow')}</a><a class="text-link tutorial-start-link" href="#tutorial">先跟教程练一遍 ${icon('arrow')}</a></div><div class="journey-symbol" aria-hidden="true"><svg viewBox="0 0 240 210" fill="none"><path d="M30 178C30 110 91 147 105 95S190 117 208 32" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 7"/><circle cx="30" cy="178" r="8" fill="currentColor"/><circle cx="105" cy="95" r="8" fill="#d4e5b5" stroke="currentColor"/><circle cx="208" cy="32" r="11" stroke="currentColor"/><path d="m202 32 4 4 8-9" stroke="currentColor" stroke-width="1.5"/></svg><span>从想法，到下一步。</span></div></section>
     <section class="section"><div class="section-head"><h2>你的起步路线</h2><span class="muted">已完成 ${done} / 3 阶段</span></div><div class="setup-steps">${steps.map((s, i) => `<article class="setup-step ${s.done ? 'complete' : ''}"><span class="step-number">${s.done ? icon('check') : i + 1}</span><div><h3>${s.name}</h3><p>${['确定硕士或博士、入学周期、方向与地区。', '补齐教育经历、语言、预算及申请限制。', '由 Agent 整理目标、资料来源和第一批任务。'][i]}</p></div>${pill(s.done ? '已整理' : '待对话', s.done ? 'green' : '')}</article>`).join('')}</div></section>
     <div class="inline-note">${icon('file')}<p>个人信息由你自己的 Agent 保存在本地。你可以随时说“更新我的计划”，也可以跳过暂时不确定的问题。</p></div>
     <section class="section path-notes"><div><h3>硕士申请</h3><p>课程与学分是否匹配？材料什么时候齐备？申请窗口和费用是什么？</p></div><div><h3>博士申请</h3><p>研究问题和导师是否匹配？如何获得资助？联系、研究计划和面试怎样安排？</p></div></section>`;
@@ -61,11 +63,12 @@ function home() {
   const todo = workspace.tasks.filter(t => !t.done).sort((a, b) => (a.priority === 'high' ? -1 : 0) - (b.priority === 'high' ? -1 : 0) || (a.due || '9999').localeCompare(b.due || '9999'));
   const dates = actionDates(workspace).sort((a, b) => daysUntil(a.deadline.date, a.deadline.timezone) - daysUntil(b.deadline.date, b.deadline.timezone));
   const nearest = dates[0];
+  const missingZone = workspace.programs.filter(p => p.deadline.basis === 'official' && p.deadline.date && !p.deadline.timezone).length;
   const complete = workspace.tasks.filter(t => t.done).length;
   const changed = unresolvedChanges().length;
   return heading('今天，把下一步走稳。', `${workspace.profile.cycle} · ${workspace.profile.field}`, promptButton('请检查我的 GradAtlas 当前记录、待办和来源，更新今天的申请计划。先读取当前版本；只写入已确认的信息。', '更新今日计划')) +
-    `<section class="daily-brief"><div class="brief-main">${pill(trackName(workspace.profile.track), 'green')}<h2>${esc(todo[0]?.title || '当前任务都已完成')}</h2><p>${esc(todo[0]?.note || '让 Agent 根据回复与申请结果，整理下一阶段的计划。')}</p><a href="#materials" class="text-link">查看完整清单 ${icon('arrow')}</a></div><div class="brief-deadline">${icon('calendar')}<span>${nearest ? esc(nearest.label) : '下一步时间'}</span><strong>${nearest ? dateLabel(nearest.deadline.date) : '待安排'}</strong><p>${nearest ? esc(nearest.program.institution) : '由 Agent 核对后补充'}</p><small>${nearest ? `${daysUntil(nearest.deadline.date, nearest.deadline.timezone) < 0 ? '已过 ' + -daysUntil(nearest.deadline.date, nearest.deadline.timezone) + ' 天' : daysUntil(nearest.deadline.date, nearest.deadline.timezone) === 0 ? '今天' : '剩 ' + daysUntil(nearest.deadline.date, nearest.deadline.timezone) + ' 天'} · ${nearest.deadline.basis === 'official' ? '官方' : '个人计划'} · ${esc(nearest.deadline.timezone || 'UTC')}` : '保留周期与时区'}</small></div></section>
-    <div class="summary-line"><span>${workspace.programs.length} 个目标项目</span><span>${todo.length} 项待办</span><span>${complete} 项任务已完成</span><span>${changed ? `${changed} 个来源有变化待核对` : '按计划稳步推进'}</span></div>
+    `<section class="daily-brief"><div class="brief-main">${pill(trackName(workspace.profile.track), 'green')}<h2>${esc(todo[0]?.title || '当前任务都已完成')}</h2><p>${esc(todo[0]?.note || '让 Agent 根据回复与申请结果，整理下一阶段的计划。')}</p><a href="#materials" class="text-link">查看完整清单 ${icon('arrow')}</a></div><div class="brief-deadline">${icon('calendar')}<span>${nearest ? esc(nearest.label) : '下一步时间'}</span><strong>${nearest ? dateLabel(nearest.deadline.date) : '待安排'}</strong><p>${nearest ? esc(nearest.program.institution) : '由 Agent 核对后补充'}</p><small>${nearest ? `${daysUntil(nearest.deadline.date, nearest.deadline.timezone) < 0 ? '已过 ' + -daysUntil(nearest.deadline.date, nearest.deadline.timezone) + ' 天' : daysUntil(nearest.deadline.date, nearest.deadline.timezone) === 0 ? '今天' : '剩 ' + daysUntil(nearest.deadline.date, nearest.deadline.timezone) + ' 天'} · ${nearest.deadline.basis === 'official' ? '官方' : '个人计划'} · ${esc(nearest.deadline.timezone || 'UTC')}${nearest.deadline.time ? ` · 截止 ${esc(nearest.deadline.time)}` : ''}` : '保留周期与时区'}</small></div></section>
+    ${missingZone ? `<div class="inline-note"><p>${missingZone} 个目标的官网截止时区尚待确认，未列入倒计时。<a href="#timeline">查看原日期</a></p></div>` : ''}<div class="summary-line"><span>${workspace.programs.length} 个目标项目</span><span>${todo.length} 项待办</span><span>${complete} 项任务已完成</span><span>${changed ? `${changed} 个来源有变化待核对` : '按计划稳步推进'}</span></div>
     <div class="dashboard-grid"><div><section class="section"><div class="section-head"><h2>接下来做什么</h2><a href="#materials">全部任务 ${icon('arrow')}</a></div><div class="task-list">${todo.slice(0, 3).map(taskRow).join('') || '<p class="muted">当前任务已完成。</p>'}</div></section><section class="section"><div class="section-head"><h2>目标项目</h2><a href="#programs">查看全部 ${icon('arrow')}</a></div>${compactPrograms(workspace.programs.slice(0, 3))}</section></div>
     <aside class="daily-side"><section class="side-section"><div class="section-head"><h2>申请进度</h2><span>${complete} / ${workspace.tasks.length}</span></div><div class="stage-track">${STAGES.map(s => { const tasks = workspace.tasks.filter(t => t.stage === s); const all = tasks.length && tasks.every(t => t.done); const active = !all && tasks.some(t => !t.done); return `<div class="stage-item ${all ? 'complete' : active ? 'active' : ''}"><span class="stage-dot">${all ? icon('check') : ''}</span><span>${s}</span><small>${tasks.length ? `${tasks.filter(t => t.done).length}/${tasks.length}` : '待安排'}</small></div>`; }).join('')}</div></section><section class="side-section"><h2>材料准备</h2><div class="material-summary">${workspace.materials.slice(0, 4).map(m => `<div><span>${esc(m.name)}</span>${pill(m.status, m.status === '已就绪' ? 'green' : m.status === '待核对' ? 'amber' : '')}</div>`).join('') || '<p class="muted">由 Agent 整理材料清单。</p>'}</div><a href="#materials" class="text-link">查看材料 ${icon('arrow')}</a></section><section class="quiet-note"><h3>${icon('spark')}和 Agent 接着聊</h3><p>“我刚收到一封回复，帮我更新计划，看看接下来要做什么。”</p></section></aside></div>`;
 }
@@ -77,8 +80,9 @@ function compactPrograms(programs) {
 function deadlineDetail(p) {
   const d = p.deadline;
   const basis = { official: '官方日期', personal: '个人计划', historical: '往年参考', unknown: '待核实' }[d.basis];
-  const n = d.date ? daysUntil(d.date, d.timezone) : null;
-  return `<div class="deadline-detail">${pill(basis, d.basis === 'official' ? 'green' : 'amber')}<strong>${esc(d.date || '尚未公布或核实')}</strong><span>${esc(d.timezone || '时区待核对')} ${d.cycle ? `· ${esc(d.cycle)}` : ''}</span>${n !== null ? `<span>${n < 0 ? `已过 ${-n} 天` : n === 0 ? '今天' : `剩 ${n} 天`}（按该时区自然日）</span>` : ''}${d.sourceId ? sourceLink(d.sourceId) : ''}</div>`;
+  const actionable = ['official', 'personal'].includes(d.basis) && (d.basis !== 'official' || d.timezone);
+  const n = d.date && actionable ? daysUntil(d.date, d.timezone) : null;
+  return `<div class="deadline-detail">${pill(basis, d.basis === 'official' ? 'green' : 'amber')}<strong>${esc(d.date ? `${d.date}${d.time ? ` ${d.time}` : ''}` : '尚未公布或核实')}</strong><span>${esc(d.timezone || '时区待核对')} ${d.cycle ? `· ${esc(d.cycle)}` : ''}</span>${d.date && !d.time ? '<span>截止时刻未记录，请核对官网。</span>' : ''}${d.basis === 'official' && !d.timezone ? '<span>官网时区尚未确认，暂不计算倒计时。</span>' : ''}${n !== null ? `<span>${n < 0 ? `已过 ${-n} 天` : n === 0 ? '今天' : `剩 ${n} 天`}（按${esc(d.timezone || 'UTC')}自然日）</span>` : ''}${d.sourceId ? sourceLink(d.sourceId) : ''}</div>`;
 }
 
 function programs() {
@@ -90,7 +94,7 @@ function programs() {
 
 function comparison() {
   const chosen = workspace.programs.filter(p => compare.has(p.id));
-  const rows = [['方向', p => trackName(p.track)], ['匹配依据', p => p.fit], ['当前阶段', p => programStage(p)], ['日期', p => `${p.deadline.date || '待核对'} · ${{ official: '官方', personal: '个人计划', historical: '往年参考', unknown: '待核实' }[p.deadline.basis]}`], ['导师与资助', p => p.track === 'phd' ? `${p.supervisor || '待核对'}；${fundingSummary(p)}` : '见各项来源要求'], ['下一步', p => p.nextAction]];
+  const rows = [['方向', p => trackName(p.track)], ['匹配依据', p => p.fit], ['当前阶段', p => programStage(p)], ['日期', p => `${p.deadline.date || '待核对'} ${p.deadline.time || ''} · ${p.deadline.timezone || '时区待核对'} · ${{ official: '官方', personal: '个人计划', historical: '往年参考', unknown: '待核实' }[p.deadline.basis]}`], ['导师与资助', p => p.track === 'phd' ? `${p.supervisor || '待核对'}；${fundingSummary(p)}` : '见各项来源要求'], ['下一步', p => p.nextAction]];
   return `<section class="comparison"><div class="section-head"><h2>并排比较</h2><button class="button quiet" id="clear-compare">清空选择</button></div><div class="table-scroll"><table><caption class="sr-only">所选项目对比</caption><thead><tr><th scope="col">比较项目</th>${chosen.map(p => `<th scope="col">${esc(p.institution)}<small>${esc(p.name)}</small></th>`).join('')}</tr></thead><tbody>${rows.map(([k, fn]) => `<tr><th scope="row">${k}</th>${chosen.map(p => `<td>${esc(fn(p))}</td>`).join('')}</tr>`).join('')}</tbody></table></div></section>`;
 }
 
@@ -154,25 +158,39 @@ function agent() {
 }
 
 function lifecycleContext() { return { esc, pill, heading, promptButton, trackFilter, matchesTrack, sourceLink, empty }; }
-const views = { home, programs, applications: () => applicationsView(workspace, lifecycleContext()), timeline, materials, decisions: () => decisionsView(workspace, lifecycleContext()), sources, profile, extensions, agent };
+function practiceView(view, data, controls) {
+  const saved = { workspace, track, query, stage, compare };
+  try { workspace = data; track = controls.track; query = controls.query; stage = controls.stage; compare = new Set(controls.compare); return views[view](); }
+  finally { ({ workspace, track, query, stage, compare } = saved); }
+}
+function helpContext() { return { esc, heading, promptButton, icon, names, renderPractice: practiceView }; }
+let tutorialStorage;
+try { tutorialStorage = window.localStorage; } catch { tutorialStorage = { getItem() { throw new Error('无法读取教程进度'); } }; }
+const tutorial = createTutorial({ storage: tutorialStorage, repaint: () => { if (currentView() === 'tutorial') render(); }, copyText: copy });
+const views = { home, programs, applications: () => applicationsView(workspace, lifecycleContext()), timeline, materials, decisions: () => decisionsView(workspace, lifecycleContext()), sources, profile, extensions, agent, guide: () => helpView(helpContext(), tutorial.hasProgress()), tutorial: () => tutorial.render(helpContext()) };
 function render() {
-  if (!workspace) return;
   const view = currentView();
+  if (!workspace && !['guide', 'tutorial'].includes(view)) return;
   const open = new Set([...document.querySelectorAll('details[open]')].map(d => d.dataset.programId || d.dataset.recordId));
   const focused = document.activeElement?.id;
+  const tourFocusKey = ['data-tour-action', 'data-tour-track', 'data-tour-lesson'].find(key => document.activeElement?.hasAttribute(key));
+  const tourFocusValue = tourFocusKey ? document.activeElement.getAttribute(tourFocusKey) : '';
   const selection = focused === 'search' ? [document.activeElement.selectionStart, document.activeElement.selectionEnd] : null;
   $('#content').innerHTML = views[view]();
   document.querySelectorAll('details[data-program-id], details[data-record-id]').forEach(d => { d.open = open.has(d.dataset.programId || d.dataset.recordId); });
+  if (view === 'tutorial') tutorial.afterRender($('#content'));
   if (view === 'extensions') for (const [id, renderer] of renderers) {
     try { const node = renderer(structuredClone(workspace)); if (!(node instanceof Node)) throw new Error('扩展需要返回 DOM 节点'); const section = document.createElement('section'); section.className = 'section'; section.append(node); $('#custom-extensions').append(section); }
     catch { const p = document.createElement('p'); p.className = 'notice'; p.textContent = `扩展 ${id} 未能显示，请让 Agent 检查本地代码。`; $('#custom-extensions').append(p); }
   }
   if (focused) { const el = document.getElementById(focused); el?.focus(); if (selection) el?.setSelectionRange?.(...selection); }
+  else if (view === 'tutorial' && tourFocusKey) { const el = $('#content').querySelector(`[${tourFocusKey}="${CSS.escape(tourFocusValue)}"]`); if (el && !el.disabled) el.focus({ preventScroll: true }); }
   document.querySelectorAll('nav [data-view], .rail-bottom [data-view]').forEach(a => { a.classList.toggle('active', a.dataset.view === view); if (a.dataset.view === view) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
   $('#breadcrumb').textContent = `申请工作区 / ${names[view]}`;
-  $('#workspace-label').textContent = workspace.profile.cycle ? `${workspace.profile.cycle} · ${trackName(workspace.profile.track)}` : '从一次对话开始';
-  const count = unresolvedChanges().length; $('#source-count').textContent = count; $('#source-count').hidden = !count;
-  $('#version').textContent = `本地版本 ${workspace.revision}${workspace.updatedAt ? ` · ${new Date(workspace.updatedAt).toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' })} 更新` : ' · 等待 Agent 整理'}`;
+  const live = workspace || blankWorkspace();
+  $('#workspace-label').textContent = live.profile.cycle ? `${live.profile.cycle} · ${trackName(live.profile.track)}` : '从一次对话开始';
+  const count = workspace ? unresolvedChanges().length : 0; $('#source-count').textContent = count; $('#source-count').hidden = !count;
+  $('#version').textContent = workspace ? `本地版本 ${live.revision}${live.updatedAt ? ` · ${new Date(live.updatedAt).toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' })} 更新` : ' · 等待 Agent 整理'}` : '等待本地记录恢复 · 帮助仍可使用';
   $('#banner').hidden = !demo; $('#banner').textContent = demo ? '示例工作区 · 人物、院校、要求与日期均为虚构，仅用于演示功能。' : '';
 }
 
@@ -183,22 +201,26 @@ const load = createLatestLoader(async () => {
     const nextSignature = JSON.stringify(data);
     if (nextSignature !== signature) { workspace = data.workspace; demo = data.demo; signature = nextSignature; compare = new Set([...compare].filter(id => workspace.programs.some(p => p.id === id))); render(); }
     $('#error').hidden = true;
-  } catch (e) { $('#error').textContent = `${e.message}。当前画面保留；请让 Agent 检查记录或确认本地服务正在运行。`; $('#error').hidden = false; }
+  } catch (e) { $('#error').textContent = `${e.message}。当前画面保留；请让 Agent 检查记录或确认本地服务正在运行。`; $('#error').hidden = false; if (!workspace) render(); }
 });
 
 let toastTimer;
 async function copy(text) {
+  let success = true;
   try { await navigator.clipboard.writeText(text); $('#toast').textContent = '已复制。粘贴给你的 Agent，即可接着整理。'; }
-  catch { $('#toast').textContent = `复制受限，请手动复制：${text}`; }
+  catch { success = false; $('#toast').textContent = `复制受限，请手动复制：${text}`; }
   $('#toast').hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => { $('#toast').hidden = true; }, 7000);
+  return success;
 }
-document.addEventListener('click', e => {
+document.addEventListener('click', async e => {
+  if (currentView() === 'tutorial' && await tutorial.handleClick(e)) return;
   const prompt = e.target.closest('[data-prompt]'); if (prompt) copy(prompt.dataset.prompt);
   const tab = e.target.closest('[data-track]'); if (tab) { track = tab.dataset.track; render(); }
   if (e.target.closest('#clear-compare')) { compare.clear(); render(); }
 });
-document.addEventListener('input', e => { if (e.target.id === 'search') { query = e.target.value; render(); } });
+document.addEventListener('input', e => { if (currentView() === 'tutorial' && tutorial.handleInput(e)) return; if (e.target.id === 'search') { query = e.target.value; render(); } });
 document.addEventListener('change', e => {
+  if (currentView() === 'tutorial' && tutorial.handleChange(e)) return;
   if (e.target.id === 'stage-filter') { stage = e.target.value; render(); }
   if (e.target.matches('[data-compare]')) {
     const id = e.target.dataset.compare;

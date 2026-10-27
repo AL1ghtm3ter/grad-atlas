@@ -11,5 +11,5 @@ catch (e) {
   if (e.code !== 'ENOENT') throw e;
   await mkdir(dirname(target), { recursive: true });
   await cp(join(root, 'skills/grad-apply-onboarding'), target, { recursive: true, errorOnExist: true, force: false });
-  console.log('引导技能已安装到 Codex skills。重新载入技能列表后使用 $grad-apply-onboarding；当前对话也可以直接请 Agent 阅读仓库中的 SKILL.md。');
+  console.log(`引导技能已安装：${target}\n在当前克隆目录使用 $grad-apply-onboarding 或技能选择器。若当前客户端未显示，请重新载入或重启客户端；也可直接请 Agent 阅读 skills/grad-apply-onboarding/SKILL.md。个人申请信息仍保存在当前克隆的 .local/。`);
 }

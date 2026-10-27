@@ -1,0 +1,4 @@
+interface:
+  display_name: "研究生申请引导"
+  short_description: "分轮梳理申请背景和目标，分别规划硕士与博士，并维护本地档案和任务"
+  default_prompt: "请使用 $grad-apply-onboarding 引导我配置或更新 GradAtlas，逐轮提问，由你整理和维护本地申请信息。"

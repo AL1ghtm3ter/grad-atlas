@@ -1,0 +1,737 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-27T12:35:41.018Z",
+  "title": "Design System: GradAtlas · 研途图谱",
+  "extensions": {
+    "colorMeta": {
+      "accent": {
+        "role": "primary",
+        "displayName": "暖棕强调（白昼）",
+        "tonalRamp": [
+          "oklch(15.00% 0.08771 61.31)",
+          "oklch(26.43% 0.08771 61.31)",
+          "oklch(37.86% 0.08771 61.31)",
+          "oklch(49.29% 0.08771 61.31)",
+          "oklch(60.71% 0.08771 61.31)",
+          "oklch(72.14% 0.08771 61.31)",
+          "oklch(83.57% 0.08771 61.31)",
+          "oklch(95.00% 0.08771 61.31)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "暖纸（白昼）",
+        "tonalRamp": [
+          "oklch(15.00% 0.01238 91.52)",
+          "oklch(26.43% 0.01238 91.52)",
+          "oklch(37.86% 0.01238 91.52)",
+          "oklch(49.29% 0.01238 91.52)",
+          "oklch(60.71% 0.01238 91.52)",
+          "oklch(72.14% 0.01238 91.52)",
+          "oklch(83.57% 0.01238 91.52)",
+          "oklch(95.00% 0.01238 91.52)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "内容面（白昼）",
+        "tonalRamp": [
+          "oklch(15.00% 0.00980 87.47)",
+          "oklch(26.43% 0.00980 87.47)",
+          "oklch(37.86% 0.00980 87.47)",
+          "oklch(49.29% 0.00980 87.47)",
+          "oklch(60.71% 0.00980 87.47)",
+          "oklch(72.14% 0.00980 87.47)",
+          "oklch(83.57% 0.00980 87.47)",
+          "oklch(95.00% 0.00980 87.47)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "墨色（白昼）",
+        "tonalRamp": [
+          "oklch(15.00% 0.00924 88.76)",
+          "oklch(26.43% 0.00924 88.76)",
+          "oklch(37.86% 0.00924 88.76)",
+          "oklch(49.29% 0.00924 88.76)",
+          "oklch(60.71% 0.00924 88.76)",
+          "oklch(72.14% 0.00924 88.76)",
+          "oklch(83.57% 0.00924 88.76)",
+          "oklch(95.00% 0.00924 88.76)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "静默文字（白昼）",
+        "tonalRamp": [
+          "oklch(15.00% 0.02380 81.69)",
+          "oklch(26.43% 0.02380 81.69)",
+          "oklch(37.86% 0.02380 81.69)",
+          "oklch(49.29% 0.02380 81.69)",
+          "oklch(60.71% 0.02380 81.69)",
+          "oklch(72.14% 0.02380 81.69)",
+          "oklch(83.57% 0.02380 81.69)",
+          "oklch(95.00% 0.02380 81.69)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "细线（白昼）",
+        "tonalRamp": [
+          "oklch(15.00% 0.02500 85.79)",
+          "oklch(26.43% 0.02500 85.79)",
+          "oklch(37.86% 0.02500 85.79)",
+          "oklch(49.29% 0.02500 85.79)",
+          "oklch(60.71% 0.02500 85.79)",
+          "oklch(72.14% 0.02500 85.79)",
+          "oklch(83.57% 0.02500 85.79)",
+          "oklch(95.00% 0.02500 85.79)"
+        ]
+      },
+      "rail": {
+        "role": "neutral",
+        "displayName": "侧栏纸色（白昼）",
+        "tonalRamp": [
+          "oklch(15.00% 0.02273 87.16)",
+          "oklch(26.43% 0.02273 87.16)",
+          "oklch(37.86% 0.02273 87.16)",
+          "oklch(49.29% 0.02273 87.16)",
+          "oklch(60.71% 0.02273 87.16)",
+          "oklch(72.14% 0.02273 87.16)",
+          "oklch(83.57% 0.02273 87.16)",
+          "oklch(95.00% 0.02273 87.16)"
+        ]
+      },
+      "rail-hover": {
+        "role": "neutral",
+        "displayName": "侧栏悬停（白昼）",
+        "tonalRamp": [
+          "oklch(15.00% 0.02791 83.53)",
+          "oklch(26.43% 0.02791 83.53)",
+          "oklch(37.86% 0.02791 83.53)",
+          "oklch(49.29% 0.02791 83.53)",
+          "oklch(60.71% 0.02791 83.53)",
+          "oklch(72.14% 0.02791 83.53)",
+          "oklch(83.57% 0.02791 83.53)",
+          "oklch(95.00% 0.02791 83.53)"
+        ]
+      },
+      "wash": {
+        "role": "neutral",
+        "displayName": "浅洗色（白昼）",
+        "tonalRamp": [
+          "oklch(15.00% 0.02142 85.95)",
+          "oklch(26.43% 0.02142 85.95)",
+          "oklch(37.86% 0.02142 85.95)",
+          "oklch(49.29% 0.02142 85.95)",
+          "oklch(60.71% 0.02142 85.95)",
+          "oklch(72.14% 0.02142 85.95)",
+          "oklch(83.57% 0.02142 85.95)",
+          "oklch(95.00% 0.02142 85.95)"
+        ]
+      },
+      "selection": {
+        "role": "neutral",
+        "displayName": "选区色（白昼）",
+        "tonalRamp": [
+          "oklch(15.00% 0.05822 75.50)",
+          "oklch(26.43% 0.05822 75.50)",
+          "oklch(37.86% 0.05822 75.50)",
+          "oklch(49.29% 0.05822 75.50)",
+          "oklch(60.71% 0.05822 75.50)",
+          "oklch(72.14% 0.05822 75.50)",
+          "oklch(83.57% 0.05822 75.50)",
+          "oklch(95.00% 0.05822 75.50)"
+        ]
+      },
+      "cover-ground": {
+        "role": "secondary",
+        "displayName": "蓝幕背景（白昼）",
+        "tonalRamp": [
+          "oklch(15.00% 0.01273 228.94)",
+          "oklch(26.43% 0.01273 228.94)",
+          "oklch(37.86% 0.01273 228.94)",
+          "oklch(49.29% 0.01273 228.94)",
+          "oklch(60.71% 0.01273 228.94)",
+          "oklch(72.14% 0.01273 228.94)",
+          "oklch(83.57% 0.01273 228.94)",
+          "oklch(95.00% 0.01273 228.94)"
+        ]
+      },
+      "cover-ink": {
+        "role": "secondary",
+        "displayName": "蓝幕文字（白昼）",
+        "tonalRamp": [
+          "oklch(15.00% 0.04417 231.39)",
+          "oklch(26.43% 0.04417 231.39)",
+          "oklch(37.86% 0.04417 231.39)",
+          "oklch(49.29% 0.04417 231.39)",
+          "oklch(60.71% 0.04417 231.39)",
+          "oklch(72.14% 0.04417 231.39)",
+          "oklch(83.57% 0.04417 231.39)",
+          "oklch(95.00% 0.04417 231.39)"
+        ]
+      },
+      "cover-muted": {
+        "role": "secondary",
+        "displayName": "蓝幕说明（白昼）",
+        "tonalRamp": [
+          "oklch(15.00% 0.05876 234.20)",
+          "oklch(26.43% 0.05876 234.20)",
+          "oklch(37.86% 0.05876 234.20)",
+          "oklch(49.29% 0.05876 234.20)",
+          "oklch(60.71% 0.05876 234.20)",
+          "oklch(72.14% 0.05876 234.20)",
+          "oklch(83.57% 0.05876 234.20)",
+          "oklch(95.00% 0.05876 234.20)"
+        ]
+      },
+      "cover-line": {
+        "role": "secondary",
+        "displayName": "蓝幕边线（白昼）",
+        "tonalRamp": [
+          "oklch(15.00% 0.03965 232.20)",
+          "oklch(26.43% 0.03965 232.20)",
+          "oklch(37.86% 0.03965 232.20)",
+          "oklch(49.29% 0.03965 232.20)",
+          "oklch(60.71% 0.03965 232.20)",
+          "oklch(72.14% 0.03965 232.20)",
+          "oklch(83.57% 0.03965 232.20)",
+          "oklch(95.00% 0.03965 232.20)"
+        ]
+      },
+      "amber": {
+        "role": "tertiary",
+        "displayName": "待核对琥珀（白昼）",
+        "tonalRamp": [
+          "oklch(15.00% 0.09234 60.76)",
+          "oklch(26.43% 0.09234 60.76)",
+          "oklch(37.86% 0.09234 60.76)",
+          "oklch(49.29% 0.09234 60.76)",
+          "oklch(60.71% 0.09234 60.76)",
+          "oklch(72.14% 0.09234 60.76)",
+          "oklch(83.57% 0.09234 60.76)",
+          "oklch(95.00% 0.09234 60.76)"
+        ]
+      },
+      "amber-bg": {
+        "role": "tertiary",
+        "displayName": "待核对底色（白昼）",
+        "tonalRamp": [
+          "oklch(15.00% 0.03845 85.34)",
+          "oklch(26.43% 0.03845 85.34)",
+          "oklch(37.86% 0.03845 85.34)",
+          "oklch(49.29% 0.03845 85.34)",
+          "oklch(60.71% 0.03845 85.34)",
+          "oklch(72.14% 0.03845 85.34)",
+          "oklch(83.57% 0.03845 85.34)",
+          "oklch(95.00% 0.03845 85.34)"
+        ]
+      },
+      "danger": {
+        "role": "tertiary",
+        "displayName": "逾期暖红（白昼）",
+        "tonalRamp": [
+          "oklch(15.00% 0.12590 32.23)",
+          "oklch(26.43% 0.12590 32.23)",
+          "oklch(37.86% 0.12590 32.23)",
+          "oklch(49.29% 0.12590 32.23)",
+          "oklch(60.71% 0.12590 32.23)",
+          "oklch(72.14% 0.12590 32.23)",
+          "oklch(83.57% 0.12590 32.23)",
+          "oklch(95.00% 0.12590 32.23)"
+        ]
+      },
+      "success": {
+        "role": "tertiary",
+        "displayName": "已整理蓝（白昼）",
+        "tonalRamp": [
+          "oklch(15.00% 0.04818 228.73)",
+          "oklch(26.43% 0.04818 228.73)",
+          "oklch(37.86% 0.04818 228.73)",
+          "oklch(49.29% 0.04818 228.73)",
+          "oklch(60.71% 0.04818 228.73)",
+          "oklch(72.14% 0.04818 228.73)",
+          "oklch(83.57% 0.04818 228.73)",
+          "oklch(95.00% 0.04818 228.73)"
+        ]
+      },
+      "success-bg": {
+        "role": "tertiary",
+        "displayName": "已整理底色（白昼）",
+        "tonalRamp": [
+          "oklch(15.00% 0.01273 228.94)",
+          "oklch(26.43% 0.01273 228.94)",
+          "oklch(37.86% 0.01273 228.94)",
+          "oklch(49.29% 0.01273 228.94)",
+          "oklch(60.71% 0.01273 228.94)",
+          "oklch(72.14% 0.01273 228.94)",
+          "oklch(83.57% 0.01273 228.94)",
+          "oklch(95.00% 0.01273 228.94)"
+        ]
+      },
+      "night-accent": {
+        "role": "primary",
+        "displayName": "暖棕强调（夜间）",
+        "tonalRamp": [
+          "oklch(15.00% 0.07986 77.62)",
+          "oklch(26.43% 0.07986 77.62)",
+          "oklch(37.86% 0.07986 77.62)",
+          "oklch(49.29% 0.07986 77.62)",
+          "oklch(60.71% 0.07986 77.62)",
+          "oklch(72.14% 0.07986 77.62)",
+          "oklch(83.57% 0.07986 77.62)",
+          "oklch(95.00% 0.07986 77.62)"
+        ]
+      },
+      "night-paper": {
+        "role": "neutral",
+        "displayName": "暖纸（夜间）",
+        "tonalRamp": [
+          "oklch(15.00% 0.02728 263.05)",
+          "oklch(26.43% 0.02728 263.05)",
+          "oklch(37.86% 0.02728 263.05)",
+          "oklch(49.29% 0.02728 263.05)",
+          "oklch(60.71% 0.02728 263.05)",
+          "oklch(72.14% 0.02728 263.05)",
+          "oklch(83.57% 0.02728 263.05)",
+          "oklch(95.00% 0.02728 263.05)"
+        ]
+      },
+      "night-surface": {
+        "role": "neutral",
+        "displayName": "内容面（夜间）",
+        "tonalRamp": [
+          "oklch(15.00% 0.03231 262.41)",
+          "oklch(26.43% 0.03231 262.41)",
+          "oklch(37.86% 0.03231 262.41)",
+          "oklch(49.29% 0.03231 262.41)",
+          "oklch(60.71% 0.03231 262.41)",
+          "oklch(72.14% 0.03231 262.41)",
+          "oklch(83.57% 0.03231 262.41)",
+          "oklch(95.00% 0.03231 262.41)"
+        ]
+      },
+      "night-ink": {
+        "role": "neutral",
+        "displayName": "墨色（夜间）",
+        "tonalRamp": [
+          "oklch(15.00% 0.00287 128.49)",
+          "oklch(26.43% 0.00287 128.49)",
+          "oklch(37.86% 0.00287 128.49)",
+          "oklch(49.29% 0.00287 128.49)",
+          "oklch(60.71% 0.00287 128.49)",
+          "oklch(72.14% 0.00287 128.49)",
+          "oklch(83.57% 0.00287 128.49)",
+          "oklch(95.00% 0.00287 128.49)"
+        ]
+      },
+      "night-muted": {
+        "role": "neutral",
+        "displayName": "静默文字（夜间）",
+        "tonalRamp": [
+          "oklch(15.00% 0.02251 259.19)",
+          "oklch(26.43% 0.02251 259.19)",
+          "oklch(37.86% 0.02251 259.19)",
+          "oklch(49.29% 0.02251 259.19)",
+          "oklch(60.71% 0.02251 259.19)",
+          "oklch(72.14% 0.02251 259.19)",
+          "oklch(83.57% 0.02251 259.19)",
+          "oklch(95.00% 0.02251 259.19)"
+        ]
+      },
+      "night-line": {
+        "role": "neutral",
+        "displayName": "细线（夜间）",
+        "tonalRamp": [
+          "oklch(15.00% 0.03279 260.93)",
+          "oklch(26.43% 0.03279 260.93)",
+          "oklch(37.86% 0.03279 260.93)",
+          "oklch(49.29% 0.03279 260.93)",
+          "oklch(60.71% 0.03279 260.93)",
+          "oklch(72.14% 0.03279 260.93)",
+          "oklch(83.57% 0.03279 260.93)",
+          "oklch(95.00% 0.03279 260.93)"
+        ]
+      },
+      "night-rail": {
+        "role": "neutral",
+        "displayName": "侧栏纸色（夜间）",
+        "tonalRamp": [
+          "oklch(15.00% 0.03155 258.98)",
+          "oklch(26.43% 0.03155 258.98)",
+          "oklch(37.86% 0.03155 258.98)",
+          "oklch(49.29% 0.03155 258.98)",
+          "oklch(60.71% 0.03155 258.98)",
+          "oklch(72.14% 0.03155 258.98)",
+          "oklch(83.57% 0.03155 258.98)",
+          "oklch(95.00% 0.03155 258.98)"
+        ]
+      },
+      "night-rail-hover": {
+        "role": "neutral",
+        "displayName": "侧栏悬停（夜间）",
+        "tonalRamp": [
+          "oklch(15.00% 0.04102 253.34)",
+          "oklch(26.43% 0.04102 253.34)",
+          "oklch(37.86% 0.04102 253.34)",
+          "oklch(49.29% 0.04102 253.34)",
+          "oklch(60.71% 0.04102 253.34)",
+          "oklch(72.14% 0.04102 253.34)",
+          "oklch(83.57% 0.04102 253.34)",
+          "oklch(95.00% 0.04102 253.34)"
+        ]
+      },
+      "night-wash": {
+        "role": "neutral",
+        "displayName": "浅洗色（夜间）",
+        "tonalRamp": [
+          "oklch(15.00% 0.03213 260.35)",
+          "oklch(26.43% 0.03213 260.35)",
+          "oklch(37.86% 0.03213 260.35)",
+          "oklch(49.29% 0.03213 260.35)",
+          "oklch(60.71% 0.03213 260.35)",
+          "oklch(72.14% 0.03213 260.35)",
+          "oklch(83.57% 0.03213 260.35)",
+          "oklch(95.00% 0.03213 260.35)"
+        ]
+      },
+      "night-selection": {
+        "role": "neutral",
+        "displayName": "选区色（夜间）",
+        "tonalRamp": [
+          "oklch(15.00% 0.04846 257.17)",
+          "oklch(26.43% 0.04846 257.17)",
+          "oklch(37.86% 0.04846 257.17)",
+          "oklch(49.29% 0.04846 257.17)",
+          "oklch(60.71% 0.04846 257.17)",
+          "oklch(72.14% 0.04846 257.17)",
+          "oklch(83.57% 0.04846 257.17)",
+          "oklch(95.00% 0.04846 257.17)"
+        ]
+      },
+      "night-cover-ground": {
+        "role": "secondary",
+        "displayName": "蓝幕背景（夜间）",
+        "tonalRamp": [
+          "oklch(15.00% 0.03952 245.71)",
+          "oklch(26.43% 0.03952 245.71)",
+          "oklch(37.86% 0.03952 245.71)",
+          "oklch(49.29% 0.03952 245.71)",
+          "oklch(60.71% 0.03952 245.71)",
+          "oklch(72.14% 0.03952 245.71)",
+          "oklch(83.57% 0.03952 245.71)",
+          "oklch(95.00% 0.03952 245.71)"
+        ]
+      },
+      "night-cover-ink": {
+        "role": "secondary",
+        "displayName": "蓝幕文字（夜间）",
+        "tonalRamp": [
+          "oklch(15.00% 0.00974 204.91)",
+          "oklch(26.43% 0.00974 204.91)",
+          "oklch(37.86% 0.00974 204.91)",
+          "oklch(49.29% 0.00974 204.91)",
+          "oklch(60.71% 0.00974 204.91)",
+          "oklch(72.14% 0.00974 204.91)",
+          "oklch(83.57% 0.00974 204.91)",
+          "oklch(95.00% 0.00974 204.91)"
+        ]
+      },
+      "night-cover-muted": {
+        "role": "secondary",
+        "displayName": "蓝幕说明（夜间）",
+        "tonalRamp": [
+          "oklch(15.00% 0.03377 232.35)",
+          "oklch(26.43% 0.03377 232.35)",
+          "oklch(37.86% 0.03377 232.35)",
+          "oklch(49.29% 0.03377 232.35)",
+          "oklch(60.71% 0.03377 232.35)",
+          "oklch(72.14% 0.03377 232.35)",
+          "oklch(83.57% 0.03377 232.35)",
+          "oklch(95.00% 0.03377 232.35)"
+        ]
+      },
+      "night-cover-line": {
+        "role": "secondary",
+        "displayName": "蓝幕边线（夜间）",
+        "tonalRamp": [
+          "oklch(15.00% 0.04739 241.33)",
+          "oklch(26.43% 0.04739 241.33)",
+          "oklch(37.86% 0.04739 241.33)",
+          "oklch(49.29% 0.04739 241.33)",
+          "oklch(60.71% 0.04739 241.33)",
+          "oklch(72.14% 0.04739 241.33)",
+          "oklch(83.57% 0.04739 241.33)",
+          "oklch(95.00% 0.04739 241.33)"
+        ]
+      },
+      "night-amber": {
+        "role": "tertiary",
+        "displayName": "待核对琥珀（夜间）",
+        "tonalRamp": [
+          "oklch(15.00% 0.07986 77.62)",
+          "oklch(26.43% 0.07986 77.62)",
+          "oklch(37.86% 0.07986 77.62)",
+          "oklch(49.29% 0.07986 77.62)",
+          "oklch(60.71% 0.07986 77.62)",
+          "oklch(72.14% 0.07986 77.62)",
+          "oklch(83.57% 0.07986 77.62)",
+          "oklch(95.00% 0.07986 77.62)"
+        ]
+      },
+      "night-amber-bg": {
+        "role": "tertiary",
+        "displayName": "待核对底色（夜间）",
+        "tonalRamp": [
+          "oklch(15.00% 0.02399 69.37)",
+          "oklch(26.43% 0.02399 69.37)",
+          "oklch(37.86% 0.02399 69.37)",
+          "oklch(49.29% 0.02399 69.37)",
+          "oklch(60.71% 0.02399 69.37)",
+          "oklch(72.14% 0.02399 69.37)",
+          "oklch(83.57% 0.02399 69.37)",
+          "oklch(95.00% 0.02399 69.37)"
+        ]
+      },
+      "night-danger": {
+        "role": "tertiary",
+        "displayName": "逾期暖红（夜间）",
+        "tonalRamp": [
+          "oklch(15.00% 0.10043 37.63)",
+          "oklch(26.43% 0.10043 37.63)",
+          "oklch(37.86% 0.10043 37.63)",
+          "oklch(49.29% 0.10043 37.63)",
+          "oklch(60.71% 0.10043 37.63)",
+          "oklch(72.14% 0.10043 37.63)",
+          "oklch(83.57% 0.10043 37.63)",
+          "oklch(95.00% 0.10043 37.63)"
+        ]
+      },
+      "night-success": {
+        "role": "tertiary",
+        "displayName": "已整理蓝（夜间）",
+        "tonalRamp": [
+          "oklch(15.00% 0.02491 226.52)",
+          "oklch(26.43% 0.02491 226.52)",
+          "oklch(37.86% 0.02491 226.52)",
+          "oklch(49.29% 0.02491 226.52)",
+          "oklch(60.71% 0.02491 226.52)",
+          "oklch(72.14% 0.02491 226.52)",
+          "oklch(83.57% 0.02491 226.52)",
+          "oklch(95.00% 0.02491 226.52)"
+        ]
+      },
+      "night-success-bg": {
+        "role": "tertiary",
+        "displayName": "已整理底色（夜间）",
+        "tonalRamp": [
+          "oklch(15.00% 0.04190 239.46)",
+          "oklch(26.43% 0.04190 239.46)",
+          "oklch(37.86% 0.04190 239.46)",
+          "oklch(49.29% 0.04190 239.46)",
+          "oklch(60.71% 0.04190 239.46)",
+          "oklch(72.14% 0.04190 239.46)",
+          "oklch(83.57% 0.04190 239.46)",
+          "oklch(95.00% 0.04190 239.46)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "页面标题",
+        "purpose": "页面主标题；断点下按布局缩小。"
+      },
+      "title": {
+        "displayName": "段落标题",
+        "purpose": "区块与项目标题。"
+      },
+      "body": {
+        "displayName": "正文基线",
+        "purpose": "根字号与默认阅读行距。"
+      },
+      "copy": {
+        "displayName": "说明文案",
+        "purpose": "页面说明和档案正文。"
+      },
+      "control": {
+        "displayName": "操作文字",
+        "purpose": "按钮与项目搜索。"
+      },
+      "label": {
+        "displayName": "状态标签",
+        "purpose": "标签和紧凑元数据。"
+      },
+      "institution-initial": {
+        "displayName": "院校首字",
+        "purpose": "紧凑列表及项目卡的首字标记。"
+      }
+    },
+    "shadows": [
+      {
+        "name": "toast",
+        "value": "0 6px 24px #080e1a22",
+        "purpose": "使短时 toast 与工作区内容分离。"
+      }
+    ],
+    "motion": [
+      {
+        "name": "toast-in",
+        "value": "0.2s ease-out",
+        "purpose": "toast 从 5px 下方、0.5 透明度进入至正常位置与不透明。"
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation:none!important;transition:none!important;scroll-behavior:auto!important",
+        "purpose": "遵循 prefers-reduced-motion: reduce。"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1500px"
+      },
+      {
+        "name": "medium",
+        "value": "1150px"
+      },
+      {
+        "name": "compact",
+        "value": "900px"
+      },
+      {
+        "name": "mobile",
+        "value": "650px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "主要行动按钮",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "复制明确的引导或 Agent 交接说明。",
+      "html": "<button class=\"ds-button-primary\" type=\"button\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.65\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m12 3 2.6 6.4L21 12l-6.4 2.6L12 21l-2.6-6.4L3 12l6.4-2.6z\"/></svg>复制引导提示词</button>",
+      "css": ".ds-button-primary{font-family:var(--body,\"Segoe UI\",\"Microsoft YaHei\",sans-serif);display:inline-flex;justify-content:center;align-items:center;gap:8px;border:1px solid var(--line,#c9c1b0);border-radius:7px;padding:9px 14px;min-height:40px;font-size:12px;line-height:1.5;white-space:nowrap;cursor:pointer;}.ds-button-primary svg{width:16px;height:16px;}.ds-button-primary:disabled{cursor:wait;opacity:.55;}.ds-button-primary:focus-visible{outline:2px solid var(--focus,#855222);outline-offset:4px;}.ds-button-primary{background:var(--primary,#835326);border-color:var(--primary,#835326);color:var(--on-primary,#f3f0e7);}.ds-button-primary:hover{background:var(--accent,#835326);}"
+    },
+    {
+      "name": "普通按钮",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "有边界的次级行动。",
+      "html": "<button class=\"ds-button-secondary\" type=\"button\">查看说明</button>",
+      "css": ".ds-button-secondary{font-family:var(--body,\"Segoe UI\",\"Microsoft YaHei\",sans-serif);display:inline-flex;justify-content:center;align-items:center;gap:8px;border:1px solid var(--line,#c9c1b0);border-radius:7px;padding:9px 14px;min-height:40px;font-size:12px;line-height:1.5;white-space:nowrap;cursor:pointer;}.ds-button-secondary svg{width:16px;height:16px;}.ds-button-secondary:disabled{cursor:wait;opacity:.55;}.ds-button-secondary:focus-visible{outline:2px solid var(--focus,#855222);outline-offset:4px;}.ds-button-secondary{background:var(--white,#faf7f0);color:var(--ink,#302e29);}.ds-button-secondary:hover{background:var(--wash,#ebe4d5);}"
+    },
+    {
+      "name": "安静按钮",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "清空比较、复制说明等次级操作。",
+      "html": "<button class=\"ds-button-quiet\" type=\"button\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.65\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m12 3 2.6 6.4L21 12l-6.4 2.6L12 21l-2.6-6.4L3 12l6.4-2.6z\"/></svg>交给 Agent</button>",
+      "css": ".ds-button-quiet{font-family:var(--body,\"Segoe UI\",\"Microsoft YaHei\",sans-serif);display:inline-flex;justify-content:center;align-items:center;gap:8px;border:1px solid var(--line,#c9c1b0);border-radius:7px;padding:9px 14px;min-height:40px;font-size:12px;line-height:1.5;white-space:nowrap;cursor:pointer;}.ds-button-quiet svg{width:16px;height:16px;}.ds-button-quiet:disabled{cursor:wait;opacity:.55;}.ds-button-quiet:focus-visible{outline:2px solid var(--focus,#855222);outline-offset:4px;}.ds-button-quiet{background:transparent;color:var(--accent,#835326);}.ds-button-quiet:hover{background:var(--wash,#ebe4d5);}"
+    },
+    {
+      "name": "项目搜索",
+      "kind": "input",
+      "refersTo": "input-search",
+      "description": "搜索项目、学校或导师；申请资料由 Agent 更新。",
+      "html": "<input class=\"ds-input-search\" type=\"search\" aria-label=\"搜索项目、学校或导师\" placeholder=\"搜索项目、学校或导师\">",
+      "css": ".ds-input-search{font-family:var(--body,\"Segoe UI\",\"Microsoft YaHei\",sans-serif);width:100%;min-width:0;background:var(--white,#faf7f0);border:1px solid var(--line,#c9c1b0);border-radius:8px;padding:9px 12px;color:var(--ink,#302e29);font-size:12px;caret-color:var(--accent,#835326);}.ds-input-search::placeholder{color:var(--muted,#6a6254);}.ds-input-search:focus-visible{outline:2px solid var(--focus,#855222);outline-offset:4px;}"
+    },
+    {
+      "name": "工作区导航",
+      "kind": "nav",
+      "refersTo": "nav-active",
+      "description": "图标与文字共同导航，当前项使用蓝幕色。",
+      "html": "<nav class=\"ds-navigation\" aria-label=\"工作区导航\"><a class=\"ds-nav-item\" href=\"#home\" aria-current=\"page\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.65\" aria-hidden=\"true\"><path d=\"m3 10 9-7 9 7v10H3z\"/><path d=\"M9 20v-7h6v7\"/></svg>申请总览</a><a class=\"ds-nav-item\" href=\"#programs\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.65\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"m16 8-3 5-5 3 3-5z\"/></svg>目标项目</a></nav>",
+      "css": ".ds-navigation{font-family:var(--body,\"Segoe UI\",\"Microsoft YaHei\",sans-serif);display:grid;gap:7px;padding:18px;background:var(--rail,#e7e0d0);}.ds-nav-item{display:flex;align-items:center;gap:12px;padding:11px 13px;border-radius:8px;font-size:13px;color:var(--rail-text,#302e29);min-height:44px;text-decoration:none;}.ds-nav-item svg{width:18px;height:18px;}.ds-nav-item:hover{background:var(--rail-hover,#ddd3c0);}.ds-nav-item[aria-current=page]{background:var(--cover-ground,#dce6eb);color:var(--cover-ink,#264453);font-weight:600;}.ds-nav-item:focus-visible{outline:2px solid var(--focus,#855222);outline-offset:4px;}@media(max-width:650px){.ds-navigation{display:flex;overflow-x:auto;gap:3px;}.ds-nav-item{padding:8px 11px;min-height:37px;white-space:nowrap;font-size:11px;gap:6px;}.ds-nav-item svg{width:15px;height:15px;}}"
+    },
+    {
+      "name": "状态标签",
+      "kind": "chip",
+      "refersTo": "status-ready",
+      "description": "中性、已整理、待核对以文字和成对颜色呈现。",
+      "html": "<span class=\"ds-pill\">准备中</span> <span class=\"ds-pill ds-pill-ready\">已就绪</span> <span class=\"ds-pill ds-pill-review\">待核对</span>",
+      "css": ".ds-pill{font-family:var(--body,\"Segoe UI\",\"Microsoft YaHei\",sans-serif);display:inline-flex;align-items:center;padding:3px 9px;font-size:11px;line-height:1.6;border-radius:5px;background:var(--wash,#ebe4d5);color:var(--muted,#6a6254);white-space:nowrap;}.ds-pill-ready{background:var(--success-bg,#dce6eb);color:var(--success,#375a6a);}.ds-pill-review{background:var(--amber-bg,#efe2c7);color:var(--amber,#855222);}"
+    },
+    {
+      "name": "方向分段筛选",
+      "kind": "button",
+      "refersTo": "segment-active",
+      "description": "以按压状态说明当前申请方向筛选。",
+      "html": "<div class=\"ds-segments\" aria-label=\"申请方向筛选\"><button type=\"button\" aria-pressed=\"true\">全部</button><button type=\"button\" aria-pressed=\"false\">硕士</button><button type=\"button\" aria-pressed=\"false\">博士</button></div>",
+      "css": ".ds-segments{font-family:var(--body,\"Segoe UI\",\"Microsoft YaHei\",sans-serif);display:inline-flex;background:var(--wash,#ebe4d5);border-radius:7px;padding:3px;gap:3px;}.ds-segments button{font-family:var(--body,\"Segoe UI\",\"Microsoft YaHei\",sans-serif);border:0;background:transparent;border-radius:5px;min-height:34px;padding:4px 16px;font-size:12px;color:var(--muted,#6a6254);cursor:pointer;}.ds-segments button[aria-pressed=true]{background:var(--white,#faf7f0);color:var(--ink,#302e29);}.ds-segments button:hover{background:var(--white,#faf7f0);}.ds-segments button:focus-visible{outline:2px solid var(--focus,#855222);outline-offset:4px;}"
+    },
+    {
+      "name": "项目卡与折叠事实",
+      "kind": "card",
+      "refersTo": "program-card",
+      "description": "事实、下一步和出处在同一容器中分组；示例内容为虚构。",
+      "html": "<article class=\"ds-program-card\"><p class=\"ds-program-institution\">示例大学 · 示例地区</p><h2>示例研究项目</h2><div class=\"ds-program-overview\"><h3>匹配与下一步</h3><p>匹配依据待补充</p><p class=\"ds-next-action\">由 Agent 整理下一步</p></div><details><summary>查看条件、来源与扩展字段</summary><p>由 Agent 逐项核对后补充。</p></details></article>",
+      "css": ".ds-program-card{font-family:var(--body,\"Segoe UI\",\"Microsoft YaHei\",sans-serif);padding:24px;background:var(--white,#faf7f0);color:var(--ink,#302e29);border-radius:var(--radius,14px);border:1px solid var(--line,#c9c1b0);line-height:1.65;}.ds-program-card p,.ds-program-card h2,.ds-program-card h3{margin:0;}.ds-program-institution{font-size:11px;}.ds-program-card h2{font-size:18px;font-weight:620;line-height:1.4;letter-spacing:-.015em;margin-top:5px;}.ds-program-overview{margin-top:25px;}.ds-program-overview h3{font-size:11px;color:var(--muted,#6a6254);font-weight:500;margin-bottom:9px;}.ds-program-overview p,.ds-program-card details{font-size:12px;}.ds-program-overview .ds-next-action{margin-top:10px;color:var(--accent,#835326);}.ds-program-card details{border-top:1px solid var(--line,#c9c1b0);margin-top:23px;padding-top:14px;}.ds-program-card summary{cursor:pointer;color:var(--accent,#835326);font-size:11px;min-height:30px;}.ds-program-card summary:focus-visible{outline:2px solid var(--focus,#855222);outline-offset:4px;}@media(max-width:650px){.ds-program-card{padding:20px;}.ds-program-card h2{font-size:17px;}}"
+    },
+    {
+      "name": "每日摘要与日期",
+      "kind": "custom",
+      "refersTo": "daily-brief",
+      "description": "浅洗色承载下一步，蓝幕色承载日期及其依据。",
+      "html": "<section class=\"ds-daily-brief\"><div class=\"ds-brief-main\"><h2>整理下一批申请材料</h2><p>示例任务 · 具体进展由 Agent 根据已确认信息维护。</p></div><div class=\"ds-brief-deadline\"><span>最近计划日期</span><strong>时间待安排</strong><p>示例项目</p><small>保留周期与时区</small></div></section>",
+      "css": ".ds-daily-brief{font-family:var(--body,\"Segoe UI\",\"Microsoft YaHei\",sans-serif);display:grid;grid-template-columns:minmax(0,1fr) 230px;background:var(--wash,#ebe4d5);color:var(--ink,#302e29);border-radius:var(--radius,14px);overflow:hidden;line-height:1.65;}.ds-brief-main{padding:26px 28px 27px;}.ds-brief-main h2{margin:15px 0 0;font-size:23px;font-weight:620;line-height:1.4;letter-spacing:-.025em;}.ds-brief-main p{font-size:12px;color:var(--muted,#6a6254);margin:10px 0 0;max-width:65ch;}.ds-brief-deadline{display:flex;flex-direction:column;align-items:flex-start;padding:28px 25px;background:var(--cover-ground,#dce6eb);color:var(--cover-ink,#264453);}.ds-brief-deadline>span,.ds-brief-deadline small{font-size:11px;color:var(--cover-muted,#426b82);}.ds-brief-deadline strong{font-size:27px;font-weight:560;letter-spacing:-.02em;margin-top:14px;line-height:1.35;font-variant-numeric:tabular-nums;}.ds-brief-deadline p{font-size:12px;margin:7px 0 0;}.ds-brief-deadline small{margin-top:10px;}@media(max-width:650px){.ds-daily-brief{grid-template-columns:1fr;}.ds-brief-main{padding:23px;}.ds-brief-main h2{font-size:22px;}.ds-brief-deadline{padding:18px 23px;}}"
+    },
+    {
+      "name": "连续任务行",
+      "kind": "custom",
+      "refersTo": "task-list-row",
+      "description": "序号、任务说明、阶段和日期分层展示；示例内容为虚构。",
+      "html": "<article class=\"ds-task-row\"><span class=\"ds-task-indicator\">01</span><div class=\"ds-task-copy\"><h3>核对示例项目材料要求</h3><p>保留适用周期与官方来源</p></div><div class=\"ds-task-meta\"><span>材料准备</span><span>时间待安排</span></div></article>",
+      "css": ".ds-task-row{font-family:var(--body,\"Segoe UI\",\"Microsoft YaHei\",sans-serif);display:flex;gap:14px;align-items:center;min-height:88px;padding:16px 0;border-bottom:1px solid var(--line,#c9c1b0);color:var(--ink,#302e29);background:var(--white,#faf7f0);}.ds-task-indicator{border:1px solid var(--line,#c9c1b0);width:27px;height:27px;border-radius:50%;display:grid;place-items:center;font-size:11px;color:var(--muted,#6a6254);flex-shrink:0;font-variant-numeric:tabular-nums;}.ds-task-copy{min-width:0;flex:1;}.ds-task-copy h3{margin:0;font-size:12px;font-weight:550;line-height:1.4;}.ds-task-copy p{font-size:11px;color:var(--muted,#6a6254);margin:5px 0 0;line-height:1.6;max-width:68ch;}.ds-task-meta{display:flex;align-items:flex-end;gap:7px;flex-direction:column;font-size:11px;color:var(--muted,#6a6254);flex-shrink:0;}.ds-task-meta span:first-child{padding:3px 9px;line-height:1.6;border-radius:5px;background:var(--wash,#ebe4d5);}@media(max-width:650px){.ds-task-row{gap:10px;min-height:90px;}.ds-task-indicator{width:24px;height:24px;}.ds-task-meta{max-width:80px;}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "暖纸上的申请工作区",
+    "overview": "暖纸底色承载日常阅读，棕色标记链接与行动，浅蓝色集中提示当前导航、日期和已整理状态。夜间保留同样的信息关系，以深蓝底色、浅墨字和暖金色行动替换明度。界面依靠排版、分隔线与色面形成秩序，适合反复查看任务、项目和来源。\n\n组件保持紧凑、平稳的操作感：正文让位于事实，标签说明状态，主要按钮用于把明确事项交给 Agent。字体、边界和色彩角色在各模块间复用；扩展模块沿用同一套视觉语言。",
+    "keyCharacteristics": [
+      "暖纸白昼与深蓝夜间共享语义色角色。",
+      "系统无衬线文字为主，衬线字仅用于院校首字标记。",
+      "色面、细线与留白构成层级，常规容器不依赖阴影。",
+      "固定侧栏在手机转为横向导航，内容按重要性收成单列。",
+      "状态始终有文字，未知信息保留明确说明。"
+    ],
+    "rules": [
+      {
+        "name": "The Paired Theme Rule",
+        "body": "增加颜色角色时同时处理白昼与夜间，使用相应前景与背景组合。",
+        "section": "colors"
+      },
+      {
+        "name": "The Written State Rule",
+        "body": "颜色辅助区分状态；就绪、待核对、逾期及日期依据必须保留文字。",
+        "section": "colors"
+      },
+      {
+        "name": "The Numeric Rhythm Rule",
+        "body": "日期、倒计时和进度保留等宽数字；文字换行不截断来源或未知状态。",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Workspace Rule",
+        "body": "列表、项目卡与导航保持平面层级，投影留给覆盖内容的短时反馈。",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** 在白昼与夜间成对复用语义色，保持主按钮反色随主题切换。",
+      "**Do** 用文字同时说明状态与日期依据，保留来源、适用周期和未知信息。",
+      "**Do** 沿用连续列表、细线和留白，按现有断点调整列数与间距。",
+      "**Do** 为新增模块延续标题、字段、标签、表格与反馈组件，并保留键盘焦点样式。",
+      "**Do** 在公开示例、组件预览与截图中使用虚构资料。"
+    ],
+    "donts": [
+      "**Don't** 在组件内固定单主题前景色，或用纯白替代主题反色。",
+      "**Don't** 把个人完成态、来源网页变化和官方要求核验合成同一种状态。",
+      "**Don't** 为常规卡片增加浮起阴影，或为状态反馈加入新的装饰色系。",
+      "**Don't** 把扩展模块做成另一套配色、排版或边界系统。",
+      "**Don't** 把来源用户的身份、个人主页地址或真实申请资料写入公开设计文档与组件示例。"
+    ]
+  }
+}

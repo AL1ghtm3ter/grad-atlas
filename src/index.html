@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f3f0e7">
+  <meta name="description" content="与 Agent 一起整理研究生申请。硕士选校、博士研究匹配、材料、时间线和来源，放在同一个本地工作区。">
+  <title>GradAtlas · 研途图谱</title>
+  <script src="/src/theme-init.js"></script>
+  <link rel="icon" href="/src/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/src/style.css">
+  <script type="module" src="/src/app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#content">跳到主要内容</a>
+  <div class="shell">
+    <aside class="rail">
+      <a class="brand" href="#home"><img src="/src/mark.svg" width="38" height="38" alt=""><span>GradAtlas<small>研途图谱</small></span></a>
+      <div id="workspace-label" class="workspace-label">你的申请工作区</div>
+      <nav aria-label="主要导航">
+        <a href="#home" data-view="home"><span data-icon="home"></span>申请总览</a>
+        <a href="#programs" data-view="programs"><span data-icon="compass"></span>目标项目</a>
+        <a href="#applications" data-view="applications"><span data-icon="file"></span>申请跟踪</a>
+        <a href="#timeline" data-view="timeline"><span data-icon="calendar"></span>申请时间线</a>
+        <a href="#materials" data-view="materials"><span data-icon="file"></span>材料与任务</a>
+        <a href="#decisions" data-view="decisions"><span data-icon="check"></span>录取与入学</a>
+        <a href="#sources" data-view="sources"><span data-icon="link"></span>来源与更新<span id="source-count" class="nav-count" hidden></span></a>
+        <a href="#profile" data-view="profile"><span data-icon="user"></span>申请档案</a>
+        <a href="#extensions" data-view="extensions"><span data-icon="grid"></span>我的扩展</a>
+      </nav>
+      <div class="rail-bottom">
+        <a href="#agent" data-view="agent"><span data-icon="spark"></span>与 Agent 协作<span class="small-arrow">↗</span></a>
+        <div class="local-label"><span class="dot"></span>资料留在本机</div>
+        <small>按自己的节奏，走下一步。</small>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><span id="breadcrumb">申请工作区 / 总览</span><div class="topbar-right"><a class="mobile-agent" href="#agent">与 Agent 协作</a><span id="connection" role="status"><i class="dot"></i>正在连接</span><time id="today"></time><button id="theme-toggle" class="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="切换至夜间配色"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><span>白昼</span></button></div></header>
+      <div id="banner" role="status" hidden></div>
+      <div id="error" role="alert" hidden></div>
+      <main id="content" tabindex="-1"><div class="loading">正在读取本地申请计划…</div></main>
+      <footer><span>GradAtlas · 为下一段学习与研究</span><span id="version">本地工作区</span></footer>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

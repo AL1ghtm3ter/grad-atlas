@@ -1,0 +1,20 @@
+{
+  "name": "grad-atlas",
+  "version": "1.0.0",
+  "description": "Agent 维护的研究生申请工作台，支持硕士与博士申请。",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node scripts/server.mjs",
+    "demo": "node scripts/server.mjs --demo",
+    "demo:phd": "node scripts/server.mjs --demo=phd --port 4682",
+    "agent": "node scripts/agent.mjs",
+    "install:skill": "node scripts/install-skill.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/preview.mjs",
+    "check:public": "node scripts/check-public.mjs",
+    "package": "node scripts/package.mjs"
+  }
+}
